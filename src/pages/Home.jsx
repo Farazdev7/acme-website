@@ -5,7 +5,6 @@ import arrow from "../../public/images/arrow-right-line.png";
 import line from "../../public/images/Deco-line.png";
 import CardSlider from "../Components/CardSlider/CardSlider";
 import ReviewSlider from "../Components/ReviewSlider/ReviewSlider";
-// import CaseStudy from "../Components/CaseStudy/CaseStudy"
 import CaseStudy from "../Components/CaseStudy/CaseStudy";
 import TextAndImageCall from "../Components/TextAndImage/TextAndImageCall";
 import DisplayCardCall from "../Components/DisplayCard/DisplayCardCall";
@@ -13,13 +12,16 @@ import Ourstack from "../Components/ourStack/OurStack";
 import OurResourse from "../Components/ourResourse/OurResourse";
 import { Link } from "react-router-dom";
 import ReviewSliderTesting2 from "../Testing2";
+
 const homeData = {
   mainText: `We help build and manage a team of world-class developers to bring your vision to life.`,
 };
+
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <React.Fragment>
       <div className="main bg-slate-200 font-[500] ">
@@ -27,11 +29,8 @@ const Home = () => {
         <div className="">
           <div className="heroSection  h-[90vh] md:h-[80vh]  lg:h-[100vh] bg-green-500 flex leading-7 md:leading-10  ">
             <div className="w-full flex justify-center  bg-white py-8  px-4 items-center">
-              {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
-              {/* <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 justify-between "> */}
               <div className="max-w-[100vw]  mx-auto grid xl:grid-cols-2 justify-between ">
                 <div className="flex flex-col justify-center max-h-[50vh] ">
-                  <p className="text-caribbean-green "></p>
                   <h1 className="md:text-4xl sm:text-3xl text-2xl  py-2 ">
                     {" "}
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
@@ -52,13 +51,11 @@ const Home = () => {
               </div>
             </div>
             <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" />
-            {/* hero section ended */}
           </div>
         </div>
         {/* hero section ended */}
         {/* Services We Offer and slider*/}
         <div className="ServicesWeOffer relative  my-10 ">
-          {/* will redirect to the services page */}
           <Link to="/services">
             <h1 className="md:text-2xl text-xl font-bold py-10 text-center">Services we offer</h1>
             <div className="slider">
@@ -71,11 +68,8 @@ const Home = () => {
         <div className=" ">
           <div className="video   md:h-[100vh]  bg-green-500 flex leading-7 md:leading-10    ">
             <div className="w-full flex justify-center  bg-white py-8  px-4 items-center">
-              {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
               <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 ">
-                {/* <div className="flex flex-col justify-center max-h-[50vh] md:ml-14 "> */}
                 <div className=" ml-10  ">
-                  {/* <p className="text-caribbean-green "></p> */}
                   <img src={line} alt="" />
                   <h1 className="md:text-4xl sm:text-3xl text-2xl py-2  ">
                     Leading companies trust us <br />
@@ -95,19 +89,17 @@ const Home = () => {
                 <img className="md:max-w-[40vw]  md:h- mx-auto " src={videoImg} alt="/" />
               </div>
             </div>
-            {/* <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" /> */}
-            {/* video section ended*/}
           </div>
-          {/* meet people text and ball bg */}
-          <div className="text-xl relative m-10">
-            <img src={line} alt="" />
-            Meet the People <br /> <span className="font-bold">We are Working With</span>
-            <img
-              className="absolute md:bottom-[10px] lg:bottom-[-95px] bottom-[-110px]  left-[50vw]"
-              src={bgImage}
-              alt=""
-            />
-          </div>
+        </div>
+        {/* meet people text and ball bg */}
+        <div className="text-xl relative m-10">
+          <img src={line} alt="" />
+          Meet the People <br /> <span className="font-bold">We are Working With</span>
+          <img
+            className="absolute md:bottom-[10px] lg:bottom-[-95px] bottom-[-110px]  left-[50vw]"
+            src={bgImage}
+            alt=""
+          />
         </div>
         {/* Banner section */}
         <div className="banner relative flex flex-wrap justify-center my-20 bg-[#F7F7FA] py-10">
@@ -121,22 +113,6 @@ const Home = () => {
           <img src="https://i.ibb.co/1G2rHvV/logo3.png" alt="3" />
         </div>
         {/* review section started  and slider */}
-        {/* <div className="review border-2   ">
-          <div className="text flex relative   justify-center items-center ">
-            <p className="text-xl relative md:text-3xl md:w-[50vw] lg:w-[50vw] text-center py-10 ">
-              Why cutomers love <br /> <span className="font-bold">working with us</span>
-              <img src="https://i.ibb.co/X3NGf8h/topComa.png" alt="Comma" />
-              <p className="text-lg">
-                Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing
-                agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their
-                work to someone else.
-              </p>
-              <img className="absolute right-8 " src="https://i.ibb.co/DMQ90mt/Bottom-Comma.png" alt="Comma" />
-            </p>
-          </div>
-        </div> */}
-        {/* {ReviewSliderTesting2} */}
-        {/* case study section */}
         <ReviewSlider />
         <div className="caseStudy py-20 px-4 bg-[#eeeef9] leading-10 ">
           <div className="text py-20">
@@ -153,7 +129,6 @@ const Home = () => {
               Way of building <br /> <span className="font-bold">Great Software</span>{" "}
             </p>
           </div>
-          {/* to redirect at blog page */}
           <Link to="/blog">
             <TextAndImageCall />
           </Link>
@@ -169,7 +144,6 @@ const Home = () => {
               </p>
             </p>
           </div>
-          {/* <DisplayCard /> */}
           <DisplayCardCall />
         </div>
         {/* from here our tech stack */}
