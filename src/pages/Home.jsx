@@ -39,7 +39,7 @@ const Home = () => {
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
                     </span>
                   </h1>
-                  <p className="text-gray-800  text-lg md:text-xl font-[400] md:mt-10 ">{homeData.mainText}</p>
+                  <p className="text-gray-800  text-xl font-[400] md:mt-10 ">{homeData.mainText}</p>
                   <button className="bg-[#3D63EA] mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
                     Let’s get started!
                   </button>

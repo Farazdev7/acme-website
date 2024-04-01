@@ -16,7 +16,7 @@ const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, im
           <div className="md:w-1/2 md:ml-8">
             <div className="md:text-left text-center max-w-md md:max-w-none">
               <h2 className="text-xl font-bold mb-4">{heading}</h2>
-              <p className="text-lg">{p}</p>
+              <p className="text-xl">{p}</p>
               <p className="my-10">{text}</p>
               <div className="flex gap-4 items-center">
                 <img className="max-h-[4rem]" src={upwordLine} alt={upwordLine} />
