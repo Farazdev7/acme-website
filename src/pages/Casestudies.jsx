@@ -35,7 +35,7 @@ const Casestudies = () => {
       : caseStudyData[2].filter((item) => item.category.toLowerCase() === btnCategory.toLowerCase());
 
   return (
-    <div className="caseStudy">
+    <div className="caseStudy bg-white">
       <div className="title bg-[#fff] text-center pb-10">
         <div className="bg-[#2baeba] text-[14px] md:text-[18px] px-[15px] py-10 text-white">
           <p className="text-[30px] font-[400] md:pt-[50px] mb-[20px]">Case Studies</p>
@@ -69,7 +69,7 @@ const Casestudies = () => {
               }}
             >
               <div
-                className="relative h-[100%] w-[100%] opacity-50"
+                className="relative h-[100%] w-[100%] opacity-50 "
                 style={{ background: `linear-gradient(to right, ${item.bgColorTo},${item.bgColorfrom} )` }}
               ></div>
               <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-4 md:p-6 lg:p-8 ">

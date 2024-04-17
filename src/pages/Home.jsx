@@ -14,6 +14,8 @@ import OurResourse from "../Components/ourResourse/OurResourse";
 import { Link } from "react-router-dom";
 import Process from './Process'
 import ProcessCircle from "../Components/process circle design/ProcessCircle";
+import logo from "../../public/images/logo/1.png";
+
 const homeData = {
   mainText: `We help build and manage a team of world-class developers to bring your vision to life.`,
 };
@@ -46,8 +48,9 @@ const Home = () => {
                   </button>
                 </div>
                 <img
-                  className="md:max-w-[40vw] h-[40vh]  w-fit mx-auto "
-                  src="https://i.ibb.co/Rg8mTFW/main.png"
+                  className=" h-[40vh]   xl:h-[70vh]  w-fit mx-auto "
+                  // src="https://i.ibb.co/Rg8mTFW/main.png"
+                  src={logo}
                   alt="/"
                 />
               </div>

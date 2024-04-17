@@ -52,7 +52,9 @@ const ProcessCircle = () => {
           {/* box3*/}
           <div className="py-4">
             <ul>
-              <li className="text-3xl">03</li>
+              <li className="text-3xl hidden md:block">03</li>
+              <li className="text-3xl  md:hidden ">02</li>
+
             </ul>{" "}
             <img src="" alt="" />
             <h1 className="text-[#0097a7] text-3xl ">WIREFRAMING</h1>
@@ -65,7 +67,9 @@ const ProcessCircle = () => {
           {/* box 5 */}
           <div className="py-4">
             <ul>
-              <li className="text-3xl">05</li>
+              <li className="text-3xl hidden md:block">05</li>
+              <li className="text-3xl  md:hidden">03</li>
+
             </ul>{" "}
             <img src="" alt="" />
             <h1 className="text-[#1a3b4f] text-3xl">MVP DEVELOPMENT</h1>
@@ -78,7 +82,9 @@ const ProcessCircle = () => {
           {/* box7 */}
           <div className="py-4">
             <ul>
-              <li className="text-3xl">07</li>
+              <li className="text-3xl hidden md:block">07</li>
+              <li className="text-3xl  md:hidden">04</li>
+
             </ul>{" "}
             <img src="" alt="" />
             <h1 className="text-[#eb9b79] text-3xl">ITERATION</h1>
@@ -132,7 +138,11 @@ const ProcessCircle = () => {
           {/* box2*/}
           <div className="py-4">
             <ul>
-              <li className="text-3xl">2</li>
+              <li className="text-3xl hidden md:block">2</li>
+              <li className="text-3xl md:hidden">5</li>
+
+
+
             </ul>{" "}
             <img src="" alt="" />
             <h1 className="text-[#2baeba] text-3xl">JOURNEY MAPPING</h1>
@@ -145,7 +155,8 @@ const ProcessCircle = () => {
           {/* box4*/}
           <div className="py-4">
             <ul>
-              <li className="text-3xl">4</li>
+              <li className="text-3xl hidden md:block">4</li>
+            <li className="text-3xl md:hidden">6</li>
             </ul>{" "}
             <img src="" alt="" />
             <h1 className="text-[#1f475b] text-3xl">DESIGN</h1>
@@ -158,7 +169,10 @@ const ProcessCircle = () => {
           {/* box6*/}
           <div className="py-4">
             <ul>
-              <li className="text-3xl">6</li>
+              <li className="text-3xl hidden md:block">6</li>
+            <li className="text-3xl md:hidden">7</li>
+
+
             </ul>{" "}
             <img src="" alt="" />
             <h1 className="text-[#f16427] text-3xl">LAUNCH</h1>

@@ -38,7 +38,7 @@ const BlogDetail = () => {
               <div key={i} className="my-4">
                 
                 <h3 className="font-bold text-xl">{i+1} : {item.heading}</h3>
-                <p className="bg-red-300">{item.text}</p>
+                <p className="">{item.text}</p>
               </div>
             ))}
           </div>
