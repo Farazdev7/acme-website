@@ -46,8 +46,8 @@ const Casestudies = () => {
             <button
               key={i}
               onClick={() => {
-                console.log(i);
-                console.log(btnCategory);
+                // console.log(i);
+                // console.log(btnCategory);
                 setCategory(item);
               }}
               className={`text-[#2baeba] hover:text-white text-[16px] md:text-[18px] bg-transparent hover:bg-[#009688] border border-[#009688] md:h-14 md:w-40 h-10 w-32 rounded-[30px] ${
@@ -84,7 +84,7 @@ const Casestudies = () => {
                 </div>
               </div>
               <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-6 lg:right-20">
-                <img data-aos="zoom-in-up" className="h-[30%] lg:h-[100%]" src={item.moboImg} alt="" />
+                <img data-aos="zoom-in-up" className="h-[100%] w-fit lg:h-[100%]" src={item.moboImg}  alt="" />
               </div>
             </div>
           </Link>

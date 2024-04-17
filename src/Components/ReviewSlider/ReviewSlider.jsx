@@ -85,7 +85,7 @@ export default function ReviewSlider() {
           <p className="text-xl relative md:text-3xl md:w-[50vw] lg:w-[50vw] text-center py-10 ">
             Why cutomers love <br /> <span className="font-bold">working with us</span>
             <img src="https://i.ibb.co/X3NGf8h/topComa.png" alt="Comma" />
-            <p className="text-lg ">
+            <p className="md:text-xl ">
               {/* Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing
               agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work
               to someone else. */}
@@ -114,8 +114,8 @@ export default function ReviewSlider() {
             {detailReview.map((item, i) => (
               <div key={i}>
                 <SwiperSlide onClick={() => setCurrentReview(item.review)}>
-                  <div className="flex flex-col justify-center items-center text-center">
-                    <img className="max-w-20 h-fit rounded-full" src={item.img} alt="" />
+                  <div className="flex flex-col justify-center items-center text-center md:text-xl ">
+                    <img className="w-20 h-fit rounded-full" src={item.img} alt="" />
                     <p>{item.stars}</p>
                     <p>{item.userName}</p>
                     <p>{item.postedDate}</p>

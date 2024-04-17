@@ -82,32 +82,31 @@ function ServicePage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Our Services</h1>
-      {services.map((service, index) => (
-        <div key={index} className="mb-8 text-center leading-10">
-          <h2 className="text-2xl font-semibold mb-2 py-10">{service.heading}</h2>
-          {/* image div */}
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-4 place-items-center">
-            {service.images.map((image, imageIndex) => (
-              <img
-                key={imageIndex}
-                src={image}
-                alt={service.heading}
-                className=" rounded-lg shadow-md max-h-[200px] w-fit  md:max-h-[200px] lg:max-h-[300px]"
-              />
-            ))}
-          </div>
-          <p className="mb-4 text-xl pt-8">{service.description}</p>
-          <p className="mb-4 text-xl pt-8">
-            <strong>Importance:</strong> <br /> {service.importance}
-          </p>
-          <p className="mb-4 text-xl pt-8">
-            <strong>Procedure:</strong> <br /> {service.procedure}
-          </p>
+    <div className="container mx-auto py-8 text-xl ">
+    <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Our Services</h1>
+    {services.map((service, index) => (
+      <div key={index} className="mb-8 text-center leading-8 bg-gray-200 rounded-lg shadow-md p-8">
+        <h2 className="text-3xl font-semibold mb-4">{service.heading}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
+          {service.images.map((image, imageIndex) => (
+            <img
+              key={imageIndex}
+              src={image}
+              alt={service.heading}
+              className="rounded-lg shadow-md max-h-64 w-full object-cover"
+            />
+          ))}
         </div>
-      ))}
-    </div>
+        <p className="my-4 text-lg">{service.description}</p>
+        <p className="my-4 text-lg">
+          <strong>Importance:</strong> <br /> {service.importance}
+        </p>
+        <p className="my-4 text-lg">
+          <strong>Procedure:</strong> <br /> {service.procedure}
+        </p>
+      </div>
+    ))}
+  </div>
   );
 }
 

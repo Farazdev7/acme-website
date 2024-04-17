@@ -72,7 +72,7 @@ const AboutUs = () => {
     Aos.init();
   });
   return (
-    <section className="bg-gray-100 ">
+    <section className="bg-gray-100 text-xl ">
       <div className="grid place-items-center text-center">
         {/* Mission Banner */}
         <div className="w-full ">

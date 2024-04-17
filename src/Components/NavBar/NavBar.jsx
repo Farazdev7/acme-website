@@ -3,7 +3,15 @@ import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
 import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 import iklogo from "../../../public/images/Ik developers.png";
-import logo from "../../../public/images/Vector.png";
+// import logo from "../../../public/images/Vector.png";
+import logo from "../../../public/images/logo/1.png";
+import logo2 from "../../../public/images/logo/2.jpg";
+import logo3 from "../../../public/images/logo/3.png";
+
+import logo4 from "../../../public/images/logo/4.jpg";
+
+
+
 const navigation = [
   { name: "About us", path: "/about" },
   { name: "Services", path: "/services" },
@@ -22,13 +30,17 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
+          <span className="icon font-bold text-lg">
+              {/* <img className="iklogo" src={iklogo} alt="" /> */}
+              {/* Acme Digital Soluction */}
+            </span>
             <span>
-              <img className="logo" src={logo} alt="" />
+              <img className="logo max-h-[12vh] w-fit" src={logo} alt="" />
             </span>
-            <span className="icon">
-              <img className="iklogo" src={iklogo} alt="" />
-            </span>
+           
           </NavLink>
+          
+          
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             {/* {navigation.map((nav, i) => (
@@ -61,7 +73,7 @@ function NavBar() {
               {" "}
               {/* <button className="contact-us-mobile"> */}
               <span className="contact-us-mobile">
-                ><Link to="/contactus">Contact us</Link>
+                <Link to="/contactus">Contact us</Link>
               </span>
               {/* </button> */}
             </li>

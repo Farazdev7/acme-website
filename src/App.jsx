@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import Home from "./pages/Home";
@@ -13,57 +12,68 @@ import Process from "./pages/Process";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import BlogDetail from "./Components/BlogDetail/BlogDetail";
-import blogData from "./Components/data/Blogs";
+import Dashboard from "./Dashboard/Dashboard";
+import Testing2 from "./Testing2";
+// import DashboardLayout from "./Dashboard/DashboardLayout";
+import DashboardSidebar from "./Dashboard/DashboardNavBar";
+import DashBlog from "./Dashboard/components/DashBlog";
+import DashContact from "./Dashboard/components/DashContact";
+import Dashhome from "./Dashboard/components/Dashhome";
+import DashCaseStudy from "./Dashboard/components/DashCaseStudy";
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <NavBar />
-        {/* landing page */}
         <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        {/* rought for the services page */}
-        <Routes>
-          <Route path="/services" element={<Services />} />
-        </Routes>
-        {/* route for the case study  */}
-        <Routes>
-          <Route path="/casestudies" element={<Casestudies />} />
-        </Routes>
+          <Route path="/" element={<LayoutComponent />}>
+            <Route index element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/casestudies" element={<Casestudies />} />
+            <Route path="/casestudies/:id/:catagory" element={<CaseStudyDetail />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="blog/:postId" element={<BlogDetail />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/hire" element={<Hire />} />
+            <Route path="/process" element={<Process />} />
+          </Route>
 
-        {/* ================================================================================== */}
-        <Routes>
-          <Route path="/casestudies/:id/:catagory" element={<CaseStudyDetail />} />
-        </Routes>
-        {/* routes for the blogs */}
-        <Routes>
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
-        {/* routes for the blogs Detail page */}
-        <Routes>
-          <Route path="blog/:postId" element={<BlogDetail />} />
-          {/* <Route path="blog/:postId" render={() => <BlogDetail posts={blogData} />} /> */}
-        </Routes>
-        {/* routes for the contact us page */}
-        <Routes>
-          <Route path="/contactus" element={<ContactUs />} />
-        </Routes>
-        {/* for about us */}
-        <Routes>
-          <Route path="/about" element={<AboutUs />} />
-        </Routes>
+          {/* <Route path="/dashboard" element={<DashboardLayout />}> */}
+          {/* <Route path="/dashboard" element={<DashboardSidebar />}>
+            <Route index element={<Dashboard/>} />
+            <Route path="/dashboard/blog" element={<DashBlog/>} />
+            <Route path="/dashboard/contactus" element={<DashContact/>} />
+          </Route> */}
+<Route path="/dashboard" element={<DashboardLayout />}>
+<Route path="/dashboard/contact" element={<DashContact />}/>
+<Route path="/dashboard/blog" element={<DashBlog/>}/>
+<Route path="/dashboard/home" element={<Dashhome/>}/>
+<Route path="/dashboard/casestudies" element={<DashCaseStudy/>}/>
+{/* <Route path="/dashboard/con" element={<DashContact />}/> */}
 
-        {/* route the hire */}
-        <Routes>
-          <Route path="/hire" element={<Hire />} />
-        </Routes>
+</Route>
+{/* <Route path="/dashboard/con" element={<DashContact />}/> */}
 
-        <Routes>
-          <Route path="/process" element={<Process />} />
+          <Route path="/testing2" element={<Testing2 />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
+    </div>
+  );
+};
+const DashboardLayout=()=>{
+  return(
+    <div>
+      <DashboardSidebar/>
+      <Outlet/>
+    </div>
+  )
+}
+const LayoutComponent = () => {
+  return (
+    <div>
+      <NavBar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

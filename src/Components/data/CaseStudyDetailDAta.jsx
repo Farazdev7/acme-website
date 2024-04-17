@@ -31,6 +31,261 @@ const contents = [
   // items array of  objects we call content
   // index 2
   [
+
+    {
+      id: "11",
+      backgroundImage:
+        "https://theapprenticedoctor.com/wp-content/uploads/2022/08/Depositphotos_103747962_XL-2048x1365.jpg",
+      // moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/03/paystreamheadergraphic.png",
+      // moboImg: "https://i.ibb.co/7rhjHnk/doc.png",
+      moboImg: "https://i.ibb.co/G9s7TYx/doctor.png",
+      heading: "Emotional Medicine ",
+      text: "Your Partner in simplifying and optimising ",
+      path: "/about",
+      bgColorfrom: "gray",
+      bgColorTo: "gray",
+      category: "Health",
+      logImg1: apple,
+      logImg2: android,
+      logImg3: react,
+      detail: `this text is for testing purposes`,
+      appScreenshort1: "https://i.ibb.co/YBMKYrM/doctor3.png",
+      appScreenshort2: "https://i.ibb.co/tqPjGbK/doctor4.png",
+      appScreenshort3: "https://i.ibb.co/HzCjTPL/doctor2.png",
+      appTestLink: "",
+      webTestLink: "",
+      isoTestLink: "",
+      clientReview: [
+        {
+          clientreview:
+            "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+          clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+          clientname: "Guy Wilcox",
+        },
+      ],
+      Process: [
+        {
+          theProblem:
+            "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+          theSoluction:
+            "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+          theresult:
+            "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+        },
+      ],
+    },
+    {
+      id: "22",
+      backgroundImage:
+        "https://www.thesun.co.uk/wp-content/uploads/2022/07/unnamed-138.jpg?w=620",
+      // moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/03/paystreamheadergraphic.png",
+      moboImg: "https://i.ibb.co/JmgjVkf/study.png",
+      heading: "SchoolTracker",
+      text: "Your Partner in simplifying and optimising ",
+      path: "/about",
+      bgColorfrom: "pink",
+      bgColorTo: "purple",
+      category: "Education",
+      logImg1: apple,
+      logImg2: android,
+      logImg3: react,
+      detail: `this text is for testing purposes`,
+      appScreenshort1: "https://i.ibb.co/qMbmf6h/study5.png",
+      appScreenshort2: "https://i.ibb.co/wJj0gnK/study3.png",
+      appScreenshort3: "https://i.ibb.co/FnBf0jc/study2.png",
+      appTestLink: "",
+      webTestLink: "",
+      isoTestLink: "",
+      clientReview: [
+        {
+          clientreview:
+            "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+          clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+          clientname: "Guy Wilcox",
+        },
+      ],
+      Process: [
+        {
+          theProblem:
+            "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+          theSoluction:
+            "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+          theresult:
+            "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+        },
+      ],
+    },
+    {
+      id: "33",
+      backgroundImage:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsywzAfwnNzw-7YGZy6MdXnclMBDy5C7HQEj26-k7ikQ&s",
+      // moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/03/paystreamheadergraphic.png",
+      moboImg: "https://i.ibb.co/SRD0mYR/events.png",
+      heading: "Events Quotes",
+      text: "Your Partner in simplifying and optimising ",
+      path: "/about",
+      bgColorfrom: "pink",
+      bgColorTo: "orange",
+      category: "Charity",
+      logImg1: apple,
+      logImg2: android,
+      logImg3: react,
+      detail: `this text is for testing purposes`,
+      appScreenshort1: "https://i.ibb.co/f9c0h9x/events2.png",
+      appScreenshort2: "https://i.ibb.co/SRD0mYR/events.png",
+      appScreenshort3: "https://i.ibb.co/hHgVgV1/events3.png",
+      appTestLink: "",
+      webTestLink: "",
+      isoTestLink: "",
+      clientReview: [
+        {
+          clientreview:
+            "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+          clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+          clientname: "Guy Wilcox",
+        },
+      ],
+      Process: [
+        {
+          theProblem:
+            "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+          theSoluction:
+            "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+          theresult:
+            "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+        },
+      ],
+    },
+
+
+
+
+    {
+      id: "44",
+      backgroundImage:
+        "https://i.insider.com/649afcb5867d960019d93090?width=700",
+      // moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/03/paystreamheadergraphic.png",
+      moboImg: "https://i.ibb.co/LkfvNGf/workShop.png",
+      heading: "Workshop",
+      text: "Your Partner in simplifying and optimising ",
+      path: "/about",
+      bgColorfrom: "pink",
+      bgColorTo: "blue",
+      category: "B2B",
+      logImg1: apple,
+      logImg2: android,
+      logImg3: react,
+      detail: `this text is for testing purposes`,
+      appScreenshort1: "https://i.ibb.co/9cGFFZM/workshop2.png",
+      appScreenshort2: "https://i.ibb.co/gtYWqzm/workshop3.png",
+      appScreenshort3: "https://i.ibb.co/9cGFFZM/workshop2.png",
+      appTestLink: "",
+      webTestLink: "",
+      isoTestLink: "",
+      clientReview: [
+        {
+          clientreview:
+            "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+          clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+          clientname: "Guy Wilcox",
+        },
+      ],
+      Process: [
+        {
+          theProblem:
+            "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+          theSoluction:
+            "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+          theresult:
+            "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+        },
+      ],
+    },
+    // {
+    //   id: "55",
+    //   backgroundImage:
+    //     "https://thedistance.co.uk/wp-content/uploads/2016/05/fc3a59798f3f4c432dabf7c21dc2fd4d2b62be85.jpg",
+    //   // moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/03/paystreamheadergraphic.png",
+    //   moboImg: "https://i.ibb.co/7rhjHnk/doc.png",
+    //   heading: "PayStream",
+    //   text: "Your Partner in simplifying and optimising ",
+    //   path: "/about",
+    //   bgColorfrom: "pink",
+    //   bgColorTo: "blue",
+    //   category: "FinTech",
+    //   logImg1: apple,
+    //   logImg2: android,
+    //   logImg3: react,
+    //   detail: `this text is for testing purposes`,
+    //   appScreenshort1: "https://thedistance.co.uk/wp-content/uploads/2023/03/iPhone-2.png",
+    //   appScreenshort2: "https://thedistance.co.uk/wp-content/uploads/2023/03/iPhone-11-Pro-01-Real-Space-Gray.png",
+    //   appScreenshort3: "https://thedistance.co.uk/wp-content/uploads/2023/03/iPhone-1.png",
+    //   appTestLink: "",
+    //   webTestLink: "",
+    //   isoTestLink: "",
+    //   clientReview: [
+    //     {
+    //       clientreview:
+    //         "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+    //       clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+    //       clientname: "Guy Wilcox",
+    //     },
+    //   ],
+    //   Process: [
+    //     {
+    //       theProblem:
+    //         "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+    //       theSoluction:
+    //         "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+    //       theresult:
+    //         "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+    //     },
+    //   ],
+    // },
+    {
+      id: "66",
+      backgroundImage:
+        "https://famisafe.wondershare.com/images/article/2023/01/kids-location-tracking.jpg",
+      // moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/03/paystreamheadergraphic.png",
+      moboImg: "https://i.ibb.co/NFPR7GR/location2.png",
+      heading: " Car Location Tracking",
+      text: "Your Partner in simplifying and optimising ",
+      path: "/about",
+      bgColorfrom: "pink",
+      bgColorTo: "blue",
+      category: "finTech",
+      logImg1: apple,
+      logImg2: android,
+      logImg3: react,
+      detail: `this text is for testing purposes`,
+      appScreenshort1: "https://i.ibb.co/hY8Q6kk/location.png",
+      appScreenshort2: "https://i.ibb.co/vPjTwXb/location3.png",
+      appScreenshort3: "https://i.ibb.co/gP0W1Kr/location4.png",
+      appTestLink: "",
+      webTestLink: "",
+      isoTestLink: "",
+      clientReview: [
+        {
+          clientreview:
+            "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+          clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+          clientname: "Guy Wilcox",
+        },
+      ],
+      Process: [
+        {
+          theProblem:
+            "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+          theSoluction:
+            "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+          theresult:
+            "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+        },
+      ],
+    },
+
+
+
     // item 1
     {
       id: "1",
@@ -41,7 +296,7 @@ const contents = [
       text: "Your Partner in simplifying and optimising ",
       path: "/about",
       bgColorfrom: "pink",
-      bgColorTo: "blue",
+      bgColorTo: "yellow",
       category: "abc",
       logImg1: apple,
       logImg2: android,

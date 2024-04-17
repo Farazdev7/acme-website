@@ -5,41 +5,43 @@ import arrow from "../../public/images/arrow-right-line.png";
 import line from "../../public/images/Deco-line.png";
 import CardSlider from "../Components/CardSlider/CardSlider";
 import ReviewSlider from "../Components/ReviewSlider/ReviewSlider";
+// import CaseStudy from "../Components/CaseStudy/CaseStudy"
 import CaseStudy from "../Components/CaseStudy/CaseStudy";
 import TextAndImageCall from "../Components/TextAndImage/TextAndImageCall";
 import DisplayCardCall from "../Components/DisplayCard/DisplayCardCall";
 import Ourstack from "../Components/ourStack/OurStack";
 import OurResourse from "../Components/ourResourse/OurResourse";
 import { Link } from "react-router-dom";
-import ReviewSliderTesting2 from "../Testing2";
-
+import Process from './Process'
+import ProcessCircle from "../Components/process circle design/ProcessCircle";
 const homeData = {
   mainText: `We help build and manage a team of world-class developers to bring your vision to life.`,
 };
-
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <React.Fragment>
-      <div className="main bg-slate-200 font-[500] ">
+      <div className="main bg-slate-200  ">
         {/* hero section stared */}
         <div className="">
-          <div className="heroSection  h-[90vh] md:h-[80vh]  lg:h-[100vh] bg-green-500 flex leading-7 md:leading-10  ">
+          <div className="heroSection  h-[90vh]  bg-green-500 flex leading-7 md:leading-10  ">
             <div className="w-full flex justify-center  bg-white py-8  px-4 items-center">
-              <div className="max-w-[100vw]  mx-auto grid xl:grid-cols-2 justify-between ">
+              {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
+              {/* <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 justify-between "> */}
+              <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2  justify-between ">
                 <div className="flex flex-col justify-center max-h-[50vh] ">
-                  <h1 className="md:text-4xl sm:text-3xl text-2xl  py-2 ">
+                  {/* <p className="text-caribbean-green "></p> */}
+                  <h1 className="md:text-6xl lg:text-7xl sm:text-5xl text-4xl  py-2 ">
                     {" "}
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
                     <span className="bold font-bold">
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
                     </span>
                   </h1>
-                  <p className="text-gray-800  text-xl font-[400] md:mt-10 ">{homeData.mainText}</p>
-                  <button className="bg-[#3D63EA] mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
+                  <p className="text-gray-800 text-xl sm:text-3xl md:text-3xl font-[400] md:mt-10 ">{homeData.mainText}</p>
+                  <button className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-10 mx-auto lg:mx-0 py-3">
                     Let’s get started!
                   </button>
                 </div>
@@ -50,58 +52,30 @@ const Home = () => {
                 />
               </div>
             </div>
-            <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" />
+            {/* <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" /> */}
+            {/* hero section ended */}
           </div>
         </div>
         {/* hero section ended */}
         {/* Services We Offer and slider*/}
-        <div className="ServicesWeOffer relative  my-10 ">
-          <Link to="/services">
-            <h1 className="md:text-2xl text-xl font-bold py-10 text-center">Services we offer</h1>
+        <div className="ServicesWeOffer relative  my-10 text-xl ">
+          {/* will redirect to the services page */}
+          
+            <h1 className="md:text-3xl lg:text-5xl text-3xl  py-10 text-center">Services we offer</h1>
             <div className="slider">
+            <Link to="/services">
               <CardSlider />
+              </Link>
+
             </div>
-          </Link>
-          <img className="absolute bottom-[10px] left-20 md:left-40 lg:left-[70%]" src={bgImage} alt="" />
+          {/* <img className="absolute bottom-[10px] left-20 md:left-40 lg:left-[70%]" src={bgImage} alt="" /> */}
         </div>
-        {/* video section started*/}
-        <div className=" ">
-          <div className="video   md:h-[100vh]  bg-green-500 flex leading-7 md:leading-10    ">
-            <div className="w-full flex justify-center  bg-white py-8  px-4 items-center">
-              <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 ">
-                <div className=" ml-10  ">
-                  <img src={line} alt="" />
-                  <h1 className="md:text-4xl sm:text-3xl text-2xl py-2  ">
-                    Leading companies trust us <br />
-                    <span className="bold font-bold">
-                      to develop software <br />
-                    </span>
-                  </h1>
-                  <p className="text-gray-[#718096] font-[400] md:mt-10 text-start ">
-                    We <span className="text-[#F76680]">add development capacity</span> to tech teams. Our value isn’t
-                    limited to building teams but is equally distributed across the project lifecycle. We are a custom
-                    software development company that guarantees the successful delivery of your project.
-                  </p>
-                  <button className=" text-[#57007B] font-medium my-6 mx-auto md:mx-0 flex items-center gap-3">
-                    See more Informations <img src={arrow} alt="" />
-                  </button>
-                </div>
-                <img className="md:max-w-[40vw]  md:h- mx-auto " src={videoImg} alt="/" />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* meet people text and ball bg */}
-        <div className="text-xl relative m-10">
-          <img src={line} alt="" />
-          Meet the People <br /> <span className="font-bold">We are Working With</span>
-          <img
-            className="absolute md:bottom-[10px] lg:bottom-[-95px] bottom-[-110px]  left-[50vw]"
-            src={bgImage}
-            alt=""
-          />
-        </div>
+{/* this div created for the space and give the backgrond color */}
+        <div className="forSpace py-24 bg-white"></div>
+         {/* <Process/> */}
+         <ProcessCircle/>
         {/* Banner section */}
+       
         <div className="banner relative flex flex-wrap justify-center my-20 bg-[#F7F7FA] py-10">
           <img src="https://i.ibb.co/XzQ7HFm/Logo-9.png" alt="-9" />
           <img src="https://i.ibb.co/BgRh1fY/logo8.png" alt="8" />
@@ -114,21 +88,24 @@ const Home = () => {
         </div>
         {/* review section started  and slider */}
         <ReviewSlider />
-        <div className="caseStudy py-20 px-4 bg-[#eeeef9] leading-10 ">
+
+        {/* case study section */}
+        <div className="caseStudy py-20 px-4 bg-[#eeeef9] leading-10 text-xl ">
           <div className="text py-20">
-            <p className=" text-center font-bold md:text-xl text-lg">
+            <p className=" text-center md:text-3xl lg:text-5xl text-3xl">
               Our recent <br /> <span>Case studies</span>{" "}
             </p>
           </div>
           <CaseStudy />
         </div>
         {/* way of building start*/}
-        <div className="wayofbuilding py-20 px-4 ">
+        <div className="wayofbuilding py-20 px-4 text-xl">
           <div className=" text-center">
-            <p className="md:text-2xl text-xl">
+            <p className=" lg:text-5xl text-3xl">
               Way of building <br /> <span className="font-bold">Great Software</span>{" "}
             </p>
           </div>
+          {/* to redirect at blog page */}
           <Link to="/blog">
             <TextAndImageCall />
           </Link>
@@ -138,22 +115,23 @@ const Home = () => {
           <div className="">
             <p className=" flex justify-center items-center flex-col text-center">
               <img src={line} alt="" />
-              <p className="md:text-2xl text-xl  py-4">
+              <p className=" lg:text-5xl text-3xl  py-4">
                 Our design and <br />
                 <span className="font-bold py-3">development approach</span>
               </p>
             </p>
           </div>
+          {/* <DisplayCard /> */}
           <DisplayCardCall />
         </div>
         {/* from here our tech stack */}
-        <div className="our-stack">
+        <div className="our-stack py-10">
           <div>
             <Ourstack />
           </div>
         </div>
         {/* resourse cards sections */}
-        <OurResourse />
+        {/* <OurResourse /> */}
       </div>
     </React.Fragment>
   );

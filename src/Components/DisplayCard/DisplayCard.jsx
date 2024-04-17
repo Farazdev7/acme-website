@@ -18,8 +18,8 @@ const DisplayCard = ({ key, heading, text, img, backGroundColor }) => {
               />
             </div>
             <div className="flex-1 p-4">
-              <h2 className="text-lg font-semibold">{heading}</h2>
-              <p className="text-sm">{text}</p>
+              <h2 className="text-md font-semibold">{heading}</h2>
+              <p className="">{text}</p>
             </div>
           </div>
         </div>

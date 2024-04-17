@@ -134,9 +134,9 @@ const CaseStudyDetail = () => {
       {/* form here detail started about page */}
       <div className="aboutapp flex justify-center items-center flex-col text-center">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-[400] py-10">About {Searched.heading}</h1>
-        <p className="font-[400]">{Searched.detail}</p>
+        <p className="font-[400] text-xl ">{Searched.detail}</p>
         <Link to={Searched.appTestLink}>
-          <button className="mt-10 bg-orange-500 hover:bg-cyan-700 py-4 px-6 rounded-full text-white font-[300] my-5">
+          <button className="mt-10 text-xl bg-orange-500 hover:bg-cyan-700 py-4 px-6 rounded-full text-white  my-5">
             Test Now
           </button>
         </Link>
@@ -195,7 +195,7 @@ const CaseStudyDetail = () => {
 
       {/* client review */}
       {/* slider will be use at the place of client review */}
-      <div className="client py-16 mt-32 bg-orange-500 grid place-items-center font-[400] leading-10 text-white text-center">
+      <div className="client text-xl py-16 mt-32 bg-orange-500 grid place-items-center font-[400] leading-10 text-white text-center">
         <h1 className="text-xl md:text-2xl lg:text:3xl ">Testimonial</h1>
         <i>{Searched.clientReview[0].clientreview}</i>
         <div className="client-img flex flex-col md:flex-row gap-8">
@@ -204,7 +204,7 @@ const CaseStudyDetail = () => {
         </div>
       </div>
       {/* the problem soluction section */}
-      <div className="font-[400] py-10 text-center  ">
+      <div className="font-[400] py-10 text-center text-xl  ">
         <p className="text-xl md:text-2xl lg:text-3xl pb-8">How We made a difference</p>
         <div className="flex justify-center items-center  flex-wrap gap-6">
           {/* the problem section */}

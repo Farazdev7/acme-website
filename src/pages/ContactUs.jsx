@@ -52,9 +52,27 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const { firstName, lastName,mobile,email,company,message}=formData
+    
+    const res=await fetch('http://localhost:4000/contactus' , {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        firstName, lastName,mobile,email,company,message
+      }),
+    })
+const data =await res.json()
+if (!data){
+  console.log('message faild to post')
+}else{
+  console.log("message send sucessfully")
+}
     // Handle form submission
+
     console.log(formData);
   };
   // const facebookProfileUrl = "https://www.facebook.com/ahsan.rasheed.18400700";

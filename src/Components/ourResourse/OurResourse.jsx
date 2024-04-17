@@ -12,48 +12,42 @@ const cards = [
     title: "How development through Alcaline works",
     // imageUrl: "https://via.placeholder.com/300x200",
     imageUrl: res1,
-    description:
-      "#1 Assemble the right team... We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do.",
+    description: "#1 Assemble the right team... We handle all aspects of vetting and choosing the  time,",
     linkTo: "/page-1",
   },
   {
     id: 2,
-    title: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "How to Build a Scalable Application up ",
     imageUrl: res2,
-    description:
-      "We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently.",
+    description: "We break monolithic apps into microservices. Decoupling the code allows ",
     linkTo: "/page-2",
   },
   {
     id: 3,
-    title: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "How to Build a Scalable Application up to ",
     imageUrl: res3,
-    description:
-      "We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently.",
+    description: "We break monolithic apps into microservices. Decoupling the code allows ",
     linkTo: "/page-2",
   },
   {
     id: 4,
-    title: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "How to Build a Scalable Application up to ",
     imageUrl: res4,
-    description:
-      "We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently.",
+    description: "We break monolithic apps into microservices. Decoupling the code allows ",
     linkTo: "/page-2",
   },
   {
     id: 5,
-    title: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "How to Build a Scalable Application up to ",
     imageUrl: res5,
-    description:
-      "We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently.",
+    description: "We break monolithic apps into microservices. Decoupling the code allows ",
     linkTo: "/page-2",
   },
   {
     id: 6,
-    title: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "How to Build a Scalable Application up to ",
     imageUrl: "https://via.placeholder.com/300x200",
-    description:
-      "We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently.",
+    description: "We break monolithic apps into microservices. Decoupling the code allows ",
     linkTo: "/page-2",
   },
 ];
@@ -63,18 +57,20 @@ const OurResourse = () => {
     <div className="main pt-40 px-4">
       <h2 className="text-3xl font-bold mb-4 text-center">Our Featured Services</h2>
       <div className="services-container mt-12 flex flex-wrap justify-center md:flex-nowrap">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5  gap-4">
           {cards.map((card) => (
             <div key={card.id} className="card rounded-lg shadow-md overflow-hidden">
               <img src={card.imageUrl} alt={card.title} className="w-full h-48 object-cover" />
-              <div className="card-content px-4 py-2">
-                <h3 className="text-sm md:text-base font-bold mb-2">{card.title}</h3>
-                <p className="text-gray-700 text-sm md:text-base mb-4">
+              <div className="card-content px-4 ">
+                {/* <h3 className="text-sm md:text-base font-bold mb-2">{card.title}</h3> */}
+                <h3 className=" font-bold ">{card.title}</h3>
+                {/* <p className="text-gray-700 text-sm md:text-base mb-4"> */}
+                <p className="text-gray-700 text-sm  ">
                   {card.description} {card.description.length > 10 && "..."}
                 </p>
                 <Link
                   to={card.linkTo}
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-600 rounded-md hover:bg-indigo-700 "
+                  className="inline-flex items-center px-2 py-1 mb-2 text-sm font-medium text-center text-white bg-indigo-600 rounded-md hover:bg-indigo-700 "
                 >
                   Read More
                   <svg
