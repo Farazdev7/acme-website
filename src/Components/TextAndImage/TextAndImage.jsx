@@ -24,7 +24,7 @@ const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, im
               </div>
               {/* name img and post section */}
               <div className="flex items-center ">
-                <img className="h-fit w-fit" src={img} alt="" />
+                <img className="h-[50px] rounded-full w-fit" src={img} alt="" />
                 <p>
                   <span className="  font-bold">{name}</span> <br />
                   <span className="text-gray-500">{post}</span>

@@ -1,4 +1,16 @@
 // Sample data array
+
+const hamzaimg='../../../public/images/team/hamza2.jpg'
+const farazimg='../../../public/images/team/faraz.jpg'
+const asherimg='../../../public/images/team/ashir2.jpg'
+const zeryabimg='../../../public/images/team/zeryab.jpg'
+const saadimg='../../../public/images/team/saad.jpg'
+const ahsanimg='../../../public/images/team/ahsan2.jpg'
+
+
+
+
+
 const blogData = [
   {
     id: 1,
@@ -8,9 +20,9 @@ const blogData = [
     italic: "Leverage AI-powered chatbots to provide instant support and recommendations, enhancing user engagement and driving business growth.",
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: true,
-    img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
+    img: farazimg,
     name: "John Doe",
-    post: "CTO",
+    post: "CEO",
     detail:[
       {
         "heading": "Personalized Recommendations",
@@ -42,9 +54,9 @@ const blogData = [
     italic: "Utilize advanced analytics tools to identify market trends, customer behaviors, and operational efficiencies, driving innovation and competitiveness.",
     imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
     isImageRight: false,
-    img: "https://i.ibb.co/1sbWC97/ee.png",
-    name: "Jane Smith",
-    post: "Data Science Lead",
+    img: hamzaimg,
+    name: "Hamza Nafasat",
+    post: "MERN Stack Developer",
     detail:[
       {
         "heading": "Personalized Recommendations",
@@ -77,9 +89,9 @@ const blogData = [
     italic: "Implement cloud-native architectures to leverage auto-scaling, microservices, and containerization, optimizing resource utilization and performance.",
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: true,
-    img: "https://i.ibb.co/tsb0C9S/bb.png",
-    name: "Alex Johnson",
-    post: "Cloud Architect",
+    img: farazimg,
+    name: "Faraz Rasool",
+    post: "CEO",
     detail:[
       {
         "heading": "On-Demand Resource Provisioning",
@@ -116,9 +128,9 @@ const blogData = [
     italic: "Implement multi-layered security measures, including encryption, access controls, and threat intelligence, to mitigate risks and ensure business continuity.",
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: false,
-    img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
-    name: "Michael Brown",
-    post: "Security Analyst",
+    img: hamzaimg,
+    name: "Hamza Nafasat",
+    post: "MERN Stack Developer",
     detail:[
       {
         "heading": "Risk Assessment and Management",
@@ -147,9 +159,9 @@ const blogData = [
     italic: "Adopt CI/CD pipelines to automate building, testing, and deploying applications, reducing manual errors and accelerating time-to-market.",
     imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
     isImageRight: true,
-    img: "https://i.ibb.co/1sbWC97/ee.png",
-    name: "Emily Wilson",
-    post: "DevOps Engineer",
+    img: farazimg,
+    name: "Faraz Rasool",
+    post: "CEO",
     detail:[
       {
         "heading": "Automated Build and Integration",
@@ -178,9 +190,9 @@ const blogData = [
     italic: "Stay informed and adaptable to technological advancements, positioning your organization for success in a rapidly evolving digital era.",
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: false,
-    img: "https://i.ibb.co/tsb0C9S/bb.png",
-    name: "David Miller",
-    post: "Lead Software Developer",
+    img: asherimg,
+    name: "Asher",
+    post: "Flutter Developer",
     detail:[
       {
         "heading": "Artificial Intelligence (AI) and Machine Learning (ML) Integration",
@@ -210,9 +222,9 @@ const blogData = [
     italic: "Utilize data visualization techniques to identify trends, patterns, and outliers, empowering stakeholders to make data-driven choices for strategic growth.",
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: true,
-    img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
-    name: "Sophia Clark",
-    post: "Data Visualization Specialist",
+    img: ahsanimg,
+    name: "Ahsan Rasheed",
+    post: "MERN Stack Developert",
     detail:[
       {
         "heading": "Enhancing Data Literacy Across Organizations",
@@ -237,8 +249,8 @@ const blogData = [
     italic: "Implement responsive design frameworks like Bootstrap and Foundation to streamline development workflows and ensure consistent branding and functionality across platforms.",
     imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
     isImageRight: false,
-    img: "https://i.ibb.co/1sbWC97/ee.png",
-    name: "Andrew Thompson",
+    img: saadimg,
+    name: "Saad Salman",
     post: "UX/UI Designer",
     detail:[]
   },
@@ -250,9 +262,9 @@ const blogData = [
     italic: "Contribute to open source projects or establish your own initiatives, cultivating a culture of knowledge sharing and collective problem-solving for the betterment of the global tech ecosystem.",
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: true,
-    img: "https://i.ibb.co/tsb0C9S/bb.png",
-    name: "Jessica Williams",
-    post: "Open Source Advocate",
+    img: farazimg,
+    name: "Faraz Rasools",
+    post: "CEO",
     detail:[
       {
         "heading": "Mobile-First Approach",
@@ -282,9 +294,9 @@ const blogData = [
     italic: "Embrace Agile frameworks like Scrum and Kanban to foster collaboration, transparency, and accountability, facilitating the successful delivery of digital products and services.",
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: false,
-    img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
-    name: "Christopher Davis",
-    post: "Agile Coach",
+    img: zeryabimg,
+    name: "Zeryab Salman",
+    post: "UI/UX Engineer",
     detail:[
       {
         "heading": "Community-Driven Development",
@@ -313,9 +325,9 @@ const blogData = [
     italic: "Deploy IoT solutions to unlock new revenue streams, improve resource utilization, and enhance quality of life, driving innovation and competitiveness in the digital age.",
     imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
     isImageRight: true,
-    img: "https://i.ibb.co/1sbWC97/ee.png",
-    name: "Emma Johnson",
-    post: "IoT Solutions Architect",
+    img: saadimg,
+    name: "Saad Salmann",
+    post: "UI/UX Engineer",
     detail:[
       {
         "heading": "Interconnected Ecosystem",
@@ -344,9 +356,9 @@ const blogData = [
     italic: "Leverage mobile app security testing tools and techniques to identify and mitigate security risks proactively, maintaining the integrity and trustworthiness of your applications.",
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: false,
-    img: "https://i.ibb.co/tsb0C9S/bb.png",
-    name: "William Roberts",
-    post: "Mobile Security Specialist",
+    img: zeryabimg,
+    name: "Zeryab Salman",
+    post: "UI/UX Engineer",
     detail:[
       {
         "heading": "Secure Coding Practices",
@@ -374,9 +386,9 @@ const blogData = [
     italic: "Implement service-oriented architectures to enable rapid development, seamless integration, and efficient management of complex systems, empowering teams to innovate and iterate with confidence.",
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: true,
-    img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
-    name: "Olivia White",
-    post: "Software Architect",
+    img: farazimg,
+    name: "Faraz Rasool",
+    post: "CEO",
     detail:[
       {
         "heading": "Decomposition of Monolithic Systems",
@@ -405,9 +417,9 @@ const blogData = [
     italic: "Harness the transparency, immutability, and decentralization of blockchain to enhance trust, security, and efficiency in various business processes and transactions, paving the way for innovative solutions and digital transformation.",
     imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
     isImageRight: false,
-    img: "https://i.ibb.co/1sbWC97/ee.png",
-    name: "Daniel Johnson",
-    post: "Blockchain Specialist",
+    img: ahsanimg,
+    name: "Ahsan Rasheed",
+    post: "MERN Stack Developer",
     detail:[
       {
         "heading": "Decentralized Ledger Technology",
@@ -436,9 +448,9 @@ const blogData = [
     italic: "Design immersive and interactive gamification experiences that resonate with your target audience, align with your brand objectives, and deliver tangible value, enhancing customer satisfaction and retention.",
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: true,
-    img: "https://i.ibb.co/tsb0C9S/bb.png",
-    name: "Sophie Anderson",
-    post: "UX/UI Designer",
+    img: asherimg,
+    name: "Asher",
+    post: "Flutter Developer",
     detail:[
       {
         "heading": "Reward Systems and Incentives",
@@ -470,8 +482,8 @@ const blogData = [
       "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: false,
-    img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
-    name: "Jeewa markram",
+    img: farazimg,
+    name: "Faraz Rasool",
     post: "CEO",
     detail:[
       {
@@ -502,9 +514,9 @@ const blogData = [
       "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
     imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
     isImageRight: true,
-    img: "https://i.ibb.co/1sbWC97/ee.png",
-    name: "Jeewa markram",
-    post: "CEO",
+    img: ahsanimg,
+    name: "Ahsan Rasheed",
+    post: "MERN Stack Developer",
     detail:[
       {
         "heading": "Define Clear Roles and Responsibilities",
@@ -534,9 +546,9 @@ const blogData = [
     "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: false,
-    img: "https://i.ibb.co/tsb0C9S/bb.png",
-    name: "Jeewa markram",
-    post: "CEO",
+    img: zeryabimg,
+    name: "Zeryab Salman",
+    post: "UI/UX Engineer",
     detail:[
       {
         "heading": "Define Clear Roles and Responsibilities",

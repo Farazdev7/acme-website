@@ -134,12 +134,12 @@ const CaseStudyDetail = () => {
       {/* form here detail started about page */}
       <div className="aboutapp flex justify-center items-center flex-col text-center">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-[400] py-10">About {Searched.heading}</h1>
-        <p className="font-[400] text-xl ">{Searched.detail}</p>
-        <Link to={Searched.appTestLink}>
+        {/* <p className="font-[400] text-xl ">{Searched.detail}</p> */}
+        {/* <Link to={Searched.appTestLink}>
           <button className="mt-10 text-xl bg-orange-500 hover:bg-cyan-700 py-4 px-6 rounded-full text-white  my-5">
             Test Now
           </button>
-        </Link>
+        </Link> */}
       </div>
       {/* displaying the app testing area */}
       {/* here i have decided to add a swiper here  */}

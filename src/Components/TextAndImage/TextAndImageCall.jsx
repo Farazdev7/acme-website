@@ -12,8 +12,8 @@ const TextAndImageCall = () => {
         "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
       imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
       isImageRight: true,
-      img: "https://i.ibb.co/FmFZpKc/Ellipse.png",
-      name: "Jeewa markram",
+      img: "../../../public/images/team/faraz.jpg",
+      name: "Faraz Rasool",
       post: "CEO",
     },
     {
@@ -25,8 +25,8 @@ const TextAndImageCall = () => {
         "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
       imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
       isImageRight: false,
-      img: "https://i.ibb.co/1sbWC97/ee.png",
-      name: "Jeewa markram",
+      img: "../../../public/images/team/faraz.jpg",
+      name: "Faraz Rasool",
       post: "CEO",
     },
     {
@@ -38,8 +38,8 @@ const TextAndImageCall = () => {
         "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
       imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
       isImageRight: true,
-      img: "https://i.ibb.co/tsb0C9S/bb.png",
-      name: "Jeewa markram",
+      img: "../../../public/images/team/faraz.jpg",
+      name: "Faraz Rasool",
       post: "CEO",
     },
   ];

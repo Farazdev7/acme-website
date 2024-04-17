@@ -35,7 +35,7 @@ function NavBar() {
               {/* Acme Digital Soluction */}
             </span>
             <span>
-              <img className="logo max-h-[12vh] w-fit" src={logo} alt="" />
+              <img className="logo md:h-[13vh] h-[11vh] w-fit" src={logo2} alt="" />
             </span>
            
           </NavLink>

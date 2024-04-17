@@ -49,6 +49,8 @@ import upwordLine from "../../public/images/Reviews/upwordLine.png";
 //   },
 // ];
 // BlogPost component to display individual posts
+
+let picture='../../public/images/team/faraz.jpg'
 const BlogPost = ({ post }) => {
   // Conditional styling based on the 'isImageRight' property
   const containerStyle = `flex flex-col  text-xl font-[400] justify-between md:flex-row mx-auto my-20 mb-36 bg-slate-200 ${
@@ -75,6 +77,7 @@ const BlogPost = ({ post }) => {
               </div>
           <div className="flex items-center mt-4">
             <img src={post.img} alt={post.name} className="w-12 h-12 rounded-full mr-4" />
+            {/* <img src={picture} alt={post.name} className="w-12 h-12 rounded-full mr-4" /> */}
             <div>
               <p className="font-bold">{post.name}</p>
               <p className="text-sm text-gray-600">{post.post}</p>
