@@ -83,8 +83,8 @@ const contents = [
       heading: "SchoolTracker",
       text: "Your Partner in simplifying and optimising ",
       path: "/about",
-      bgColorfrom: "pink",
-      bgColorTo: "purple",
+      bgColorfrom: "#FFB563",
+      bgColorTo: "#FFB563",
       category: "Education",
       logImg1: apple,
       logImg2: android,
@@ -124,7 +124,7 @@ const contents = [
       heading: "Events Quotes",
       text: "Your Partner in simplifying and optimising ",
       path: "/about",
-      bgColorfrom: "pink",
+      bgColorfrom: "#A4996E",
       bgColorTo: "orange",
       category: "Charity",
       logImg1: apple,
@@ -409,46 +409,46 @@ const contents = [
       ],
     },
     // item 4
-    {
-      id: "4",
-      backgroundImage:
-        "https://thedistance.co.uk/wp-content/uploads/2023/03/jonathan-borba-LR5O79shvro-unsplash-scaled-e1680339028418.jpg",
-      moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/04/Group-17319.png",
-      heading: "PayStream",
-      text: "Your Partner in simplifying and optimising financial management",
-      path: "/about",
-      bgColorfrom: "",
-      bgColorTo: "",
-      category: "The Core",
-      logImg1: apple,
-      logImg2: android,
-      logImg3: react,
-      detail: `this text is for testing purposes`,
-      appScreenshort1: "https://thedistance.co.uk/wp-content/uploads/2020/02/DSA-1.png",
-      appScreenshort2: "https://thedistance.co.uk/wp-content/uploads/2020/02/DSA-1.png",
-      appScreenshort3: "https://thedistance.co.uk/wp-content/uploads/2020/02/DSA-1.png",
-      appTestLink: "",
-      webTestLink: "",
-      isoTestLink: "",
-      clientReview: [
-        {
-          clientreview:
-            "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
-          clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
-          clientname: "Guy Wilcox",
-        },
-      ],
-      Process: [
-        {
-          theProblem:
-            "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
-          theSoluction:
-            "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
-          theresult:
-            "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
-        },
-      ],
-    },
+    // {
+    //   id: "4",
+    //   backgroundImage:
+    //     "https://thedistance.co.uk/wp-content/uploads/2023/03/jonathan-borba-LR5O79shvro-unsplash-scaled-e1680339028418.jpg",
+    //   moboImg: "https://thedistance.co.uk/wp-content/uploads/2023/04/Group-17319.png",
+    //   heading: "PayStream",
+    //   text: "Your Partner in simplifying and optimising financial management",
+    //   path: "/about",
+    //   bgColorfrom: "FFB563",
+    //   bgColorTo: "",
+    //   category: "The Core",
+    //   logImg1: apple,
+    //   logImg2: android,
+    //   logImg3: react,
+    //   detail: `this text is for testing purposes`,
+    //   appScreenshort1: "https://thedistance.co.uk/wp-content/uploads/2020/02/DSA-1.png",
+    //   appScreenshort2: "https://thedistance.co.uk/wp-content/uploads/2020/02/DSA-1.png",
+    //   appScreenshort3: "https://thedistance.co.uk/wp-content/uploads/2020/02/DSA-1.png",
+    //   appTestLink: "",
+    //   webTestLink: "",
+    //   isoTestLink: "",
+    //   clientReview: [
+    //     {
+    //       clientreview:
+    //         "The build was completed very quickly. The Distance App Developers’ efforts resulted in impressive reviews and generated more users than expected. The work was completed efficiently and the project management was good. Their team was well-structured and highly engaging.",
+    //       clientImg: "https://thedistance.co.uk/wp-content/uploads/2020/02/guy-300x300.jpeg",
+    //       clientname: "Guy Wilcox",
+    //     },
+    //   ],
+    //   Process: [
+    //     {
+    //       theProblem:
+    //         "The Down Syndrome Association (DSA) aimed to create an accessible and user-friendly application offering healthy recipes and activity tracking for individuals with Down Syndrome. Their priority was to ensure that the app was easy to understand and use",
+    //       theSoluction:
+    //         "The Distance took a user-centric approach, engaging with the Down Syndrome community directly to understand their needs. They shared an early prototype for user feedback, ensuring the app's suitability before development. The project involved building both a front-end application and a content management system (CMS) for DSA, enabling content control and personalisation",
+    //       theresult:
+    //         "The resulting 'Health Swap' app successfully promoted physical activity and healthy eating choices among users. It seamlessly integrated into their routines, thanks to extensive user involvement and feedback. Users appreciated the simplicity and effectiveness of the tool, which fulfilled its intended purpose",
+    //     },
+    //   ],
+    // },
     // item 5
     {
       id: "5",
@@ -457,8 +457,8 @@ const contents = [
       heading: "PayStream",
       text: "Your Partner in simplifying and optimising financial management",
       path: "/about",
-      bgColorfrom: "",
-      bgColorTo: "",
+      bgColorfrom: "pink",
+      bgColorTo: "#D1D47B",
       category: "def",
       logImg1: apple,
       logImg2: android,
