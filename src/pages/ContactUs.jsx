@@ -4,26 +4,26 @@ let cloud = "https://thedistance.co.uk/wp-content/themes/thedistance/dist/images
 
 const contactData = [
   {
-    phone: "03404099242",
-    email: "rasheedahsan786@gmail.com",
+    phone: "+923201619619",
+    email: "connect@acmedigitalsol.online ",
     // email subject will be here with %20 .'%20' that mean space
     emailSubject: "Contact%20to%20Acme",
     maintext: ` We’d love to hear about your latest app idea and discuss how we can help bring it to fruition, get in touch
     below or visit us at our York or London offices.`,
     ourLocation: {
       lication1: {
-        city: "London",
-        street: "90 York Way",
-        street2: "N1 9AG.",
+        city: "UAE_Sharjah",
+        street: "Near Al Malomat Center - AlBu Danig_Sharjah ",
+        street2: "Office No 7",
       },
       lication2: {
-        city: "York",
-        street: "12-18 Market st.",
-        street2: "York YO1 8ST",
+        city: "Lahore - Pakistan",
+        street: "rd Floor, AMNA Tower , Near Model Town link ",
+        street2: "YOffice No 3",
       },
       contactform: {
-        uniname: `London King's Cross`,
-        address: "York Micklegate",
+        uniname: `Acme Digital Solutions`,
+        address: "",
       },
     },
     socialLinks: {
