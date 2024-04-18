@@ -28,7 +28,7 @@ const About = [
         desination: "CEO",
       },
       {
-        name: "Zrayab Salman",
+        name: "Zaryab Salman",
         image:zeryabimg,
         desination: "Marketing Manager & UI/UX Designer",
       },
@@ -69,7 +69,7 @@ const AboutUs = () => {
     Aos.init();
   });
   return (
-    <section className="bg-gray-100 text-xl">
+    <section className="bg-gray-100 ">
     <div className="grid place-items-center text-center">
       {/* Mission Banner */}
       <div className="w-full">
@@ -80,7 +80,7 @@ const AboutUs = () => {
         /> */}
         {/* Our mission */}
         <div className="pt-6 bg-orange-500 pb-16">
-          <h3 className="text-xl md:text-3xl font-semibold mb-4">Our Mission</h3>
+          <h2 className="text-xl md: font-semibold mb-4">Our Mission</h2>
           <p className="text-gray-700 font-[400]">
             We are dedicated to providing innovative software solutions that empower businesses and individuals to achieve
             their goals efficiently and effectively.
@@ -89,34 +89,34 @@ const AboutUs = () => {
       </div>
       {/* Our Values Section */}
       <div className="mt-12 my-16">
-        <h3 className="text-3xl font-semibold mb-4">Our Values</h3>
+        <h2 className=" font-semibold mb-4">Our Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Value 1 */}
           <div className="max-w-xs">
             <GiPodiumWinner className="mx-auto w-24 h-24 object-cover object-center mb-4" />
-            <p className="text-xl font-semibold mb-2">Empower Success</p>
+            <h3 className=" font-semibold mb-2">Empower Success</h3>
           </div>
           {/* Value 2 */}
           <div className="max-w-xs">
             <HiOutlineLightBulb className="mx-auto w-24 h-24 object-cover object-center mb-4" />
-            <p className="text-xl font-semibold mb-2">Passionate Experts</p>
+            <h3 className=" font-semibold mb-2">Passionate Experts</h3>
           </div>
           {/* Value 3 */}
           <div className="max-w-xs">
             <BiSolidBookAlt className="mx-auto w-24 h-24 object-cover object-center mb-4" />
-            <p className="text-xl font-semibold mb-2">Creative Problem Solvers</p>
+            <h3 className=" font-semibold mb-2">Creative Problem Solver</h3>
           </div>
           {/* Value 4 */}
           <div className="max-w-xs">
             <HiOutlineRocketLaunch className="mx-auto w-24 h-24 object-cover object-center mb-4" />
-            <p className="text-xl font-semibold mb-2">Enjoy the Journey</p>
+            <h3 className=" font-semibold mb-2">Enjoy the Journey</h3>
           </div>
         </div>
       </div>
       {/* Our Team Section */}
       <section className="bg-[#99d8e7] w-full py-14">
         <article className="text-white text-center font-[400]">
-          <h1 className="text-xl md:text-2xl lg:text-4xl">Senior Management Team</h1>
+          <h1 className=" md:text-2xl lg:text-4xl">Senior Management Team</h1>
           <p>
             Our SMT brings a world of experience to the company. Our business leaders inspire and guide the team to ensure
             the quality and efficiency of all our app development projects.
@@ -128,8 +128,8 @@ const AboutUs = () => {
             <div key={i} data-aos="fade-up" className="max-w-sm rounded-lg overflow-hidden shadow-lg mb-4">
               <img className="w-full h-64 object-cover object-center" src={item.image} alt="Employee" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
-                <p className="text-gray-700">{item.desination}</p>
+                <h3 className=" font-semibold mb-2">{item.name}</h3>
+                <h4 className="text-gray-700">{item.desination}</h4>
               </div>
             </div>
           ))}

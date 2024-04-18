@@ -138,7 +138,7 @@ if (!data){
       {/* // form section */}
       <div className="bg-[#1a3b4f] text-white  py-24 bg-[url('https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/phone-bg.svg')] ">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl lg:text-4xl mb-4 text-center">Tell us more about your project</h2>
+          <h2 className=" mb-4 text-center">Tell us more about your project</h2>
           <div className="flex items-center mb-4">
             <FaPhone className="mr-2" />
             {/* <span>+923404099242</span> */}
