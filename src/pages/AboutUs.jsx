@@ -28,14 +28,14 @@ const About = [
         desination: "CEO",
       },
       {
-        name: "Zeryab Salman",
+        name: "Zrayab Salman",
         image:zeryabimg,
-        desination: "Markiting Manager",
+        desination: "Marketing Manager & UI/UX Designer",
       },
       {
         name: "Saad Salman",
         image:saadimg,
-        desination: "UI/UX Engineer",
+        desination: "Business Developer",
       },
       {
         name: "Hamza Nafasat",

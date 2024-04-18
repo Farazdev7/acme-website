@@ -109,12 +109,12 @@ function ServicePage() {
             />
           ))}
         </div>
-        <p className="my-4 text-lg mb-8">{service.description}</p>
-        <p className="my-4 text-lg mb-8">
-          <strong>Importance:</strong> <br /> {service.importance}
+        <p className="my-4  mb-8">{service.description}</p>
+        <p className="my-4  mb-8">
+          <strong><h3>Importance:</h3></strong> <br /> {service.importance}
         </p>
-        <p className="my-4 text-lg mb-8">
-          <strong>Procedure:</strong> <br /> {service.procedure}
+        <p className="my-4  mb-8">
+          <strong><h3>Procedure:</h3></strong> <br /> {service.procedure}
         </p>
       </div>
     ))}

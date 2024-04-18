@@ -23,9 +23,9 @@ const Process = () => {
     <div className="">
       {/* for the cloud background */}
       <div className="background relative bg-[#2baeba] md:h-[95vh] h-[60vh] ">
-        <h1 className="text-white text-3xl md:text-3xl font-[400] text-center pt-10">
+        <h2 className="text-white  font-[400] text-center pt-10">
           We're with you all the way, from idea to launch and beyond...
-        </h1>
+        </h2>
 
         {/* smalls clouds1 */}
         <img

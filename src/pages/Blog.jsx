@@ -67,7 +67,7 @@ const BlogPost = ({ post }) => {
       <div className={containerStyle}>
         <div className={contentStyle}>
       
-          <h2 className="text-2xl font-bold py-4">{post.heading}</h2>
+          <h3 className="t font-bold py-4">{post.heading}</h3>
           <p className=" ">{post.p}</p>
           <p className="my-4 text-gray-800 font-[500]">{post.text}</p>
           

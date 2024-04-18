@@ -15,7 +15,7 @@ const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, im
           {/* Text */}
           <div className="lg:w-1/2 md:ml-8  pt-4">
             <div className="md:text-left text-center max-w-md md:max-w-none">
-              <h2 className="text-xl font-bold mb-4">{heading}</h2>
+              <h3 className=" font-bold mb-4">{heading}</h3>
               <p className="">{p}</p>
               <p className="md:my-10 my-6">{text}</p>
               <div className="flex gap-4 items-center">

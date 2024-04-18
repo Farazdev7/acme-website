@@ -25,7 +25,7 @@ const BlogDetail = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8  text-xl leading-10">
+    <div className="container mx-auto px-4 py-8   leading-10">
       <section className="grid  gap-8 ">
         <article className=" ">
           <img className="mx-auto my-auto md:w-[60vh] h-auto" src={SearchedByID.imageUrl} alt="" />
@@ -37,7 +37,7 @@ const BlogDetail = () => {
             {SearchedByID.detail.map((item, i) => (
               <div key={i} className="my-4">
                 
-                <h3 className="font-bold text-xl">{i+1} : {item.heading}</h3>
+                <h3 className="font-bold ">{i+1} : {item.heading}</h3>
                 <p className="">{item.text}</p>
               </div>
             ))}

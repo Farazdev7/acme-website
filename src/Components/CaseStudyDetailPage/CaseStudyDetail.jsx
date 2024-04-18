@@ -115,7 +115,7 @@ const CaseStudyDetail = () => {
             {/* here is text div */}
             <div className="text-inner">
               {/* <p className="heading text-xl md:text-2xl lg:text-5xl font-bold">{contents.heading}</p> */}
-              <p className="text text-xl md:text-2xl lg:text-5xl font-extralight">{Searched.text}</p>
+              <h1 className="text  font-[400]">{Searched.text}</h1>
             </div>
             {/* apple android and react image is here */}
             <div className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
@@ -133,7 +133,7 @@ const CaseStudyDetail = () => {
       {/* here image box ended */}
       {/* form here detail started about page */}
       <div className="aboutapp flex justify-center items-center flex-col text-center">
-        <h1 className="text-xl md:text-2xl lg:text-4xl font-[400] py-10">About {Searched.heading}</h1>
+        <h2 className=" font-[400] py-10">About {Searched.heading}</h2>
         {/* <p className="font-[400] text-xl ">{Searched.detail}</p> */}
         {/* <Link to={Searched.appTestLink}>
           <button className="mt-10 text-xl bg-orange-500 hover:bg-cyan-700 py-4 px-6 rounded-full text-white  my-5">
@@ -196,8 +196,8 @@ const CaseStudyDetail = () => {
       {/* client review */}
       {/* slider will be use at the place of client review */}
       <div className="client text-xl py-16 mt-32 bg-orange-500 grid place-items-center font-[400] leading-10 text-white text-center">
-        <h1 className="text-xl md:text-2xl lg:text:3xl ">Testimonial</h1>
-        <i>{Searched.clientReview[0].clientreview}</i>
+        <h2 className=" ">Testimonial</h2>
+       <p><i>{Searched.clientReview[0].clientreview}</i></p> 
         <div className="client-img flex flex-col md:flex-row gap-8">
           <img className="max-h-[80px] rounded-full w-fit" src={Searched.clientReview[0].clientImg} alt="n" />
           <p className="name font-bold">{Searched.clientReview[0].clientname}</p>

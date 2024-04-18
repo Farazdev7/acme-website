@@ -74,8 +74,8 @@ const Casestudies = () => {
               ></div>
               <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-4 md:p-6 lg:p-8 ">
                 <div className="text-inner">
-                  <p className="heading text-xl md:text-2xl lg:text-5xl font-bold">{item.heading}</p>
-                  <p className="text text-xl md:text-2xl lg:text-5xl font-[400] my-5">{item.text}</p>
+                  <h1 className="heading  font-bold">{item.heading}</h1>
+                  <h3 className="text text-xl md:text-2xl lg:text-5xl font-[400] my-5">{item.text}</h3>
                 </div>
                 <div className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
                   <img className="w-fit lg:h-20 h-10" src={item.logImg1} alt="" />
