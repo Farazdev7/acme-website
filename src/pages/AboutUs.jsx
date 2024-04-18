@@ -5,6 +5,15 @@ import { BiSolidBookAlt } from "react-icons/bi";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import Aos from "aos";
 import "aos/dist/aos.css";
+ import frazimg from "../../public/images/team/faraz.jpg";
+ import zeryabimg from "../../public/images/team/zeryab.jpg";
+ import saadimg from "../../public/images/team/faraz.jpg";
+ import hamzaimg from "../../public/images/team/hamza2.jpg";
+
+ import ashirimg from "../../public/images/team/faraz.jpg";
+ import ahsanimg from "../../public/images/team/faraz.jpg";
+
+
 
 // thats array of object will come from backend
 const About = [
@@ -15,39 +24,34 @@ const About = [
     team: [
       {
         name: "Faraz Rasool",
-        image:
-      '../../public/images/team/faraz.jpg',
+        image:frazimg,
         desination: "CEO",
       },
       {
         name: "Zeryab Salman",
-        image:
-          '../../public/images/team/zeryab.jpg',
+        image:zeryabimg,
         desination: "UI/UX Engineer",
       },
       {
         name: "Saad Salman",
-        image:
-          '../../public/images/team/saad.jpg',
+        image:saadimg,
         desination: "UI/UX Engineer",
       },
       {
         name: "Hamza Nafasat",
-        image:
-        '../../public/images/team/hamza2.jpg',  
+        image:hamzaimg,  
           desination: "MERN Stack Developer",
       },
       {
         name: "Asher",
-        image:
-          "../../public/images/team/ashir2.jpg",
+        image:ashirimg,
           // "../../public/images/team/asher.jpeg",
 
         desination: "Flutter develop",
       },
       {
         name: "Ahsan Rasheed",
-        image: '../../public/images/team/ahsan2.jpg',
+        image:ahsanimg,
         // image: '../../public/images/team/ahsan.jpg',
 
         desination: "MERN Stack Developer",
