@@ -75,10 +75,7 @@ if (!data){
 
     console.log(formData);
   };
-  // const facebookProfileUrl = "https://www.facebook.com/ahsan.rasheed.18400700";
-  // const linkedinProfileUrl = "https://www.linkedin.com/in/ahsan-rasheed-977693177";
-  // const twitterProfileUrl = "https://twitter.com/home";
-
+ 
   const facebookClick = () => {
     window.open(contactData[0].socialLinks.facebookProfileUrl, "_blank");
   };

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./HalfRedHalfBlueCircle.css";
 import { FaRegLightbulb, FaSearch } from "react-icons/fa";
 import { HiMiniRocketLaunch } from "react-icons/hi2";
 import { FiTool } from "react-icons/fi";
@@ -10,6 +9,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ProcessCircle from "../Components/process circle design/ProcessCircle";
 
+const cloud='https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/clouds-small.svg'
 
 const Process = () => {
   useEffect(() => {
@@ -30,21 +30,21 @@ const Process = () => {
         {/* smalls clouds1 */}
         <img
           className="max-h-[70px] absolute right-10 w-fit"
-          src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/clouds-small.svg"
+          src={cloud}
           alt=""
         />
         {/* smalls clouds2 */}
 
         <img
           className="max-h-[70px] hidden md:block  right-32 absolute top-64 w-fit"
-          src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/clouds-small.svg"
+          src={cloud}
           alt=""
         />
 
         {/* smalls clouds3 */}
         <img
           className="max-h-[70px] absolute top-64 md:top-32 left-10 w-fit"
-          src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/clouds-small.svg"
+          src={cloud}
           alt=""
         />
         {/* rocket image */}
