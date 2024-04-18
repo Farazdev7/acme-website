@@ -28,8 +28,8 @@ const Home = () => {
       <div className="main bg-slate-200  ">
         {/* hero section stared */}
         <div className="">
-          <div className="heroSection  h-[90vh]  bg-green-500 flex leading-7 md:leading-10  ">
-            <div className="w-full flex justify-center  bg-white py-8  px-4 items-center">
+          <div className="heroSection  h-[90vh]  flex leading-7 md:leading-10  ">
+            <div className="w-full flex pt-[10vh] justify-center  bg-white py-8  px-4 items-center">
               {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
               {/* <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 justify-between "> */}
               <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2  justify-between ">
