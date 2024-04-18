@@ -115,7 +115,7 @@ const CaseStudyDetail = () => {
             {/* here is text div */}
             <div className="text-inner">
               {/* <p className="heading text-xl md:text-2xl lg:text-5xl font-bold">{contents.heading}</p> */}
-              <h1 className="text  font-[400]">{Searched.text}</h1>
+              <h2 className="text  font-[400]">{Searched.text}</h2>
             </div>
             {/* apple android and react image is here */}
             <div className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
