@@ -7,11 +7,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
  import frazimg from "../../public/images/team/faraz.jpg";
  import zeryabimg from "../../public/images/team/zeryab.jpg";
- import saadimg from "../../public/images/team/faraz.jpg";
+ import saadimg from "../../public/images/team/saad.jpg";
  import hamzaimg from "../../public/images/team/hamza2.jpg";
 
- import ashirimg from "../../public/images/team/faraz.jpg";
- import ahsanimg from "../../public/images/team/faraz.jpg";
+ import ashirimg from "../../public/images/team/ashir2.jpg";
+ import ahsanimg from "../../public/images/team/ahsan2.jpg";
 
 
 
@@ -30,7 +30,7 @@ const About = [
       {
         name: "Zeryab Salman",
         image:zeryabimg,
-        desination: "UI/UX Engineer",
+        desination: "Markiting Manager",
       },
       {
         name: "Saad Salman",

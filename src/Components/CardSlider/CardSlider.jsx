@@ -13,39 +13,34 @@ import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 const data = [
   {
-    img: "https://i.ibb.co/XkvBwdq/mobile.png",
-    heading: "Mobile App Development",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    "img": "https://i.ibb.co/XkvBwdq/mobile.png",
+    "heading": "Mobile App Development",
+    "text": "Empower your business with our mobile app development expertise. Your app is vital for digital success, and we specialize in bringing your vision to life with engaging and functional applications."
   },
   {
-    img: "https://i.ibb.co/XkvBwdq/mobile.png",
-    heading: "Mobile App Development",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    "img": "https://i.ibb.co/pZd1FLw/coder.png",
+    "heading": "Web App Development",
+    "text": "Empower your online presence with our custom web app development solutions. Let us transform your ideas into functional and engaging web applications."
   },
   {
-    img: "https://i.ibb.co/pZd1FLw/coder.png",
-    heading: "Web Design & Development",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    "img": "https://i.ibb.co/XkvBwdq/mobile.png",
+    "heading": "Digital Marketing",
+    "text": "Boost your online presence with our tailored digital marketing services. From SEO to social media, we'll elevate your online strategy for success."
   },
   {
-    img: "https://i.ibb.co/F5brMXC/Dashboard.png",
-    heading: "Software Testing Service",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    "img": "https://i.ibb.co/F5brMXC/Dashboard.png",
+    "heading": "Software Testing Service",
+    "text": "Ensuring the reliability and functionality of your software through comprehensive testing. Trust us to optimize your digital assets and enhance user experiences."
+  }, 
+  {
+    "img": "https://i.ibb.co/XkvBwdq/mobile.png",
+    "heading": "Web App Designing",
+    "text": "Crafting intuitive, visually appealing web apps that effectively communicate your brand's message, engage users seamlessly, and drive conversions."
   },
   {
-    img: "https://i.ibb.co/XkvBwdq/mobile.png",
-    heading: "Software Testing Service",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-  },
-  {
-    img: "https://i.ibb.co/F5brMXC/Dashboard.png",
-    heading: "Software Testing Service",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-  },
-  {
-    img: "https://i.ibb.co/XkvBwdq/mobile.png",
-    heading: "Mobile App Development",
-    text: "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+    "img": "https://i.ibb.co/F5brMXC/Dashboard.png",
+    "heading": "Mobile App Designing",
+    "text": "Crafting intuitive, visually stunning mobile app designs that captivate your audience and reflect your brand's essence."
   },
 ];
 

@@ -1,14 +1,11 @@
 // Sample data array
 
-const hamzaimg='../../../public/images/team/hamza2.jpg'
-const farazimg='../../../public/images/team/faraz.jpg'
-const asherimg='../../../public/images/team/ashir2.jpg'
-const zeryabimg='../../../public/images/team/zeryab.jpg'
-const saadimg='../../../public/images/team/saad.jpg'
-const ahsanimg='../../../public/images/team/ahsan2.jpg'
-
-
-
+import hamzaimg from '../../../public/images/team/hamza2.jpg';
+import farazimg from '../../../public/images/team/faraz.jpg';
+import asherimg from '../../../public/images/team/ashir2.jpg';
+import zeryabimg from '../../../public/images/team/zeryab.jpg';
+import saadimg from '../../../public/images/team/saad.jpg';
+import ahsanimg from '../../../public/images/team/ahsan2.jpg';
 
 
 const blogData = [

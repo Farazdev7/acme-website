@@ -9,7 +9,7 @@ const DisplayCard = ({ key, heading, text, img, backGroundColor }) => {
           {" "}
           {/* lg:max-h-[10rem] */}
           <div className="flex lg:w-[30vw] flex-row items-start bg-gray-100 rounded-lg overflow-hidden ">
-            <div className="flex items-center">
+            <div className="pl-2 flex items-center">
               <img
                 src={img}
                 alt="Icon"

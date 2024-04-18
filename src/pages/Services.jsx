@@ -32,6 +32,18 @@ const services = [
     ],
   },
   {
+    "heading": "Digital Marketing",
+    "description": "In today's digital era, effective digital marketing is essential for businesses to thrive online. Our Digital Marketing services are tailored to enhance your online presence, increase brand visibility, and drive meaningful engagement with your target audience. From SEO and social media marketing to content creation and email campaigns, we have the expertise to elevate your digital strategy and help your business succeed in the competitive online landscape.",
+    "importance": "Digital marketing amplifies your brand's visibility, extends your reach, and engages your audience across various online channels. It allows businesses to connect with their customers in real-time, understand their preferences, and deliver personalized experiences.",
+    "procedure": "Our digital marketing strategy is data-driven, focusing on targeted campaigns, content optimization, and performance tracking to maximize ROI and achieve your business goals. We work closely with you to understand your objectives, analyze your market, and develop custom solutions that resonate with your audience and drive results.",
+    "images": [
+      "https://irp.cdn-website.com/bb44a1e6/dms3rep/multi/parkyd-banner-toronto-canada-digiatl-marketing.gif",
+      "https://www.anipixart.com/assets/admin/images/course-details//634611652181493.gif",
+      "https://i.pinimg.com/originals/35/ca/72/35ca72c8f011488fc91bb828c837ac47.gif"
+    ]
+  },
+  
+  {
     heading: "Web Designing",
     description:
       "A visually appealing and user-friendly website is crucial for making a strong impression on your audience and driving conversions. Our Web Designing team specializes in creating stunning and intuitive designs that captivate users and enhance brand credibility.",
@@ -83,11 +95,11 @@ function ServicePage() {
   }, []);
   return (
     <div className="container mx-auto py-8 text-xl ">
-    <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Our Services</h1>
+    <h1 className="text-4xl font-bold   text-center mb-8 text-gray-800">Our Services</h1>
     {services.map((service, index) => (
-      <div key={index} className="mb-8 text-center leading-8 bg-gray-200 rounded-lg shadow-md p-8">
-        <h2 className="text-3xl font-semibold mb-4">{service.heading}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
+      <div key={index} className="mb-8  leading-8 bg-gray-200 rounded-lg shadow-md p-8">
+        <h2 className="text-3xl text-center font-semibold mb-8">{service.heading}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 items-center justify-center">
           {service.images.map((image, imageIndex) => (
             <img
               key={imageIndex}
@@ -97,11 +109,11 @@ function ServicePage() {
             />
           ))}
         </div>
-        <p className="my-4 text-lg">{service.description}</p>
-        <p className="my-4 text-lg">
+        <p className="my-4 text-lg mb-8">{service.description}</p>
+        <p className="my-4 text-lg mb-8">
           <strong>Importance:</strong> <br /> {service.importance}
         </p>
-        <p className="my-4 text-lg">
+        <p className="my-4 text-lg mb-8">
           <strong>Procedure:</strong> <br /> {service.procedure}
         </p>
       </div>

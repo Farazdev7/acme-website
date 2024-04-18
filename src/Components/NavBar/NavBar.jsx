@@ -13,13 +13,15 @@ import logo4 from "../../../public/images/logo/4.jpg";
 
 
 const navigation = [
-  { name: "About us", path: "/about" },
-  { name: "Services", path: "/services" },
   { name: "Case Studies", path: "/casestudies" },
+  { name: "Services", path: "/services" },
   { name: "Blog", path: "/blog" },
-  // { name: "How it Works", path: "/howitworks" },
   // { name: "Hire", path: "/hire" },
   { name: "Process", path: "/process" },
+  { name: "About us", path: "/about" },
+
+  { name: "Contact us", path: "/contactus" }, 
+
 ];
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -35,7 +37,7 @@ function NavBar() {
               {/* Acme Digital Soluction */}
             </span>
             <span>
-              <img className="logo md:h-[15vh] h-[11vh] w-fit" src={logo4} alt="" />
+              <img className="logo  h-[10vh] w-fit" src={logo4} alt="" />
             </span>
            
           </NavLink>
@@ -59,29 +61,16 @@ function NavBar() {
               </li>
             ))}
 
-            {/* <li className="nav-item">
-              <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={handleClick}>
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink exact to="/contact" activeClassName="active" className="nav-links" onClick={handleClick}>
-                Contact Us
-              </NavLink>
-            </li> */}
+           
             <li>
-              {" "}
-              {/* <button className="contact-us-mobile"> */}
-              <span className="contact-us-mobile">
+              {/* <span className="contact-us-mobile">
                 <Link to="/contactus">Contact us</Link>
-              </span>
-              {/* </button> */}
+              </span> */}
             </li>
           </ul>
-          {/* <button className="contact-us">Contact us</button> */}
-          <span className="contact-us">
+          {/* <span className="contact-us">
             <Link to="/contactus">Contact us</Link>
-          </span>
+          </span> */}
           <div className="nav-icon" onClick={handleClick}>
             {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
             {click ? (
