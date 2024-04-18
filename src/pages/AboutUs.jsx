@@ -47,7 +47,7 @@ const About = [
         image:ashirimg,
           // "../../public/images/team/asher.jpeg",
 
-        desination: "Flutter develop",
+        desination: "Flutter developer",
       },
       {
         name: "Ahsan Rasheed",
@@ -125,14 +125,14 @@ const AboutUs = () => {
         <div className="w-full flex flex-wrap justify-center space-x-4 mt-12 text-white text-center font-[400]">
           {/* Employee mapping here */}
           {About[0].team.map((item, i) => (
-            <div key={i} data-aos="fade-up" className="max-w-sm rounded-lg overflow-hidden shadow-lg mb-4">
-              <img className="w-full h-64 object-cover object-center" src={item.image} alt="Employee" />
-              <div className="p-6">
-                <h3 className=" font-semibold mb-2">{item.name}</h3>
-                <h4 className="text-gray-700">{item.desination}</h4>
-              </div>
-            </div>
-          ))}
+  <div key={i} data-aos="fade-up" className="max-w-sm rounded-lg overflow-hidden shadow-lg mb-4">
+    <img className="w-full h-64 object-cover object-center" src={item.image} alt="Employee" />
+    <div className="p-6">
+      <h3 className="font-semibold mb-2">{item.name}</h3>
+      <h4 className="text-gray-700" dangerouslySetInnerHTML={{ __html: item.desination.replace("&", "<br />") }} />
+    </div>
+  </div>
+))}
         </div>
       </section>
     </div>
