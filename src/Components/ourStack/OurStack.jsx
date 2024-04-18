@@ -43,7 +43,7 @@ const Ourstack = () => {
   return (
     <div className="ourstack flex flex-col items-center content-center text-center ">
       {/* <img src="" alt="" /> */}
-      <h2 className="text-3xl font-bold mb-4 flex-col flex  items-center content-center">
+      <h2 className=" font-bold mb-4 flex-col flex  items-center content-center">
         {" "}
         <img className="py-1" src={line} alt="" />
         Our <br /> Tech Stack

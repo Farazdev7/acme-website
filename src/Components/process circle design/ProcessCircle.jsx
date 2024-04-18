@@ -25,15 +25,15 @@ const ProcessCircle = () => {
 
         <>
 <main>
-<div className="app-development-process text-center font-[400] md:px-32 px-8 md:text-xl ">
-        <h1 className="my-8 md:text-3xl lg:text-5xl text-3xl">App Development Process</h1>
+<div className="app-development-process text-center font-[400] md:px-32 px-8  ">
+        <h2 className="my-8  ">App Development Process</h2>
         <p className="my-10">{dataOfProcess.appDevelopmwnt}</p>
         <Link className=" bg-[#1f475b] text-white rounded-md py-[10px] px-[20px] " to="/casestudies">
           {" "}
           Read Case Studies
         </Link>
       </div>
-<div className="processing grid md:grid-cols-3  px-10 py-32 justify-items-center md:text-xl ">
+<div className="processing grid md:grid-cols-3  px-10 py-32 justify-items-center  ">
         <div className="right-heading-text-image">
           {/* box1 */}
           <div className="py-4">

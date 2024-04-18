@@ -41,7 +41,7 @@ const CaseStudy = () => {
             <img className="h-[100%] w-fit " src={item.img} alt="" />
           </div>
           <div className="txt md:w-[80%] lg:w-[60%] relative">
-            <p className="md:text-xl text-lg font-bold">{item.heading}</p>
+            <h3 className="md:text-xl font-bold">{item.heading}</h3>
             <p className="pb-10">
               {" "}
               {item.text}

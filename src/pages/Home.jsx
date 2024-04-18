@@ -36,14 +36,13 @@ const Home = () => {
               {/* max-h-[50vh] */}
                <div className="flex flex-col justify-center ">
                   {/* <p className="text-caribbean-green "></p> */}
-                  <h1 className="md:text-6xl lg:text-7xl sm:text-5xl text-4xl  py-2 ">
-                    {" "}
+                  <h1 className=" py-2 ">
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
                     <span className="bold font-bold">
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
                     </span>
                   </h1>
-                  <p className="text-gray-800 text-xl sm:text-3xl md:text-3xl font-[400] md:mt-10 ">{homeData.mainText}</p>
+                  <p className="text-gray-800 text-xl  md:text-2xl font-[400] md:mt-10 ">{homeData.mainText}</p>
                   <button className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-10 mx-auto lg:mx-0 py-3">
                     Let’s get started!
                   </button>
@@ -62,10 +61,10 @@ const Home = () => {
         </div>
         {/* hero section ended */}
         {/* Services We Offer and slider*/}
-        <div className="ServicesWeOffer relative  my-10 text-xl ">
+        <div className="ServicesWeOffer relative  my-10  ">
           {/* will redirect to the services page */}
           
-            <h1 className="md:text-3xl lg:text-5xl text-3xl  py-10 text-center">Services we offer</h1>
+            <h2 className="   py-10 text-center">Services we offer</h2>
             <div className="slider">
             <Link to="/services">
               <CardSlider />
@@ -94,20 +93,20 @@ const Home = () => {
         <ReviewSlider />
 
         {/* case study section */}
-        <div className="caseStudy py-20 px-4 bg-[#eeeef9] leading-10 text-xl ">
+        <div className="caseStudy py-20 px-4 bg-[#eeeef9] leading-10  ">
           <div className="text py-20">
-            <p className=" text-center md:text-3xl lg:text-5xl text-3xl">
+            <h2 className=" text-center ">
               Our recent <br /> <span>Case studies</span>{" "}
-            </p>
+            </h2>
           </div>
           <CaseStudy />
         </div>
         {/* way of building start*/}
-        <div className="wayofbuilding py-20 px-4 text-xl">
+        <div className="wayofbuilding py-20 px-4 ">
           <div className=" text-center">
-            <p className=" lg:text-5xl text-3xl">
+            <h2 >
               Way of building <br /> <span className="font-bold">Great Software</span>{" "}
-            </p>
+            </h2>
           </div>
           {/* to redirect at blog page */}
           <Link to="/blog">
@@ -119,10 +118,10 @@ const Home = () => {
           <div className="">
             <p className=" flex justify-center items-center flex-col text-center">
               <img src={line} alt="" />
-              <p className=" lg:text-5xl text-3xl  py-4">
+              <h2 className="py-4">
                 Our design and <br />
                 <span className="font-bold py-3">development approach</span>
-              </p>
+              </h2>
             </p>
           </div>
           {/* <DisplayCard /> */}

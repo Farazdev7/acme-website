@@ -98,10 +98,13 @@ if(index===detailReview.length-1){
     <>
       <div className="review border-2   ">
         <div className="text flex relative   justify-center items-center ">
-          <p className="text-xl relative md:text-3xl md:w-[50vw] lg:w-[50vw] text-center py-10 ">
+          <p className="relative  md:w-[50vw] lg:w-[50vw] text-center py-10 ">
+            <h2 className="">
             Why cutomers love <br /> <span className="font-bold">working with us</span>
+            </h2>
+            
             <img src="https://i.ibb.co/X3NGf8h/topComa.png" alt="Comma" />
-            <p className="md:text-xl ">
+            <p className=" ">
               {currentReview}
             </p>
             <img className="absolute right-8 " src="https://i.ibb.co/DMQ90mt/Bottom-Comma.png" alt="Comma" />
@@ -129,7 +132,7 @@ if(index===detailReview.length-1){
             {detailReview.map((item, i) => (
               <div key={i}>
                 <SwiperSlide >
-                  <div className="flex flex-col justify-center items-center text-center md:text-xl ">
+                  <div className="flex flex-col justify-center items-center text-center  ">
                     <img className="w-fit h-20 rounded-full" src={item.img} alt="" />
                     <p >{item.stars}</p>
                     <p>{item.userName}</p>
