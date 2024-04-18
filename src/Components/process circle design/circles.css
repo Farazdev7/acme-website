@@ -19,6 +19,8 @@
 .circle2{
     border: 25px solid #2baeba;
     border-right-color:#ededed;
+    /* border-right-color: #ededed; */
+
     border-top-color: #ededed;
     /* border-right-color: transparent; */
     /* border-top-color: transparent; */

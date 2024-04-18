@@ -18,8 +18,8 @@ const contactData = [
       },
       lication2: {
         city: "Lahore - Pakistan",
-        street: "rd Floor, AMNA Tower , Near Model Town link ",
-        street2: "YOffice No 3",
+        street: "rd Floor, AMNA Tower , Near Model Town link Rood ",
+        street2: "Office No 3",
       },
       contactform: {
         uniname: `Acme Digital Solutions`,
@@ -27,8 +27,8 @@ const contactData = [
       },
     },
     socialLinks: {
-      facebookProfileUrl: "https://www.facebook.com/ahsan.rasheed.18400700",
-      linkedinProfileUrl: "https://www.linkedin.com/in/ahsan-rasheed-977693177",
+      facebookProfileUrl: "https://www.facebook.com/profile.php?id=61557459425088&mibextid=ZbWKwL",
+      linkedinProfileUrl: "https://www.linkedin.com/company/acme-digital-solutions/about/",
       twitterProfileUrl: "https://twitter.com/home",
     },
   },
@@ -97,36 +97,18 @@ if (!data){
         </div>
         <div className="our-locations bg-[#2baeba] md:h-[75vh] py-[13vh] ">
           <h1 className="text-3xl">Our Locations</h1>
-          {/* cloudes images is here stared */}
-          <img className="h-[80px] hidden md:block w-fit absolute left-[40vw] bottom-[30vh]" src={cloud} alt="cloud1" />
-          <img
-            className="h-[80px] hidden md:block w-fit absolute right-[20vw] bottom-[10vh]"
-            src={cloud}
-            alt="cloud2"
-          />
-          <img className="h-[80px] hidden lg:block w-fit absolute left-[20vw] top-[35vh]" src={cloud} alt="cloud3" />
-          <img className="h-[80px] hidden lg:block w-fit absolute left-[10vh] bottom-[30vh]" src={cloud} alt="cloud4" />
-          {/* cloudes images is here  ended */}
           {/* our locations */}
-          <div className="location text-center flex flex-col md:flex-row items-center  justify-around">
-            <div className="London">
-              <img
-                className="w-[250px] "
-                src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/london-1.svg"
-                alt=""
-              />
-              <h1 className="text-2xl">{contactData[0].ourLocation.lication1.city}</h1>
+          <div className="location  flex flex-col md:flex-row items-center  justify-around">
+            <div className="UAE">
+              <img src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/london-1.svg" alt=""/>
+              <h2 className="mt-5">{contactData[0].ourLocation.lication1.city}</h2>
               <p>{contactData[0].ourLocation.lication1.street}</p>
 
               <p>{contactData[0].ourLocation.lication1.street2}</p>
             </div>
-            <div className="New York text-center">
-              <img
-                className="w-[250px] "
-                src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/york-1.svg"
-                alt=""
-              />
-              <h1 className="text-2xl">{contactData[0].ourLocation.lication2.city}</h1>
+            <div className="Lahore">
+              <img src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/york-1.svg" alt=""/> 
+              <h2 className="mt-5">{contactData[0].ourLocation.lication2.city}</h2>
               <p>{contactData[0].ourLocation.lication2.street}</p>
 
               <p>{contactData[0].ourLocation.lication2.street2}</p>
@@ -141,7 +123,6 @@ if (!data){
           <h2 className=" mb-4 text-center">Tell us more about your project</h2>
           <div className="flex items-center mb-4">
             <FaPhone className="mr-2" />
-            {/* <span>+923404099242</span> */}
             <span>
               <a href={`tel:${contactData[0].phone}`}>{contactData[0].phone}</a>
             </span>
@@ -149,7 +130,6 @@ if (!data){
           <div className="flex items-center mb-8">
             <FaEnvelope className="mr-2" />
             <span>
-              {/* rasheedahsan786@gmail.com */}
               <a
                 target="_blank"
                 href={`https://mail.google.com/mail/?view=cm&to=${contactData[0].email}&su=${contactData[0].emailSubject}`}
@@ -228,16 +208,15 @@ if (!data){
             </div>
 
             <div className="flex gap-10">
-              <span onClick={facebookClick} style={{ cursor: "pointer" }}>
+              <span className="cursor-pointer hover:text-orange-500" onClick={facebookClick}>
                 <FaFacebookF className="mx-1" />
               </span>
-              <span onClick={twitterClick} style={{ cursor: "pointer" }}>
+              {/* <span onClick={twitterClick} style={{ cursor: "pointer" }}>
                 <FaTwitter className="mx-1" />
-              </span>
-              <span onClick={linkedinClick} style={{ cursor: "pointer" }}>
+              </span> */}
+              <span onClick={linkedinClick} className="cursor-pointer hover:text-orange-500">
                 <FaLinkedinIn className="mx-1" />
               </span>
-              {/* <FaFacebookF className="mx-1" /> */}
             </div>
           </div>
         </div>

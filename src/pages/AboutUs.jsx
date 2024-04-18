@@ -134,7 +134,7 @@ const AboutUs = () => {
   </div>
 ))}
         </div>
-      </section>
+      </section>  
     </div>
   </section>
   
