@@ -33,7 +33,8 @@ const Home = () => {
               {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
               {/* <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 justify-between "> */}
               <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2  justify-between ">
-                <div className="flex flex-col justify-center max-h-[50vh] ">
+              {/* max-h-[50vh] */}
+               <div className="flex flex-col justify-center ">
                   {/* <p className="text-caribbean-green "></p> */}
                   <h1 className="md:text-6xl lg:text-7xl sm:text-5xl text-4xl  py-2 ">
                     {" "}
@@ -48,7 +49,7 @@ const Home = () => {
                   </button>
                 </div>
                 <img
-                  className=" h-[40vh]   xl:h-[70vh]  w-fit mx-auto "
+                  className=" max-h-[50vh]  w-fit mx-auto "
                   // src="https://i.ibb.co/Rg8mTFW/main.png"
                   src={logo}
                   alt="/"
