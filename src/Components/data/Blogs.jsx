@@ -18,7 +18,7 @@ const blogData = [
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: true,
     img: farazimg,
-    name: "John Doe",
+    name: "Faraz Rasool",
     post: "CEO",
     detail:[
       {

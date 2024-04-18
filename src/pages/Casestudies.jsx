@@ -5,19 +5,6 @@ import "aos/dist/aos.css";
 
 // data of theh buttons and content are fetching from here and this object will be fetch from the backent
 import caseStudyData from "../Components/data/CaseStudyDetailDAta";
-// const CaseStudybtn = [
-//   "View All",
-//   "B2B",
-//   "Charity",
-//   "Consumer",
-//   "Education",
-//   "Enterprise",
-//   "FinTech",
-//   "Health",
-//   "IOT",
-//   "The Core",
-//   "Travel",
-// ];
 
 const Casestudies = () => {
   useEffect(() => {
@@ -62,7 +49,7 @@ const Casestudies = () => {
       <div className="contents-main py-10 grid gap-20">
         {filteredData.map((item, i) => (
           <Link key={i} to={`${item.id}/${item.category} `}>
-            <div
+            <div data-aos="fade-up"
               className="content relative bg-cover md:h-[40vh] h-[40vh] lg:h-[60vh] bg-no-repeat"
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
@@ -84,7 +71,7 @@ const Casestudies = () => {
                 </div>
               </div>
               <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-6 lg:right-20">
-                <img data-aos="zoom-in-up" className="h-[100%] w-fit lg:h-[100%]" src={item.moboImg}  alt="" />
+                <img data-aos="zoom-in-down" className="h-[100%] w-fit lg:h-[100%]" src={item.moboImg}  alt="" />
               </div>
             </div>
           </Link>

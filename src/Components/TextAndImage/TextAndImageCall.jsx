@@ -1,6 +1,6 @@
 import React from "react";
 import TextAndImage from "./TextAndImage";
-
+import farazimg from '../../../public/images/team/faraz.jpg'
 const TextAndImageCall = () => {
   const data = [
     {
@@ -12,7 +12,7 @@ const TextAndImageCall = () => {
         "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
       imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
       isImageRight: true,
-      img: "../../../public/images/team/faraz.jpg",
+      img: farazimg,
       name: "Faraz Rasool",
       post: "CEO",
     },
@@ -25,7 +25,7 @@ const TextAndImageCall = () => {
         "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
       imageUrl: "https://i.ibb.co/Bqd1tPN/great-Software2.png",
       isImageRight: false,
-      img: "../../../public/images/team/faraz.jpg",
+      img: farazimg,
       name: "Faraz Rasool",
       post: "CEO",
     },
@@ -38,7 +38,7 @@ const TextAndImageCall = () => {
         "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
       imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
       isImageRight: true,
-      img: "../../../public/images/team/faraz.jpg",
+      img: farazimg,
       name: "Faraz Rasool",
       post: "CEO",
     },
