@@ -40,7 +40,7 @@ const CaseStudyDetail = () => {
   // SearchedByCatagory is a a object that will give the sugesstion application under the box related apps
   // ==========================================================================
 
-  console.log(SearchedByCatagory);
+  // console.log(SearchedByCatagory);
   //   search by the catagory
   //   const search_by_catagory = (array, id) => {
   //     return array.find((obj) => obj.id === id);
@@ -89,7 +89,7 @@ const CaseStudyDetail = () => {
       {/* form here detail started about page */}
       <div className="aboutapp flex justify-center items-center flex-col text-center">
         <h2 className=" font-[400] pt-10">About {Searched.heading}</h2>
-        <p className="w-[80%] md:w-[60%] ">{Searched.detail}</p>
+        <p className= {`w-[80%] md:w-[60%] ${Searched.detail===true ? "" : "hidden"}`}>{Searched.detail}</p>
         {/* <Link to={Searched.appTestLink}>
           <button className="mt-10 text-xl bg-orange-500 hover:bg-cyan-700 py-4 px-6 rounded-full text-white  my-5">
             Test Now
@@ -98,7 +98,8 @@ const CaseStudyDetail = () => {
       </div>
       {/* displaying the app testing area */}
       {/* here i have decided to add a swiper here  */}
-      <div className="mainapp-datails-with-Image h-[60vh]  mb-18">
+      {/* ${Searched.detail===true ? "" : "hidden"} */}
+      <div className={`mainapp-datails-with-Image h-[60vh]  mb-18 `}>
         <div className="slider-app-detail ">
           <Swiper
             slidesPerView={1}
@@ -124,25 +125,48 @@ const CaseStudyDetail = () => {
             className="mySwiper  flex justify-center items-center flex-col py-20 "
           >
             {/* image one */}
-            <SwiperSlide className="flex  justify-center items-center">
+            {/* <SwiperSlide className="flex  justify-center items-center">
               <img
                 className="max-h-[60vh] h-fit hover:scale-125 duration-700  "
-                src={Searched.appScreenshort1}
+                src={Searched.screenScreenshort[0]}
                 alt="1"
               />
-            </SwiperSlide>
+            </SwiperSlide> */}
+
+            {
+              // console.log(Searched)
+              // Searched.screenScreenshort.map((item, index) => (
+              //   <SwiperSlide key={index} className="flex  justify-center items-center">
+              //   <img
+              //     className="max-h-[60vh] h-fit hover:scale-125 duration-700  "
+              //     src={item}
+              //     alt="1"
+              //   />
+              // </SwiperSlide>
+                // <SwiperSlide key={index} className="flex justify-center items-center">
+                //   <img
+                //     className="max-h-[60vh] h-fit hover:scale-125 duration-700"
+                //     src={item}
+                //     alt={`Slide ${index + 1}`}
+                //   />
+                // </SwiperSlide>
+              // ))
+          }
+
+
+
             {/* image two*/}
-            <SwiperSlide className="flex justify-center items-center">
+            {/* <SwiperSlide className="flex justify-center items-center">
               <img className="max-h-[60vh] h-fit hover:scale-125 duration-700" src={Searched.appScreenshort2} alt="2" />
-            </SwiperSlide>
+            </SwiperSlide> */}
             {/* image three*/}
-            <SwiperSlide className="flex justify-center items-center ">
+            {/* <SwiperSlide className="flex justify-center items-center ">
               <img
                 className="max-h-[60vh] h-fit hover:scale-125 duration-700 "
                 src={Searched.appScreenshort3}
                 alt="3"
               />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
         {/* swiper divs ends */}
@@ -150,7 +174,7 @@ const CaseStudyDetail = () => {
 
       {/* client review */}
       {/* slider will be use at the place of client review */}
-      <div className="client  py-16 mt-32 bg-orange-300 grid place-items-center font-[400] leading-10 text-white text-center">
+      <div className={`client  py-16 mt-32 bg-orange-300 grid place-items-center font-[400] leading-10 text-white text-center ${Searched.clientReview[0].clientreview===true ? "" : "hidden"}`}>
         <h2 className=" ">Testimonial</h2>
        <p><i>{Searched.clientReview[0].clientreview}</i></p> 
         <div className="client-img flex flex-col md:flex-row gap-8">
