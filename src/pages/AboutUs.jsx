@@ -69,7 +69,8 @@ const AboutUs = () => {
     Aos.init();
   });
   return (
-    <section className="bg-gray-100 ">
+    //bg-gray-100 
+    <section className="">
     <div className="grid place-items-center text-center">
       {/* Mission Banner */}
       <div className="w-full">
@@ -79,7 +80,7 @@ const AboutUs = () => {
           alt="Mission Banner"
         /> */}
         {/* Our mission */}
-        <div className="pt-6 bg-orange-500 pb-16">
+        <div className="pt-6  pb-16">
           <h2 className="text-xl md: font-semibold mb-4">Our Mission</h2>
           <p className="text-gray-700 font-[400]">
             We are dedicated to providing innovative software solutions that empower businesses and individuals to achieve
@@ -114,15 +115,15 @@ const AboutUs = () => {
         </div>
       </div>
       {/* Our Team Section */}
-      <section className="bg-[#99d8e7] w-full py-14">
-        <article className="text-white text-center font-[400]">
+      <section className=" w-full py-14">
+        <article className=" text-center font-[400]">
           <h1 className=" md:text-2xl lg:text-4xl">Senior Management Team</h1>
           <p>
             Our SMT brings a world of experience to the company. Our business leaders inspire and guide the team to ensure
             the quality and efficiency of all our app development projects.
           </p>
         </article>
-        <div className="w-full flex flex-wrap justify-center space-x-4 mt-12 text-white text-center font-[400]">
+        <div className="w-full flex flex-wrap justify-center space-x-4 mt-12  text-center font-[400]">
           {/* Employee mapping here */}
           {About[0].team.map((item, i) => (
   <div key={i} data-aos="fade-up" className="max-w-sm rounded-lg overflow-hidden shadow-lg mb-4">

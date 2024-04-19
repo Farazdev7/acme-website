@@ -248,7 +248,7 @@ const blogData = [
     isImageRight: false,
     img: saadimg,
     name: "Saad Salman",
-    post: "UX/UI Designer",
+    post: "Business Developer",
     detail:[]
   },
   {
@@ -260,7 +260,7 @@ const blogData = [
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: true,
     img: farazimg,
-    name: "Faraz Rasools",
+    name: "Faraz Rasool",
     post: "CEO",
     detail:[
       {
@@ -292,8 +292,8 @@ const blogData = [
     imageUrl: "https://i.ibb.co/H21r2VY/great-Software1.png",
     isImageRight: false,
     img: zeryabimg,
-    name: "Zeryab Salman",
-    post: "UI/UX Engineer",
+    name: "Zaryab Salman",
+    post: "Marketing Manager & UI/UX Designer",
     detail:[
       {
         "heading": "Community-Driven Development",
@@ -324,7 +324,7 @@ const blogData = [
     isImageRight: true,
     img: saadimg,
     name: "Saad Salmann",
-    post: "UI/UX Engineer",
+    post: "Business Developer",
     detail:[
       {
         "heading": "Interconnected Ecosystem",
@@ -354,8 +354,8 @@ const blogData = [
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: false,
     img: zeryabimg,
-    name: "Zeryab Salman",
-    post: "UI/UX Engineer",
+    name: "Zaryab Salman",
+    post: "Marketing Manager & UI/UX Designer",
     detail:[
       {
         "heading": "Secure Coding Practices",
@@ -544,8 +544,8 @@ const blogData = [
     imageUrl: "https://i.ibb.co/C1GXS1w/great-Software3.png",
     isImageRight: false,
     img: zeryabimg,
-    name: "Zeryab Salman",
-    post: "UI/UX Engineer",
+    name: "Zaryab Salman",
+    post: "Marketing Manager & UI/UX Designer",
     detail:[
       {
         "heading": "Define Clear Roles and Responsibilities",

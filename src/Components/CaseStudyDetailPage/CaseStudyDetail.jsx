@@ -62,18 +62,18 @@ const CaseStudyDetail = () => {
           }}
         >
           <div
-            className=" relative  h-[100%] w-[100%] opacity-50"
+            className=" relative  h-[100%] w-[100%] opacity-25"
             style={{ background: "linear-gradient(to right, #00f,#fff )" }}
           ></div>
           {/* this is a div which containe the text and images */}
           <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-4 md:p-6 lg:p-8 ">
             {/* here is text div */}
             <div className="text-inner">
-              {/* <p className="heading text-xl md:text-2xl lg:text-5xl font-bold">{contents.heading}</p> */}
-              <h2 className="text  font-[400]">{Searched.text}</h2>
+              <h1 className="heading  font-bold">{Searched.heading}</h1>
+              <h3 data-aos="fade-down-left" className="text  font-[400]">{Searched.text}</h3>
             </div>
             {/* apple android and react image is here */}
-            <div className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
+            <div  data-aos="zoom-in" className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
               <img className="w-fit lg:h-20 h-10" src={Searched.logImg1} alt="" />
               <img className="w-fit lg:h-20 h-10" src={Searched.logImg2} alt="" />
               <img className="w-fit lg:h-20 h-10" src={Searched.logImg3} alt="" />
@@ -87,19 +87,45 @@ const CaseStudyDetail = () => {
       </div>
       {/* here image box ended */}
       {/* form here detail started about page */}
-      <div className="aboutapp flex justify-center items-center flex-col text-center">
+      <div className={`aboutapp flex justify-center items-center flex-col text-center ${Searched.detail ? "" : "hidden"}`}>
         <h2 className=" font-[400] pt-10">About {Searched.heading}</h2>
-        <p className= {`w-[80%] md:w-[60%] ${Searched.detail===true ? "" : "hidden"}`}>{Searched.detail}</p>
-        {/* <Link to={Searched.appTestLink}>
-          <button className="mt-10 text-xl bg-orange-500 hover:bg-cyan-700 py-4 px-6 rounded-full text-white  my-5">
-            Test Now
-          </button>
-        </Link> */}
+        <p className= {`w-[80%] md:w-[60%] ${Searched.detail===true ? "hidden" : ""}`}>{Searched.detail}</p>
+       
+        
       </div>
+
+
+{/* this is  for testing  button */}
+<div className="btns flex flex-wrap gap-8  justify-center mt-6">
+<a target="_blank" href={Searched.webTestLink} className={`${Searched.webTestLink ? "" : "hidden"}`}>
+          <button  className=" text-xl bg-cyan-700 active:bg-cyan-600 py-4 px-6 rounded-full text-white  ">
+            Test Website Now
+          </button>
+        </a>
+
+
+        <a target="_blank" href={Searched.appTestLink} className={`${Searched.appTestLink ? "" : "hidden"}`}>
+          <button  className=" text-xl bg-cyan-700 active:bg-cyan-600 py-4 px-6 rounded-full text-white  ">
+            Test Android App Now
+          </button>
+        </a>
+
+        <a  target="_blank" href={Searched.isoTestLink} className={`${Searched.isoTestLink ? "" : "hidden"}`}>
+          <button  className=" text-xl bg-cyan-700 active:bg-cyan-600 py-4 px-6 rounded-full text-white  ">
+            Test ISO App Now
+          </button>
+        </a>
+</div>
+    
+
+
+
+
+
+
+
       {/* displaying the app testing area */}
-      {/* here i have decided to add a swiper here  */}
-      {/* ${Searched.detail===true ? "" : "hidden"} */}
-      <div className={`mainapp-datails-with-Image h-[60vh]  mb-18 `}>
+      <div className={`mainapp-datails-with-Image h-[60vh]  mb-18 ${Searched.screenScreenshort ? "" : "hidden"} `}>
         <div className="slider-app-detail ">
           <Swiper
             slidesPerView={1}
@@ -124,49 +150,17 @@ const CaseStudyDetail = () => {
             modules={[Pagination]}
             className="mySwiper  flex justify-center items-center flex-col py-20 "
           >
-            {/* image one */}
-            {/* <SwiperSlide className="flex  justify-center items-center">
-              <img
-                className="max-h-[60vh] h-fit hover:scale-125 duration-700  "
-                src={Searched.screenScreenshort[0]}
-                alt="1"
-              />
-            </SwiperSlide> */}
-
-            {
-              // console.log(Searched)
-              // Searched.screenScreenshort.map((item, index) => (
-              //   <SwiperSlide key={index} className="flex  justify-center items-center">
-              //   <img
-              //     className="max-h-[60vh] h-fit hover:scale-125 duration-700  "
-              //     src={item}
-              //     alt="1"
-              //   />
-              // </SwiperSlide>
-                // <SwiperSlide key={index} className="flex justify-center items-center">
-                //   <img
-                //     className="max-h-[60vh] h-fit hover:scale-125 duration-700"
-                //     src={item}
-                //     alt={`Slide ${index + 1}`}
-                //   />
-                // </SwiperSlide>
-              // ))
+             {
+              Searched.screenScreenshort.map((item, index) => (
+                <SwiperSlide key={index} className="flex  justify-center items-center">
+                <img
+                  className="max-h-[60vh] h-fit hover:scale-125 duration-700  "
+                  src={item}
+                  alt="1"
+                />
+               </SwiperSlide>
+              ))
           }
-
-
-
-            {/* image two*/}
-            {/* <SwiperSlide className="flex justify-center items-center">
-              <img className="max-h-[60vh] h-fit hover:scale-125 duration-700" src={Searched.appScreenshort2} alt="2" />
-            </SwiperSlide> */}
-            {/* image three*/}
-            {/* <SwiperSlide className="flex justify-center items-center ">
-              <img
-                className="max-h-[60vh] h-fit hover:scale-125 duration-700 "
-                src={Searched.appScreenshort3}
-                alt="3"
-              />
-            </SwiperSlide> */}
           </Swiper>
         </div>
         {/* swiper divs ends */}
@@ -174,7 +168,7 @@ const CaseStudyDetail = () => {
 
       {/* client review */}
       {/* slider will be use at the place of client review */}
-      <div className={`client  py-16 mt-32 bg-orange-300 grid place-items-center font-[400] leading-10 text-white text-center ${Searched.clientReview[0].clientreview===true ? "" : "hidden"}`}>
+      <div className={`client  py-16 mt-32 bg-orange-300 grid place-items-center font-[400] leading-10 text-white text-center ${Searched.clientReview[0].clientreview ? "" : "hidden"}`}>
         <h2 className=" ">Testimonial</h2>
        <p><i>{Searched.clientReview[0].clientreview}</i></p> 
         <div className="client-img flex flex-col md:flex-row gap-8">
@@ -183,11 +177,14 @@ const CaseStudyDetail = () => {
         </div>
       </div>
       {/* the problem soluction section */}
-      <div className="font-[400] py-10 text-center   ">
+      <div className={`font-[400] py-10 text-center
+       ${Searched.Process[0].theProblem ||
+        Searched.Process[0].theSoluction ||
+         Searched.Process[0].theResult ? "" : "hidden"}  `}>
         <h2 className="  pb-8">How We made a difference</h2>
         <div className="flex justify-center items-center  flex-wrap gap-6">
           {/* the problem section */}
-          <div data-aos="fade-up" className="problem bg-white max-w-[80vw] lg:max-w-[25vw]  shadow-lg  ">
+          <div data-aos="fade-up" className={`problem bg-white max-w-[80vw] lg:max-w-[25vw]  shadow-lg ${Searched.Process[0].theProblem ? "" : "hidden"}  `}>
             <div className="problem-img py-16 grid place-items-center bg-cyan-800">
               <div className="a">
                 <img className="max-h-[80px] w-fit" src={questionmark} alt="" />
@@ -197,7 +194,7 @@ const CaseStudyDetail = () => {
             <p className="py-10 px-2">{Searched.Process[0].theProblem}</p>
           </div>
           {/* the soluction section */}
-          <div data-aos="fade-up" className="problem bg-white max-w-[80vw] lg:max-w-[25vw]  shadow-lg  ">
+          <div data-aos="fade-up" className={`problem bg-white max-w-[80vw] lg:max-w-[25vw]  shadow-lg ${Searched.Process[0].theSoluction ? "" : "hidden"} `}>
             <div className="soluction-img py-16 grid place-items-center bg-cyan-800">
               <div className="a">
                 <img className="max-h-[80px] w-fit" src={soluction} alt="" />
@@ -207,14 +204,14 @@ const CaseStudyDetail = () => {
             <p className="py-10 px-2">{Searched.Process[0].theSoluction}</p>
           </div>
           {/* the result */}
-          <div data-aos="fade-up" className="problem bg-white max-w-[80vw] lg:max-w-[25vw]  shadow-lg  ">
+          <div data-aos="fade-up" className={`problem bg-white max-w-[80vw] lg:max-w-[25vw]  shadow-lg ${Searched.Process[0].theresult ? "" : "hidden"}`}>
             <div className="result-img py-16 grid place-items-center bg-cyan-800">
               <div className="a">
                 <img className="max-h-[80px] w-fit" src={result} alt="" />
               </div>
               <p className="text-white">The Result</p>
             </div>
-            <p className="py-10 px-2">{Searched.Process[0].theProblem}</p>
+            <p className="py-10 px-2">{Searched.Process[0].theresult}</p>
           </div>
         </div>
         {/* maping from here */}

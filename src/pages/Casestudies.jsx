@@ -22,8 +22,10 @@ const Casestudies = () => {
       : caseStudyData[2].filter((item) => item.category.toLowerCase() === btnCategory.toLowerCase());
 
   return (
-    <div className="caseStudy bg-white">
-      <div className="title bg-[#fff] text-center pb-10">
+    // bg-white
+    <div className="caseStudy ">
+      {/* bg-[#fff] */}
+      <div className="title  text-center pb-10">
         <div className="bg-[#2baeba] text-[14px] md:text-[18px] px-[15px] py-10 text-white">
           <p className="text-[30px] font-[400] md:pt-[50px] mb-[20px]">Case Studies</p>
           <p className="px-4">{caseStudyData[1][0].mainText}</p>
@@ -46,31 +48,32 @@ const Casestudies = () => {
           ))}
         </div>
       </div>
-      <div className="contents-main py-10 grid gap-20">
+      <div className="contents-main py-10 grid gap-20  justify-center">
         {filteredData.map((item, i) => (
           <Link key={i} to={`${item.id}/${item.category} `}>
             <div data-aos="fade-up"
-              className="content relative bg-cover md:h-[40vh] h-[40vh] lg:h-[60vh] bg-no-repeat"
+            // bg-cover bg-center bg-no-repeat
+              className="content relative  bg-center  bg-cover xl:w-[75vw] w-[90vw]  h-[30vh]   xl:h-[50vh] bg-no-repeat"
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
               }}
             >
               <div
-                className="relative h-[100%] w-[100%] opacity-50 "
+                className="relative h-[100%] w-[100%]  opacity-25 "
                 style={{ background: `linear-gradient(to right, ${item.bgColorTo},${item.bgColorfrom} )` }}
               ></div>
-              <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-4 md:p-6 lg:p-8 ">
-                <div className="text-inner">
-                  <h2 className="heading  font-bold">{item.heading}</h2>
-                  <h2 className="text  font-[400] my-5">{item.text}</h2>
+              <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-1 md:p-6 lg:p-8 ">
+                <div data-aos="fade-down-left" className="text-inner">
+                  <h3 className="heading  font-bold">{item.heading}</h3>
+                  <p className="text  font-[400] my-5">{item.text}</p>
                 </div>
-                <div className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
-                  <img className="w-fit lg:h-20 h-10" src={item.logImg1} alt="" />
-                  <img className="w-fit lg:h-20 h-10" src={item.logImg2} alt="" />
-                  <img className="w-fit lg:h-20 h-10" src={item.logImg3} alt="" />
+                <div  data-aos="zoom-in" className="imgs  flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
+                  <img className={`w-fit lg:h-20 h-10 ${item.logImg1 ? '':'hidden'}`} src={item.logImg1} alt="" />
+                  <img className={`w-fit lg:h-20 h-10 ${item.logImg2 ? '':'hidden'}`} src={item.logImg2} alt="" />
+                  <img className={`w-fit lg:h-20 h-10 ${item.logImg3 ? '':'hidden'}`} src={item.logImg3} alt="" />
                 </div>
               </div>
-              <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-6 lg:right-20">
+              <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-0 lg:right-20">
                 <img data-aos="zoom-in-down" className="h-[100%] w-fit lg:h-[100%]" src={item.moboImg}  alt="" />
               </div>
             </div>

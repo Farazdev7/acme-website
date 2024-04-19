@@ -90,12 +90,12 @@ if (!data){
   }, []);
   return (
     <div className="main">
-      <section className="contactus-landing md:min-h-[90vh] md:max-h-[100vh] text-center text-white font-[400] ">
+      <section className="contactus-landing  text-center text-white font-[400] ">
         <div className="contact py-[10vh]  bg-[#116c78]">
           <h1 className="text-3xl">Contact</h1>
           <p>{contactData[0].maintext}</p>
         </div>
-        <div className="our-locations bg-[#2baeba] md:h-[75vh] py-[13vh] ">
+        <div className="our-locations bg-[#2baeba]  py-[13vh] ">
           <h1 className="text-3xl">Our Locations</h1>
           {/* our locations */}
           <div className="location  flex flex-col md:flex-row items-center  justify-around">
@@ -118,7 +118,7 @@ if (!data){
       </section>
 
       {/* // form section */}
-      <div className="bg-[#1a3b4f] text-white  py-24 bg-[url('https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/phone-bg.svg')] ">
+      <div className="bg-[#1a3b4f] text-white px-6  py-24 bg-[url('https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/phone-bg.svg')] ">
         <div className="max-w-2xl mx-auto">
           <h2 className=" mb-4 text-center">Tell us more about your project</h2>
           <div className="flex items-center mb-4">
