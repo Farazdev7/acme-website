@@ -1,9 +1,4 @@
-import { Link } from "react-router-dom";
-import { FaRegLightbulb, FaSearch } from "react-icons/fa";
-import { HiMiniRocketLaunch } from "react-icons/hi2";
-import { FiTool } from "react-icons/fi";
-import { FaMobileScreenButton, FaPaintbrush } from "react-icons/fa6";
-import { LuRefreshCcw } from "react-icons/lu";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

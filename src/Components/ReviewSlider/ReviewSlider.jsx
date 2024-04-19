@@ -117,8 +117,9 @@ if(index===detailReview.length-1){
           loop={true}
           freeMode={true}
           autoplay={{
-            delay: 5000,
+            delay: 4000,
             disableOnInteraction: false,
+            // disableOnInteraction: true,
           }}
           pagination={{
             dynamicBullets: true,
@@ -126,7 +127,8 @@ if(index===detailReview.length-1){
           modules={[FreeMode, Pagination, Autoplay]}
           className="mySwiper"
           onSlideChange={onSwiperChanged } 
-      
+          allowTouchMove={false}
+
         >
           <div className="reviewslider">
             {detailReview.map((item, i) => (

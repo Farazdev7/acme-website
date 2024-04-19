@@ -17,19 +17,21 @@ import javaScript from "../../../public/images/stacks/javascript.png";
 import html from "../../../public/images/stacks/html.png";
 import css from "../../../public/images/stacks/css.png";
 
+const flutter='https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png'
+const nosql='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHR8IVafJTt5lhLxDual3CibpMiq3kHNcPA&usqp=CAU'
 const Ourstack = () => {
   const [activeButton, setActiveButton] = useState("frontend");
 
   const stacks = {
     backend: [dotnet, go, java, mongodb, mysql, nodejs, php, python, ruby],
-    frontend: [react, angular2, vue, javaScript, html, css],
+    frontend: [react, angular2, vue, javaScript, html, css,flutter],
     database: [
       mysql,
       "https://i.ibb.co/kyYxBcQ/Postgre-SQL.png",
       mongodb,
       "https://i.ibb.co/1XCnRBG/Oracle-Database.png",
       "https://i.ibb.co/fQrr4yZ/SQL-Server.png",
-      "NoSQL",
+      nosql,
     ],
     cms: ["https://i.ibb.co/J7sfX3y/Word-Press.png", "Drupal", "Joomla", "Contentful", "Prismic", "Statamic"],
     cloudtesting: ["AWS Lambda", "Google Cloud Functions", "Azure Functions", "Selenium", "Cypress", "Jest"],

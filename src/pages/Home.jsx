@@ -10,7 +10,7 @@ import CaseStudy from "../Components/CaseStudy/CaseStudy";
 import TextAndImageCall from "../Components/TextAndImage/TextAndImageCall";
 import DisplayCardCall from "../Components/DisplayCard/DisplayCardCall";
 import Ourstack from "../Components/ourStack/OurStack";
-import OurResourse from "../Components/ourResourse/OurResourse";
+// import OurResourse from "../Components/ourResourse/OurResourse";
 import { Link } from "react-router-dom";
 import Process from './Process'
 import ProcessCircle from "../Components/process circle design/ProcessCircle";
@@ -25,11 +25,11 @@ const Home = () => {
   }, []);
   return (
     <React.Fragment>
-      <div className="main bg-slate-200  ">
+      <div className="main  ">
         {/* hero section stared */}
         <div className="">
           <div className="heroSection  h-[90vh]  flex leading-7 md:leading-10  ">
-            <div className="w-full flex pt-[10vh] justify-center  bg-white py-8  px-4 items-center">
+            <div className="w-full flex pt-[10vh] justify-center   py-8  px-4 items-center">
               {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
               {/* <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 justify-between "> */}
               <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2  justify-between ">
@@ -74,12 +74,12 @@ const Home = () => {
           {/* <img className="absolute bottom-[10px] left-20 md:left-40 lg:left-[70%]" src={bgImage} alt="" /> */}
         </div>
 {/* this div created for the space and give the backgrond color */}
-        <div className="forSpace py-24 bg-white"></div>
+        <div className="forSpace py-24 "></div>
          {/* <Process/> */}
          <ProcessCircle/>
         {/* Banner section */}
        
-        <div className="banner relative flex flex-wrap justify-center my-20 bg-[#F7F7FA] py-10">
+        <div className="banner relative flex flex-wrap justify-center my-20  py-10">
           <img src="https://i.ibb.co/XzQ7HFm/Logo-9.png" alt="-9" />
           <img src="https://i.ibb.co/BgRh1fY/logo8.png" alt="8" />
           <img src="https://i.ibb.co/mJX257t/logo5.png" alt="5" />
@@ -93,7 +93,7 @@ const Home = () => {
         <ReviewSlider />
 
         {/* case study section */}
-        <div className="caseStudy py-20 px-4 bg-[#eeeef9] leading-10  ">
+        <div className="caseStudy py-20 px-4  leading-10  ">
           <div className="text py-20">
             <h2 className=" text-center ">
               Our recent <br /> <span>Case studies</span>{" "}

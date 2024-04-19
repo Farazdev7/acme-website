@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Casestudies from "./pages/Casestudies";
 import Blog from "./pages/Blog";
-import Hire from "./pages/Hire";
 import CaseStudyDetail from "./Components/CaseStudyDetailPage/CaseStudyDetail";
 import Process from "./pages/Process";
 import ContactUs from "./pages/ContactUs";
@@ -34,7 +33,6 @@ const App = () => {
             <Route path="blog/:postId" element={<BlogDetail />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/hire" element={<Hire />} />
             <Route path="/process" element={<Process />} />
           </Route>
 

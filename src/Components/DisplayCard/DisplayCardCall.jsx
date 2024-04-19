@@ -42,7 +42,7 @@ const data = [
 
 const DisplayCardCall = () => {
   return (
-    <div className="main bg-gray-200 flex justify-center ">
+    <div className="main  flex justify-center ">
       <div className="  py-8   flex flex-wrap  ">
         {data.map((item, i) => (
           <DevelopmentCards
