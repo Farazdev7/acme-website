@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+    
+body{
+    margin: 0px;
+    font-family:poppins;
+    overflow-x: hidden;
+    font-size: 16px;
+    /* background: #000; */
+    background: linear-gradient(to bottom, #fff0e4 ,#ffe8aa ) ;
+
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {font-size: 1.3rem;}
+
+h4 {
+  font-size: 1.1rem;
+}
+p{
+  font-size: 1rem;
+}
+/* h1{
+
+} */

@@ -1,0 +1,185 @@
+<div className=" ">
+          <div className="video   md:h-[100vh]  bg-green-500 flex leading-7 md:leading-10    ">
+            <div className="w-full flex justify-center  bg-white py-8  px-4 items-center">
+              {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
+              <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 ">
+                {/* <div className="flex flex-col justify-center max-h-[50vh] md:ml-14 "> */}
+                <div className=" ml-10  ">
+                  {/* <p className="text-caribbean-green "></p> */}
+                  <img src={line} alt="" />
+                  <h1 className=" text-2xl py-2  ">
+                    Leading companies trust us <br />
+                    <span className="bold font-bold">
+                      to develop software <br />
+                    </span>
+                  </h1>
+                  <p className="text-gray-[#718096] font-[400] md:mt-10 text-start ">
+                    We <span className="text-[#F76680]">add development capacity</span> to tech teams. Our value isn’t
+                    limited to building teams but is equally distributed across the project lifecycle. We are a custom
+                    software development company that guarantees the successful delivery of your project.
+                  </p>
+                  <button className=" text-[#57007B] font-medium my-6 mx-auto md:mx-0 flex items-center gap-3">
+                    See more Informations <img src={arrow} alt="" />
+                  </button>
+                </div>
+                <img className="md:max-w-[40vw]  md:h- mx-auto " src={videoImg} alt="/" />
+              </div>
+            </div>
+            {/* <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" /> */}
+            {/* video section ended*/}
+          </div>
+          {/* meet people text and ball bg */}
+          <div className="text-xl relative m-10">
+            <img src={line} alt="" />
+            Meet the People <br /> <span className="font-bold">We are Working With</span>
+            <img
+              className="absolute md:bottom-[10px] lg:bottom-[-95px] bottom-[-110px]  left-[50vw]"
+              src={bgImage}
+              alt=""
+            />
+          </div>
+        </div>
+
+
+
+
+        <!-- process circles code -->
+
+
+        <div className="processing grid md:grid-cols-3  px-10 py-32 justify-items-center  ">
+          <div className="right-heading-text-image">
+            {/* box1 */}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">01</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#99d8e7] text-3xl">DISCOVER</h1>
+            </div>
+  
+            <p>
+              We will help define your primary objectives and identify what will deliver an engaging experience for your
+              audience. Understanding user needs and your purpose will help streamline the process and create a
+              goal-focused product.
+            </p>
+            {/* box3*/}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">03</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#0097a7] text-3xl ">WIREFRAMING</h1>
+            </div>
+  
+            <p>
+              Our team will conceptualise the primary user journeys using best practice techniques. Visualising the
+              experience will make it easier to validate and test the product’s key features early in the process.
+            </p>
+            {/* box 5 */}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">05</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#1a3b4f] text-3xl">MVP DEVELOPMENT</h1>
+            </div>
+  
+            <p>
+              Our technical teams work through sprint-based cycles developing and testing the prioritised feature set.
+              Each iterative release building toward a customer-focused deliverable.
+            </p>
+            {/* box7 */}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">07</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#eb9b79] text-3xl">ITERATION</h1>
+            </div>
+  
+            <p>
+              Regular updates ensure your app is always relevant from both a security and user experience perspective.
+              They also provide a great way to demonstrate that you are listening to your customer’s feedback
+            </p>
+          </div>
+  
+          <section className="half-circle-divs hidden  relative  max-w-[110px]  md:grid place-items-center ">
+            <div className="circle circle1  ">
+              <span>
+                <FaRegLightbulb className=" rotate-[-45deg] h-fit w-[40px]" />{" "}
+              </span>
+            </div>
+            <div className="circle circle2  ">
+              <span>
+                <FaSearch className=" rotate-[-45deg] h-fit w-[40px]" />
+              </span>
+            </div>
+            <div className="circle circle3  ">
+              <span>
+                <FaMobileScreenButton className=" rotate-[-45deg] h-fit w-[40px]" />
+              </span>
+            </div>
+            <div className="circle circle4  ">
+              <span>
+                <FaPaintbrush className=" rotate-[-45deg] h-fit w-[40px]" />
+              </span>
+            </div>
+            <div className="circle circle5  ">
+              <span>
+                <FiTool className=" rotate-[-45deg] h-fit w-[40px]" />
+              </span>
+            </div>
+            <div className="circle circle6  ">
+              <span>
+                <HiMiniRocketLaunch className=" rotate-[-45deg] h-fit w-[40px]" />{" "}
+              </span>
+            </div>
+            <div className="circle circle7  ">
+              <span>
+                <LuRefreshCcw className=" rotate-[-45deg] h-fit w-[40px]" />{" "}
+              </span>
+            </div>
+          </section>
+  
+          <div className="left-heading-text-img text-right md:py-32">
+            {/* box2*/}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">2</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#2baeba] text-3xl">JOURNEY MAPPING</h1>
+            </div>
+  
+            <p>
+              By focusing on your users needs, we will help map their objectives into engaging user experiences that
+              subsequently meet your wider goals. Evaluating how other businesses have approached similar challenges.{" "}
+            </p>
+            {/* box4*/}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">4</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#1f475b] text-3xl">DESIGN</h1>
+            </div>
+  
+            <p>
+              UI designers will apply creative flair to platform/HCI guidelines to produce an intuitive interface that
+              aligns with your brand guidelines and engages your customers
+            </p>
+            {/* box6*/}
+            <div className="py-4">
+              <ul>
+                <li className="text-3xl">6</li>
+              </ul>{" "}
+              <img src="" alt="" />
+              <h1 className="text-[#f16427] text-3xl">LAUNCH</h1>
+            </div>
+  
+            <p>
+              Whether the app is being released as a beta or to an internal or global audience we support you through each
+              phase of the release cycle, gathering feedback and aligning with third party marketing goals
+            </p>
+          </div>
+        </div>
