@@ -12,10 +12,10 @@
   import ashirimg from "../../public/images/team/ashir2.jpg";
   import ahsanimg from "../../public/images/team/ahsan2.jpg";
   // blue background images
-  import ahsan2bgimg from "../../public/images/team/blur img/ahsan2bg.jpg";
-  import saad2bgimg from "../../public/images/team/blur img/saadbgimage.jpg";
-  import hamza2bgimg from "../../public/images/team/blur img/hamzablur.jpg";
-  import ashir2bgimg from "../../public/images/team/blur img/ashirblur.jpg";
+  // import ahsan2bgimg from "../../public/images/team/blur img/ahsan2bg.jpg";
+  // import saad2bgimg from "../../public/images/team/blur img/saadbgimage.jpg";
+  // import hamza2bgimg from "../../public/images/team/blur img/hamzablur.jpg";
+  // import ashir2bgimg from "../../public/images/team/blur img/ashirblur.jpg";
 
 
 
