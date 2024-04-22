@@ -43,7 +43,7 @@ const BlogPost = ({ post }) => {
           </div>
         </div>
         <div className={imageStyle}>
-          <img  src={post.imageUrl} alt="Blog" className="md:mx-auto w-full md:w-auto rounded-lg shadow-lg" />
+          <img loading="lazy"  src={post.imageUrl} alt="Blog" className="md:mx-auto w-full md:w-auto rounded-lg shadow-lg" />
         </div>
       </div>
     </Link>

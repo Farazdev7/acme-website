@@ -74,19 +74,19 @@ const CaseStudyDetail = () => {
             </div>
             {/* apple android and react image is here */}
             <div  data-aos="zoom-in" className="imgs flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
-              <img className="w-fit lg:h-20 h-10" src={Searched.logImg1} alt="" />
-              <img className="w-fit lg:h-20 h-10" src={Searched.logImg2} alt="" />
-              <img className="w-fit lg:h-20 h-10" src={Searched.logImg3} alt="" />
+              <img loading="lazy" className="w-fit lg:h-20 h-10" src={Searched.logImg1} alt="" />
+              <img loading="lazy" className="w-fit lg:h-20 h-10" src={Searched.logImg2} alt="" />
+              <img loading="lazy" className="w-fit lg:h-20 h-10" src={Searched.logImg3} alt="" />
             </div>
           </div>
           {/* floating image is here which is phone */}
           <div className="phone absolute max-w-[120px] md:max-w-[220px] bottom-5 right-6 lg:right-20">
-            <img className="h-[30%] lg:h-[14%] w-fit" src={Searched.moboImg} alt="" />
+            <img loading="lazy" className="h-[30%] lg:h-[14%] w-fit" src={Searched.moboImg} alt="" />
           </div>
         </div>
       </div>
       {/* here image box ended */}
-      {/* form here detail started about page */}
+      {/* from here detail started about page */}
       <div className={`aboutapp flex justify-center items-center flex-col text-center ${Searched.detail ? "" : "hidden"}`}>
         <h2 className=" font-[400] pt-10">About {Searched.heading}</h2>
         <p className= {`w-[80%] md:w-[60%] ${Searched.detail===true ? "hidden" : ""}`}>{Searched.detail}</p>
@@ -172,7 +172,7 @@ const CaseStudyDetail = () => {
         <h2 className=" ">Testimonial</h2>
        <p><i>{Searched.clientReview[0].clientreview}</i></p> 
         <div className="client-img flex flex-col md:flex-row gap-8">
-          <img className="max-h-[80px] rounded-full w-fit" src={Searched.clientReview[0].clientImg} alt="n" />
+          <img loading="lazy" className="max-h-[80px] rounded-full w-fit" src={Searched.clientReview[0].clientImg} alt="n" />
           <p className="name font-bold">{Searched.clientReview[0].clientname}</p>
         </div>
       </div>

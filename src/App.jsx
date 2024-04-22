@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import  { lazy } from "react";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Casestudies from "./pages/Casestudies";
 import Process from "./pages/Process";
+import LoginForm from "./Dashboard/components/LoginForm";
 
 
 
@@ -47,11 +48,19 @@ const App = () => {
           </Route>
 
         
+
+
+          <Route path="/login" element={<LoginForm/>}/>
+
+
+
 <Route path="/dashboard" element={<DashboardLayout />}>
+
 <Route path="/dashboard/contact" element={<DashContact />}/>
 <Route path="/dashboard/blog" element={<DashBlog/>}/>
 <Route path="/dashboard/home" element={<Dashhome/>}/>
 <Route path="/dashboard/casestudies" element={<DashCaseStudy/>}/>
+
 </Route>
 
         </Routes>
