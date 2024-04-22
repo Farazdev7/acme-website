@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 
 const services = [
   {
@@ -102,6 +102,7 @@ function ServicePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 items-center justify-center">
           {service.images.map((image, imageIndex) => (
             <img
+            loading="lazy"
               key={imageIndex}
               src={image}
               alt={service.heading}

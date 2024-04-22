@@ -28,7 +28,7 @@ const BlogDetail = () => {
     <div className="container mx-auto px-4 py-8   leading-10">
       <section className="grid  gap-8 ">
         <article className=" ">
-          <img className="mx-auto my-auto md:w-[60vh] h-auto" src={SearchedByID.imageUrl} alt="" />
+          <img loading="lazy" className="mx-auto my-auto md:w-[60vh] h-auto" src={SearchedByID.imageUrl} alt="" />
           <h2 className="text-3xl font-bold my-10">{SearchedByID.heading}</h2>
           <p className="text-gray-600 ">{SearchedByID.p}</p>
           <p className="my-4 text-gray-800">{SearchedByID.text}</p>

@@ -13,18 +13,17 @@ const Casestudies = () => {
 
   useEffect(() => {
     Aos.init();
-  });
+  }, []);
+
   const [btnCategory, setCategory] = useState(0);
 
   const filteredData =
     btnCategory === 0 || btnCategory === "View All"
       ? caseStudyData[2]
       : caseStudyData[2].filter((item) => item.category.toLowerCase() === btnCategory.toLowerCase());
-
+      
   return (
-    // bg-white
-    <div className="caseStudy ">
-      {/* bg-[#fff] */}
+    <div  className="caseStudy ">
       <div className="title  text-center pb-10">
         <div className="bg-[#2baeba] text-[14px] md:text-[18px] px-[15px] py-10 text-white">
           <p className="text-[30px] font-[400] md:pt-[50px] mb-[20px]">Case Studies</p>
@@ -35,8 +34,6 @@ const Casestudies = () => {
             <button
               key={i}
               onClick={() => {
-                // console.log(i);
-                // console.log(btnCategory);
                 setCategory(item);
               }}
               className={`text-[#2baeba] hover:text-white text-[16px] md:text-[18px] bg-transparent hover:bg-[#009688] border border-[#009688] md:h-14 md:w-40 h-10 w-32 rounded-[30px] ${
@@ -68,13 +65,13 @@ const Casestudies = () => {
                   <p className="text  font-[400] my-5">{item.text}</p>
                 </div>
                 <div  data-aos="zoom-in" className="imgs  flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
-                  <img className={`w-fit lg:h-20 h-10 ${item.logImg1 ? '':'hidden'}`} src={item.logImg1} alt="" />
-                  <img className={`w-fit lg:h-20 h-10 ${item.logImg2 ? '':'hidden'}`} src={item.logImg2} alt="" />
-                  <img className={`w-fit lg:h-20 h-10 ${item.logImg3 ? '':'hidden'}`} src={item.logImg3} alt="" />
+                  <img  loading="lazy"  className={`w-fit lg:h-20 h-10 ${item.logImg1 ? '':'hidden'} smooth-fade-in`} src={item.logImg1} alt="" />
+                  <img  loading="lazy"  className={`w-fit lg:h-20 h-10 ${item.logImg2 ? '':'hidden'} smooth-fade-in`} src={item.logImg2} alt="" />
+                  <img  loading="lazy"  className={`w-fit lg:h-20 h-10 ${item.logImg3 ? '':'hidden'} smooth-fade-in`} src={item.logImg3} alt="" />
                 </div>
               </div>
               <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-0 lg:right-20">
-                <img data-aos="zoom-in-down" className="h-[100%] w-fit lg:h-[100%]" src={item.moboImg}  alt="" />
+                <img data-aos="zoom-in-down" loading="lazy" className="h-[100%] w-fit lg:h-[100%] smooth-fade-in" src={item.moboImg}  alt="" />
               </div>
             </div>
           </Link>
@@ -83,5 +80,8 @@ const Casestudies = () => {
     </div>
   );
 };
+
+// Add the following CSS to your component
+
 
 export default Casestudies;
