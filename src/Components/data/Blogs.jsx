@@ -4,7 +4,7 @@ import hamzaimg from '../../../public/images/team/hamza2.jpg';
 import farazimg from '../../../public/images/team/faraz.jpg';
 import asherimg from '../../../public/images/team/ashir2.jpg';
 import zeryabimg from '../../../public/images/team/zeryab.jpg';
-import saadimg from '../../../public/images/team/saad.jpg';
+import saadimg from '../../../public/images/team/image.jpg';
 import ahsanimg from '../../../public/images/team/ahsan2.jpg';
 
 
