@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import bgImage from "../../public/images/bgImage.png";
 import videoImg from "../../public/images/video.png";
 import arrow from "../../public/images/arrow-right-line.png";
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import Process from './Process'
 import ProcessCircle from "../Components/process circle design/ProcessCircle";
 import logo from "../../public/images/logo/1.png";
-
+import { Btncontext } from "../Components/Contexts/MenuButton";
 const homeData = {
   mainText: `We help build and manage a team of world-class developers to bring your vision to life.`,
 };
@@ -23,6 +23,7 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <React.Fragment>
       <div className="main  ">
@@ -47,6 +48,7 @@ const Home = () => {
                     Let’s get started!
                   </button>
                 </div>
+                
                 <img
                   className=" max-h-[50vh]  w-fit mx-auto "
                   // src="https://i.ibb.co/Rg8mTFW/main.png"

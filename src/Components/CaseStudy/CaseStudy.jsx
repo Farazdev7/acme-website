@@ -42,7 +42,7 @@ const CaseStudy = () => {
           </div>
           <div className="txt md:w-[80%] lg:w-[60%] relative">
             <h3 className="font-bold">{item.heading}</h3>
-            <p className="pb-10">
+            <div className="pb-10">
               {" "}
               {item.text}
               <div className="">
@@ -50,7 +50,7 @@ const CaseStudy = () => {
                   <Link to={item.path}> Read More</Link>
                 </button>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       ))}

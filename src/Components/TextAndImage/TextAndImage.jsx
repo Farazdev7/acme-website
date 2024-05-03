@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import upwordLine from "../../../public/images/Reviews/upwordLine.png";
 import { Link } from "react-router-dom";
 
 const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, img, name, post }) => {
   const desktopLayoutClass = isImageRight ? "lg:flex-row-reverse  " : "";
-  console.log(id);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Link to={`/blog/${id}`}>
-      <div className="container mx-auto my-20 mb-44 bg-slate-50 ">
+    <div className="container mx-auto my-20 mb-44 bg-slate-50 ">
+      <Link to={`/blog/${id}`} className="block">
         <div className={`flex flex-col lg:flex-row md:items-center md:justify-between ${desktopLayoutClass}`}>
           {/* Text */}
           <div className="lg:w-1/2 md:ml-8  pt-4">
@@ -38,8 +37,8 @@ const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, im
             <img src={imageUrl} alt="Image" className="md:mx-auto w-full md:w-auto rounded-lg shadow-lg" />
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
