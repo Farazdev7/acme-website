@@ -123,23 +123,23 @@ const Home = () => {
             </article>
 
                   {/* <p className="text-caribbean-green "></p> */}
-                  <h1 className=" py-2 mt-24 absolute ">
+                  <h1 className=" py-2  absolute ">
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
                     <span className="bold font-bold">
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
                     </span>
                   </h1>
                   <p className="text-gray-800 text-xl  md:text-2xl font-[400] md:mt-10 ">{homeData.mainText}</p>
-                  <button className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-10 mx-auto lg:mx-0 py-3">
+                  <Link to={'/contactus'} className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-10 mx-auto lg:mx-0 py-3">
                     Let’s get started!
-                  </button>
+                  </Link>
                 </div>
                 
                 <img
-    style={{
-        filter: 'drop-shadow(10px 15px 6px rgba(3, 1, 0, 1.5))',
-        transition: 'filter 0.3s', // Add transition for smooth effect
-    }}
+    // style={{
+    //     filter: 'drop-shadow(10px 15px 6px rgba(3, 1, 0, 1.5))',
+    //     transition: 'filter 0.3s', // Add transition for smooth effect
+    // }}
     className="max-h-[50vh] w-fit mx-auto cursor-pointer"
     src={logo}
     alt="/"
