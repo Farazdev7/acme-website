@@ -28,14 +28,14 @@ const CaseStudy = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="case-study-main flex justify-center flex-col gap-10 items-center  ">
+    <div className="case-study-main flex justify-center flex-col gap-10 items-center   ">
       {/* mapping from here */}
       {data.map((item, i) => (
         <div
           key={i}
           style={{ backgroundColor: item.bgColor }}
           // flex-col md:flex-row
-          className={`case_study relative border-2   rounded-md md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7`}
+          className={`case_study relative shadow-xl rounded-2xl  md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7`}
         >
           <div className="img  lg:w-[40%]" style={{ height: "100%" }}>
             <img className="h-[100%] w-fit " src={item.img} alt="" />

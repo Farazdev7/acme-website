@@ -80,8 +80,9 @@ const Home = () => {
 
               {/* max-h-[50vh] */}
                <div className="flex flex-col justify-center ">
+                 {/* blobs 2*/}
                <article className="h-[50vh] w-full flex justify-center items-center  ">
-            {/* blobs one */}
+            {/* blobs 2*/}
     <svg className="h-[20vh] " style={{
         filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',
         transition: 'filter 0.3s', // Add transition for smooth effect
