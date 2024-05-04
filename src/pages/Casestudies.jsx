@@ -45,18 +45,18 @@ const Casestudies = () => {
           ))}
         </div>
       </div>
-      <div className="contents-main py-10 grid gap-20  justify-center">
+      <div className="contents-main  py-10 grid gap-20  justify-center">
         {filteredData.map((item, i) => (
           <Link key={i} to={`${item.id}/${item.category} `}>
             <div data-aos="fade-up"
             // bg-cover bg-center bg-no-repeat
-              className="content relative  bg-center  bg-cover xl:w-[75vw] w-[90vw]  h-[30vh]   xl:h-[50vh] bg-no-repeat"
+              className="content relative shadow-xl rounded-2xl  bg-center  bg-cover xl:w-[75vw] w-[90vw]  h-[30vh]   xl:h-[50vh] bg-no-repeat"
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
               }}
             >
               <div
-                className="relative h-[100%] w-[100%]  opacity-25 "
+                className="relative h-[100%] w-[100%] hover:shadow-2xl shadow-xl rounded-2xl  opacity-25 "
                 style={{ background: `linear-gradient(to right, ${item.bgColorTo},${item.bgColorfrom} )` }}
               ></div>
               <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-1 md:p-6 lg:p-8 ">

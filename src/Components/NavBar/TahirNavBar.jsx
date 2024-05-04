@@ -23,27 +23,15 @@ const TahirNavBar = ({ value }) => {
       <ParticlesBackground/>
       <main className={`tahir-nav-bar ${showNavbar}`}>
         <ul>
-        <li style={{ "--i": 7 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/'?'active':'' }>
-            <NavLink to={"/"} activeClassName="active" >Home</NavLink>
-          </li>
-          <li style={{ "--i": 6 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/casestudies'?'active':'' }>
-            <NavLink to={"/casestudies"} activeClassName="active" >Case Studies</NavLink>
-          </li>
-          <li style={{ "--i": 5 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/services'?'active':''}>
-            <NavLink to={"/services"} >Services</NavLink>
-          </li>
-          <li style={{ "--i": 4 }} onClick={() => setMenuToggle(!menuToggle)} className={pathname=='/blog'?'active':''}>
-            <NavLink to={"/blog"} >Blog</NavLink>
-          </li>
-          <li style={{ "--i": 3 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/process'?'active':''}>
-            <NavLink to={"/process"} >Process</NavLink>
-          </li>
-          <li style={{ "--i": 2 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/about'?'active':''}>
-            <NavLink to={"/about"} >About us</NavLink>
-          </li>
-          <li style={{ "--i": 1 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/contactus'?'active':''}>
-            <NavLink to={"/contactus"} >Contact us</NavLink>
-          </li>
+        <NavLink to={"/"} activeClassName="active" >
+        <li style={{ "--i": 7 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/'?'active':'' }>Home</li></NavLink>
+           <NavLink to={"/casestudies"} activeClassName="active" >
+          <li style={{ "--i": 6 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/casestudies'?'active':'' }>Case Studies</li></NavLink>
+          <NavLink to={"/services"} >  <li style={{ "--i": 5 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/services'?'active':''}>Services</li></NavLink>
+           <NavLink to={"/blog"} >  <li style={{ "--i": 4 }} onClick={() => setMenuToggle(!menuToggle)} className={pathname=='/blog'?'active':''}>Blog</li></NavLink>
+           <NavLink to={"/process"} >  <li style={{ "--i": 3 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/process'?'active':''}> Process</li></NavLink>
+            <NavLink to={"/about"} > <li style={{ "--i": 2 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/about'?'active':''}> About us</li></NavLink>
+            <NavLink to={"/contactus"} > <li style={{ "--i": 1 }} onClick={() => setMenuToggle(!menuToggle)} className={ pathname=='/contactus'?'active':''}>Contact us</li></NavLink>
         </ul>
       </main>
     </div>

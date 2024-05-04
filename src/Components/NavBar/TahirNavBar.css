@@ -75,7 +75,7 @@
     background: #2982b9;
 }
 
-.tahir-nav-bar ul li a {
+.tahir-nav-bar ul li  {
     text-decoration: none;
     color: #999;
     display: block;
@@ -84,7 +84,7 @@
     transform: 0.5s;
 }
 
-.tahir-nav-bar ul li:hover a {
+.tahir-nav-bar ul li:hover  {
     color: #fff;
 }
 
@@ -114,7 +114,7 @@
     background: #2982b9;
 }
 
-.tahir-nav-bar ul li.active a {
+.tahir-nav-bar ul li.active  {
     color: #fff;
 }
 
