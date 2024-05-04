@@ -30,9 +30,9 @@ const Home = () => {
       <div className="main  ">
         {/* hero section stared */}
         <div className="">
-          <div className="heroSection  lg:min-h-[100vh] h-[90vh]  flex leading-7 md:leading-10   ">
+          <div className="heroSection    lg:min-h-[100vh] h-[90vh]  flex justify-center items-center leading-7 md:leading-10   ">
 {/* blobs */}
-          <article className="relative flex  justify-center    w-[100vw]">
+          <article className="relative flex w-[100vw] h-[100vh] ">
             {/* blobs one */}
     <svg style={{
         filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',
@@ -80,10 +80,49 @@ const Home = () => {
 
               {/* max-h-[50vh] */}
                <div className="flex flex-col justify-center ">
-     
+               <article className="h-[50vh] w-full flex justify-center items-center  ">
+            {/* blobs one */}
+    <svg className="h-[20vh] " style={{
+        filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',
+        transition: 'filter 0.3s', // Add transition for smooth effect
+    }}
+     viewBox="0 0 100 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style={{ stopColor: 'rgb(101, 193, 230)' }}></stop>
+                <stop offset="100%" style={{ stopColor: 'rgb(101, 193, 230)' }}></stop>
+            </linearGradient>
+        </defs>
+        <path fill="url(#gradient)">
+            <animate attributeName="d" dur="10s" repeatCount="indefinite"
+             values='M389,278Q375,306,368,339.5Q361,373,337.5,410Q314,447,275,413Q236,379,185,415Q134,
+             451,136,391Q138,331,103.5,310Q69,289,77,252Q85,215,94.5,179.5Q104,144,120,98Q136,52,186,
+             86Q236,120,277.5,79.5Q319,39,329,95.5Q339,152,408.5,150Q478,148,440.5,199Q403,250,389,278Z;           
+             
+             M414,275.5Q365,301,388.5,365.5Q412,430,363,438Q314,446,275,413.5Q236,381,208.5,375.5Q181,370,
+             159.5,350.5Q138,331,131,304Q124,277,88,242.5Q52,208,85,181Q118,154,143.5,132Q169,110,202.5,
+             114Q236,118,262.5,124Q289,130,328,125Q367,120,405,142Q443,164,453,207Q463,250,414,275.5Z;
+             
+             M431.5,292Q440,334,423,378.5Q406,423,362,441Q318,459,272.5,462Q227,465,188,445Q149,425,135.5,
+             384Q122,343,76,320Q30,297,79,260.5Q128,224,91,165.5Q54,107,90,71.5Q126,36,176,30.5Q226,25,261,
+             66.5Q296,108,322,124.5Q348,141,412,145Q476,149,449.5,199.5Q423,250,431.5,292Z;
+             
+             M429,289Q426,328,410.5,369.5Q395,411,348,408.5Q301,406,263,449Q225,492,179,472Q133,452,95.5,420.5Q58,
+             389,33,345Q8,301,63.5,261.5Q119,222,117.5,187.5Q116,153,138,123.5Q160,94,194,67.5Q228,41,260,81.5Q292,122,
+             326.5,124Q361,126,401,145.5Q441,165,436.5,207.5Q432,250,429,289Z;
+
+             M389,278Q375,306,368,339.5Q361,373,337.5,410Q314,447,275,413Q236,379,185,415Q134,
+             451,136,391Q138,331,103.5,310Q69,289,77,252Q85,215,94.5,179.5Q104,144,120,98Q136,52,186,
+             86Q236,120,277.5,79.5Q319,39,329,95.5Q339,152,408.5,150Q478,148,440.5,199Q403,250,389,278Z;
+             '>
+            </animate>
+        </path>
+    </svg>
+    
+            </article>
 
                   {/* <p className="text-caribbean-green "></p> */}
-                  <h1 className=" py-2 mt-24 ">
+                  <h1 className=" py-2 mt-24 absolute ">
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
                     <span className="bold font-bold">
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
