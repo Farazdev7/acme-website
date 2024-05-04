@@ -42,6 +42,11 @@ const data = [
     "heading": "Mobile App Designing",
     "text": "Crafting intuitive, visually stunning mobile app designs that captivate your audience and reflect your brand's essence."
   },
+   {
+    "img": "https://i.ibb.co/F5brMXC/Dashboard.png",
+    "heading": "Mobile App Designing",
+    "text": "Crafting intuitive, visually stunning mobile app designs that captivate your audience and reflect your brand's essence."
+  },
 ];
 
 export default function CardSlider() {
@@ -86,12 +91,10 @@ export default function CardSlider() {
         <div className="cardSliderMain ">
           {data.map((item, i) => (
             <SwiperSlide key={i}>
-              {/* <div className="sliderBox w-full  p-4 bg-zinc-100 h-[287px] leading-7"> */}
-              <div className="sliderBox w-full  shadow-xl rounded-xl   p-4 bg-zinc-100 min-h-[30vh]  leading-7 " style={{ boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}>
+              <div className="sliderBox w-full  shadow-xl rounded-xl   p-4 bg-zinc-100 min-h-[40vh]  leading-7 " style={{ boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}>
                 <img className="py-2" src={item.img} alt="" />
                 <b>{item.heading}</b> <br />
-                <p>{item.text}
-                </p>
+                <p>{item.text}</p>
               </div>
             </SwiperSlide>
           ))}
