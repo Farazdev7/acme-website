@@ -87,7 +87,7 @@ export default function CardSlider() {
           {data.map((item, i) => (
             <SwiperSlide key={i}>
               {/* <div className="sliderBox w-full  p-4 bg-zinc-100 h-[287px] leading-7"> */}
-              <div className="sliderBox w-full border-4    p-4 bg-zinc-100 h-[30vh] leading-7 ">
+              <div className="sliderBox w-full border-4    p-4 bg-zinc-100 lg:h-[30vh] h-[40vh] leading-7 ">
                 <img className="py-2" src={item.img} alt="" />
                 <b>{item.heading}</b> <br />
                 <p>{item.text}</p>
