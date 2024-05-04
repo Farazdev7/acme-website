@@ -23,7 +23,7 @@ const MenuButton = () => {
           <div className="bar bar--middle"></div>
           <div className="bar bar--bottom"></div>
         </label>
-        <h3 >Menu</h3>
+        {/* <h3 className='text-white' >Menu</h3> */}
       </div>
     </main>
   );
