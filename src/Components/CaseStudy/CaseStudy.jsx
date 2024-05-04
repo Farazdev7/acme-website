@@ -40,7 +40,7 @@ const CaseStudy = () => {
           <div className="img  lg:w-[40%]" style={{ height: "100%" }}>
             <img className="h-[100%] w-fit " src={item.img} alt="" />
           </div>
-          <div className="txt md:w-[80%] lg:w-[60%] relative">
+          <div className="txt md:w-[80%] lg:w-[60%] relative md:p-0 p-3">
             <h3 className="font-bold">{item.heading}</h3>
             <div className="pb-10">
               {" "}
