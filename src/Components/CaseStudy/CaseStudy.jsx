@@ -33,9 +33,10 @@ const CaseStudy = () => {
       {data.map((item, i) => (
         <div
           key={i}
-          style={{ backgroundColor: item.bgColor }}
+          // style={{ backgroundColor: item.bgColor }}
+          style={{backgroundColor: item.bgColor , boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}
           // flex-col md:flex-row
-          className={`case_study relative shadow-xl rounded-2xl  md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7`}
+          className={`case_study relative shadow-xl rounded-2xl  md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7` }
         >
           <div className="img  lg:w-[40%]" style={{ height: "100%" }}>
             <img className="h-[100%] w-fit " src={item.img} alt="" />

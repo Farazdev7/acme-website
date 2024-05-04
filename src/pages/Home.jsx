@@ -84,9 +84,7 @@ const Home = () => {
                <article className="h-[50vh] w-full flex justify-center items-center  ">
             {/* blobs 2*/}
     <svg className="h-[20vh] " style={{
-        filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',
-        transition: 'filter 0.3s', // Add transition for smooth effect
-    }}
+        filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',transition: 'filter 0.3s', }}
      viewBox="0 0 100 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -129,10 +127,13 @@ const Home = () => {
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
                     </span>
                   </h1>
-                  <p className="text-gray-800 text-xl  md:text-2xl font-[400] md:mt-10 ">{homeData.mainText}</p>
-                  <Link to={'/contactus'} className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-10 mx-auto lg:mx-0 py-3">
+                  <h3 className="text-gray-800  font-[400]  ">{homeData.mainText}</h3>
+                  <div className="bg-gray-300  mx-auto mt-6">
+                  <Link to={'/contactus'} className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-fit rounded-md font-medium my-10 px-4 mx-auto lg:mx-0 py-3">
                     Let’s get started!
                   </Link>
+                  </div>
+                 
                 </div>
                 
                 <img
@@ -140,7 +141,7 @@ const Home = () => {
     //     filter: 'drop-shadow(10px 15px 6px rgba(3, 1, 0, 1.5))',
     //     transition: 'filter 0.3s', // Add transition for smooth effect
     // }}
-    className="max-h-[50vh] w-fit mx-auto cursor-pointer"
+    className="max-h-[50vh] w-fit mx-auto cursor-pointer transition duration-1000 "
     src={logo}
     alt="/"
     onMouseOver={(e) => { // Mouse over event handler
@@ -148,7 +149,8 @@ const Home = () => {
     }}
     onMouseOut={(e) => { // Mouse out event handler
         e.target.style.filter = 'none'; // Reset filter on mouse out
-    }}/>
+    }}
+    />
               </div>
             </div>
             {/* <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" /> */}

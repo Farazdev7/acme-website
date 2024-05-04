@@ -60,7 +60,7 @@ const Footer = () => {
     // <div className="w-full mt-24 bg-[#0c312d] text-gray-800 py-y px-2 bg-img bg-[url('https://help.fanruan.com/finereport-en10.0/uploads/20201230/1609295170644784.gif')]">
     // <div className="w-full mt-24 bg-[#0c312d] text-gray-800 py-y px-2 bg-img bg-[url('https://img.genial.ly/59e059d30b9c21060cb4c2ec/ea44d19b-e9a0-4deb-bcb3-3133356d2890.gif')]">
     <div
-      className="w-full  bg-[#2BAEB9] text-white py-y px-2  "
+      className="w-full  bg-gray-400 text-white py-y px-2  "
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
     >
       {/* <div className="w-full mt-24 bg-[#d9f6f3] text-gray-800 py-y px-2 bg-img bg-[url('https://assets-v2.lottiefiles.com/a/42f51f18-118a-11ee-af8e-d3d2c254a2db/yTm2O6PVV8.gif')]"> */}
