@@ -35,7 +35,7 @@ const CaseStudy = () => {
           key={i}
           style={{ backgroundColor: item.bgColor }}
           // flex-col md:flex-row
-          className={`case_study relative   md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7`}
+          className={`case_study relative border-2   rounded-md md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7`}
         >
           <div className="img  lg:w-[40%]" style={{ height: "100%" }}>
             <img className="h-[100%] w-fit " src={item.img} alt="" />

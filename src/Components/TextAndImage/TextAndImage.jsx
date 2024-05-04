@@ -8,8 +8,8 @@ const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, im
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="container mx-auto my-20 mb-44 bg-slate-50 ">
-      <Link to={`/blog/${id}`} className="block">
+    <div className="container mx-auto my-20 mb-44 bg-slate-50 rounded-md ">
+      <Link to={`/blog/${id}`} className="block border-2  border-pink-300 ">
         <div className={`flex flex-col lg:flex-row md:items-center md:justify-between ${desktopLayoutClass}`}>
           {/* Text */}
           <div className="lg:w-1/2 md:ml-8  pt-4">

@@ -16,7 +16,7 @@ const MenuButton = () => {
 
   return (
    <main>
-      <div onClick={menuToggleHandler} id="menuToggle" className='z-50 fixed top-[10vh] left-10'>
+      <div onClick={menuToggleHandler} id="menuToggle" className='z-50 fixed  md:top-[10vh] left-[46vw] md:left-10 '>
         <input checked = {!menuToggle}   id="checkbox" type="checkbox" readOnly />
         <label className="toggle" htmlFor="checkbox">
           <div className="bar bar--top"></div>
