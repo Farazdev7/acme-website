@@ -57,11 +57,15 @@ const LayoutComponent = () => {
     <Btncontext.Provider value={{menuToggle, setMenuToggle}}>
 
     <div>
-      {/* <NavBar /> */}
+      <div className="lg:hidden block"> <NavBar /></div>
+      {/* {clasName=''} */}
+     
       {/* <ParticlesBackground/>   */}
       {/* <Testing/> */}
-       <TahirNavBar value={menuToggle}/>
-      <MenuButton/>
+      <div className="lg:block hidden"> <TahirNavBar value={menuToggle}/></div>
+
+       
+      <div className="lg:block hidden"><MenuButton/></div> 
       <Outlet />
       <Footer />
       

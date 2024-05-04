@@ -32,7 +32,7 @@ const Home = () => {
         <div className="">
           <div className="heroSection  lg:min-h-[100vh] h-[90vh]  flex leading-7 md:leading-10   ">
 {/* blobs */}
-          <article className="relative flex  justify-center   w-[100vw]">
+          <article className="relative flex  justify-center    w-[100vw]">
             {/* blobs one */}
     <svg style={{
         filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',
