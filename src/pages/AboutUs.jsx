@@ -129,7 +129,8 @@
           </div>
         </div>
         {/* Our Team Section */}
-        <section className=" w-full py-14">
+
+        {/* <section className=" w-full py-14">
           <article className=" text-center font-[400]">
             <h1 className=" md:text-2xl lg:text-4xl">Senior Management Team</h1>
             <p>
@@ -138,7 +139,6 @@
             </p>
           </article>
           <div className="w-full flex flex-wrap justify-center space-x-4 mt-12  text-center font-[400]">
-            {/* Employee mapping here */}
             {About[0].team.map((item, i) => (
               <div key={i} data-aos="fade-up" 
               className="max-w-sm rounded-lg overflow-hidden shadow-lg mb-4 bg-cover bg-center">   
@@ -154,7 +154,9 @@
     </div>
   ))}
           </div>
-        </section>  
+        </section>   */}
+
+
       </div>
     </section>
     

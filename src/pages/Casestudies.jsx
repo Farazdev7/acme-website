@@ -27,7 +27,7 @@ const Casestudies = () => {
       <div className="title  text-center pb-10">
         <div className="bg-[#2baeba] text-[14px] md:text-[18px] px-[15px] py-10 text-white">
           <p className="text-[30px] font-[400] md:pt-[50px] mb-[20px]">Case Studies</p>
-          <p className="px-4">{caseStudyData[1][0].mainText}</p>
+          <p className="px-4 leading-4">{caseStudyData[1][0].mainText}</p>
         </div>
         <div className="buttons py-10 place-items-center flex flex-wrap gap-4 items-center justify-center">
           {caseStudyData[0].map((item, i) => (
