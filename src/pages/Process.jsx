@@ -1,10 +1,10 @@
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ProcessCircle from "../Components/process circle design/ProcessCircle";
 
-const cloud='https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/clouds-small.svg'
+const cloud =
+  "https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/clouds-small.svg";
 
 const Process = () => {
   useEffect(() => {
@@ -61,12 +61,10 @@ const Process = () => {
       </div>
       <hr className="border border-[#2baeba]" />
 
-  
-
       {/* ============================================================================================================= */}
       {/* process started form here */}
       {/* ============================================================================================================= */}
-     <ProcessCircle/>
+      <ProcessCircle />
 
       {/* that is main div ended here */}
     </div>
