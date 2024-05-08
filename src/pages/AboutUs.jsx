@@ -11,12 +11,13 @@
   import hamzaimg from "../../public/images/team/hamza2.jpg";
   import ashirimg from "../../public/images/team/ashir2.jpg";
   import ahsanimg from "../../public/images/team/ahsan2.jpg";
+  import Msameerimg from "../../public/images/team/Msameer.jpg"
+
   // blue background images
   import ahsan2bgimg from "../../public/images/team/blur img/ahsan2bg.jpg";
   import saad2bgimg from "../../public/images/team/blur img/saadbgimage.jpg";
   import hamza2bgimg from "../../public/images/team/blur img/hamzablur.jpg";
   import ashir2bgimg from "../../public/images/team/blur img/ashirblur.jpg";
-
 
 
 
@@ -64,6 +65,13 @@
           blurimg:ahsan2bgimg,
           // image: '../../public/images/team/ahsan.jpg',
           desination: "MERN Stack Developer",
+        },
+        {
+          name: "Muhammad Sameer",
+          image:Msameerimg,
+          blurimg:ahsan2bgimg,
+          // image: '../../public/images/team/ahsan.jpg',
+          desination: "WordPress Developer",
         },
       ],
     },
