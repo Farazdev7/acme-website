@@ -12,13 +12,13 @@
   import ashirimg from "../../public/images/team/ashir2.jpg";
   import ahsanimg from "../../public/images/team/ahsan2.jpg";
   import Msameerimg from "../../public/images/team/Msameer.jpg"
+  import kamranimg from '../../public/images/team/Kamran.jpeg'
 
   // blue background images
   import ahsan2bgimg from "../../public/images/team/blur img/ahsan2bg.jpg";
   import saad2bgimg from "../../public/images/team/blur img/saadbgimage.jpg";
   import hamza2bgimg from "../../public/images/team/blur img/hamzablur.jpg";
   import ashir2bgimg from "../../public/images/team/blur img/ashirblur.jpg";
-
 
 
 
@@ -72,6 +72,13 @@
           blurimg:ahsan2bgimg,
           // image: '../../public/images/team/ahsan.jpg',
           desination: "WordPress Developer",
+        },
+        {
+          name: "Muhammad Kamran",
+          image:kamranimg,
+          blurimg:ahsan2bgimg,
+          // image: '../../public/images/team/ahsan.jpg',
+          desination: "Flutter Developer",
         },
       ],
     },
