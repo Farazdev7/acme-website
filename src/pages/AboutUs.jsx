@@ -130,7 +130,7 @@
         </div>
         {/* Our Team Section */}
 
-        {/* <section className=" w-full py-14">
+        <section className=" w-full py-14">
           <article className=" text-center font-[400]">
             <h1 className=" md:text-2xl lg:text-4xl">Senior Management Team</h1>
             <p>
@@ -154,7 +154,7 @@
     </div>
   ))}
           </div>
-        </section>   */}
+        </section>  
 
 
       </div>
