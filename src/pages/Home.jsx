@@ -33,10 +33,9 @@ const Home = () => {
           <div className="heroSection    lg:min-h-[100vh] h-[90vh]  flex justify-center items-center leading-7 md:leading-10   ">
 {/* blobs */}
           <article className="relative flex w-[100vw] h-[100vh] ">
-            {/* blobs one */}
     <svg style={{
         filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',
-        transition: 'filter 0.3s', // Add transition for smooth effect
+        transition: 'filter 0.3s', 
     }}
      viewBox="0 0 100 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
         <defs>
@@ -81,8 +80,8 @@ const Home = () => {
               {/* max-h-[50vh] */}
                <div className="flex flex-col justify-center ">
                  {/* blobs 2*/}
-               <article className="h-[50vh] w-full flex justify-center items-center  ">
-            {/* blobs 2*/}
+
+               <article className="h-[50vh] w-full flex justify-center items-center md:block hidden ">
     <svg className="h-[20vh] " style={{
         filter: 'drop-shadow(5px 5px 6px rgba(0, 0, 0, 7.5))',transition: 'filter 0.3s', }}
      viewBox="0 0 100 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
@@ -121,7 +120,7 @@ const Home = () => {
             </article>
 
                   {/* <p className="text-caribbean-green "></p> */}
-                  <h1 className=" py-2  absolute ">
+                  <h1 className=" py-2  md:absolute ">
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
                     <span className="bold font-bold">
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
