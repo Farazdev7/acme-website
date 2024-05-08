@@ -19,7 +19,6 @@ const navigation = [
   // { name: "Hire", path: "/hire" },
   { name: "Process", path: "/process" },
   { name: "About us", path: "/about" },
-
   { name: "Contact us", path: "/contactus" }, 
 
 ];

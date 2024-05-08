@@ -26,8 +26,8 @@ const ProcessCircle = () => {
         <>
 <main>
 <div className="app-development-process text-center font-[400] md:px-32 px-8  ">
-        <h2 className="my-8  ">App Development Process</h2>
-        <p className="my-10">{dataOfProcess.appDevelopmwnt}</p>
+        <h2 className="  ">App Development Process</h2>
+        <p className="my-10 leading-4">{dataOfProcess.appDevelopmwnt}</p>
         <Link className=" bg-[#1f475b] text-white rounded-md py-[10px] px-[20px] " to="/casestudies">
           {" "}
           Read Case Studies
@@ -44,7 +44,7 @@ const ProcessCircle = () => {
             <h1 className="text-[#99d8e7] text-3xl">DISCOVER</h1>
           </div>
 
-          <p>
+          <p className=''>
             We will help define your primary objectives and identify what will deliver an engaging experience for your
             audience. Understanding user needs and your purpose will help streamline the process and create a
             goal-focused product.
@@ -148,7 +148,7 @@ const ProcessCircle = () => {
             <h1 className="text-[#2baeba] text-3xl">JOURNEY MAPPING</h1>
           </div>
 
-          <p>
+          <p className='text-left md:text-right'>
             By focusing on your users needs, we will help map their objectives into engaging user experiences that
             subsequently meet your wider goals. Evaluating how other businesses have approached similar challenges.{" "}
           </p>
@@ -162,7 +162,7 @@ const ProcessCircle = () => {
             <h1 className="text-[#1f475b] text-3xl">DESIGN</h1>
           </div>
 
-          <p>
+          <p className='text-left md:text-right'>
             UI designers will apply creative flair to platform/HCI guidelines to produce an intuitive interface that
             aligns with your brand guidelines and engages your customers
           </p>
@@ -178,7 +178,7 @@ const ProcessCircle = () => {
             <h1 className="text-[#f16427] text-3xl">LAUNCH</h1>
           </div>
 
-          <p>
+          <p className='text-left md:text-right'>
             Whether the app is being released as a beta or to an internal or global audience we support you through each
             phase of the release cycle, gathering feedback and aligning with third party marketing goals
           </p>

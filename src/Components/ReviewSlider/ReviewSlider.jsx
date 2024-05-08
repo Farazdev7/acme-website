@@ -130,7 +130,7 @@ if(index===detailReview.length-1){
           allowTouchMove={false}
 
         >
-          <div className="reviewslider">
+          <div className="reviewslider px-1">
             {detailReview.map((item, i) => (
   <div key={`${i}-${item.userName}`} >
     <SwiperSlide >

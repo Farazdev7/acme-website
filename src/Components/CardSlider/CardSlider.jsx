@@ -49,6 +49,14 @@ const data = [
   },
 ];
 
+
+const data2={
+  img:'abc',
+  img2:'abc',
+  img3:'abc',
+
+}
+
 export default function CardSlider() {
   return (
     <>
