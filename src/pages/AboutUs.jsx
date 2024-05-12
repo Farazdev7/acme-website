@@ -13,6 +13,7 @@
   import ahsanimg from "../../public/images/team/ahsan2.jpg";
   import Msameerimg from "../../public/images/team/Msameer.jpg"
   import kamranimg from '../../public/images/team/Kamran.jpeg'
+  import sharyarimg from '../../public/images/team/Sharyar.jpeg'
 
   // blue background images
   import ahsan2bgimg from "../../public/images/team/blur img/ahsan2bg.jpg";
@@ -36,17 +37,12 @@
           desination: "CEO",
         },
         {
-          name: "Zaryab Salman",
+          name: "Muhammad Sheheryar",
           blurimg:ahsan2bgimg,
-          image:zeryabimg,
-          desination: "Marketing Manager & UI/UX Designer",
+          image:sharyarimg,
+          desination: "Manager",
         },
-        {
-          name: "Saad Salman",
-          image:saad2img,
-          blurimg:saad2bgimg,
-          desination: "Business Developer",
-        },
+        
         {
           name: "Hamza Nafasat",
           image:hamzaimg,  
@@ -65,6 +61,18 @@
           blurimg:ahsan2bgimg,
           // image: '../../public/images/team/ahsan.jpg',
           desination: "MERN Stack Developer",
+        },
+        {
+          name: "Zaryab Salman",
+          blurimg:ahsan2bgimg,
+          image:zeryabimg,
+          desination: "Marketing Manager & UI/UX Designer",
+        },
+        {
+          name: "Saad Salman",
+          image:saad2img,
+          blurimg:saad2bgimg,
+          desination: "Business Developer",
         },
         {
           name: "Muhammad Sameer",
