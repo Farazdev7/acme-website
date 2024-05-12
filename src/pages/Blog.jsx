@@ -11,7 +11,11 @@ import upwordLine from "../../public/images/Reviews/upwordLine.png";
 
 const BlogPost = ({ post }) => {
   // Conditional styling based on the 'isImageRight' property
+<<<<<<< HEAD
   const containerStyle = `flex shadow-xl rounded-2xl flex-col  text-xl font-[400] justify-between md:flex-row mx-auto my-20 mb-36 bg-slate-200 ${
+=======
+  const containerStyle = `flex flex-col  text-xl font-[400] justify-between md:flex-row mx-auto my-20 mb-36 bg-slate-200 ${
+>>>>>>> upstream/main
     post.isImageRight ? "" : "md:flex-row-reverse"
   } items-center my-8`;
   const contentStyle = " md:ml-8  lg:w-[50%] pt-4  md:text-left text-center ";

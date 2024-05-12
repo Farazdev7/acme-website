@@ -42,6 +42,7 @@ const data = [
     "heading": "Mobile App Designing",
     "text": "Crafting intuitive, visually stunning mobile app designs that captivate your audience and reflect your brand's essence."
   },
+<<<<<<< HEAD
    {
     "img": "https://i.ibb.co/F5brMXC/Dashboard.png",
     "heading": "Mobile App Designing",
@@ -57,6 +58,10 @@ const data2={
 
 }
 
+=======
+];
+
+>>>>>>> upstream/main
 export default function CardSlider() {
   return (
     <>
@@ -95,12 +100,20 @@ export default function CardSlider() {
         modules={[FreeMode, Pagination, Autoplay]}
         className="mySwiper"
       >
+<<<<<<< HEAD
         
+=======
+>>>>>>> upstream/main
         {/* services */}
         <div className="cardSliderMain ">
           {data.map((item, i) => (
             <SwiperSlide key={i}>
+<<<<<<< HEAD
               <div className="sliderBox w-full  shadow-xl rounded-xl   p-4 bg-zinc-100 min-h-[40vh]  leading-7 " style={{ boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}>
+=======
+              {/* <div className="sliderBox w-full  p-4 bg-zinc-100 h-[287px] leading-7"> */}
+              <div className="sliderBox w-full  p-4 bg-zinc-100  leading-7 ">
+>>>>>>> upstream/main
                 <img className="py-2" src={item.img} alt="" />
                 <b>{item.heading}</b> <br />
                 <p>{item.text}</p>

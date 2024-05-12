@@ -1,16 +1,29 @@
+<<<<<<< HEAD
 import { useEffect } from "react";
+=======
+import React, { useEffect } from "react";
+>>>>>>> upstream/main
 import upwordLine from "../../../public/images/Reviews/upwordLine.png";
 import { Link } from "react-router-dom";
 
 const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, img, name, post }) => {
   const desktopLayoutClass = isImageRight ? "lg:flex-row-reverse  " : "";
+<<<<<<< HEAD
+=======
+  console.log(id);
+>>>>>>> upstream/main
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
+<<<<<<< HEAD
     <div className="container mx-auto my-20 mb-44 bg-slate-50 rounded-md ">
       <Link to={`/blog/${id}`} className="block shadow-xl rounded-2xl  "style={{ boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}
 >
+=======
+    <Link to={`/blog/${id}`}>
+      <div className="container mx-auto my-20 mb-44 bg-slate-50 ">
+>>>>>>> upstream/main
         <div className={`flex flex-col lg:flex-row md:items-center md:justify-between ${desktopLayoutClass}`}>
           {/* Text */}
           <div className="lg:w-1/2 md:ml-8  pt-4">
@@ -38,8 +51,13 @@ const TextAndImage = ({ id, heading, p, text, italic, imageUrl, isImageRight, im
             <img src={imageUrl} alt="Image" className="md:mx-auto w-full md:w-auto rounded-lg shadow-lg" />
           </div>
         </div>
+<<<<<<< HEAD
       </Link>
     </div>
+=======
+      </div>
+    </Link>
+>>>>>>> upstream/main
   );
 };
 

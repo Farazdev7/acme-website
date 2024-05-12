@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 let cloud = "https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/london-4.svg";
+=======
+import {
+  FaPhone,
+  FaEnvelope,
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa";
+let cloud =
+  "https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/london-4.svg";
+>>>>>>> upstream/main
 
 const contactData = [
   {
@@ -27,8 +39,15 @@ const contactData = [
       },
     },
     socialLinks: {
+<<<<<<< HEAD
       facebookProfileUrl: "https://www.facebook.com/profile.php?id=61557459425088&mibextid=ZbWKwL",
       linkedinProfileUrl: "https://www.linkedin.com/company/acme-digital-solutions/about/",
+=======
+      facebookProfileUrl:
+        "https://www.facebook.com/profile.php?id=61557459425088&mibextid=ZbWKwL",
+      linkedinProfileUrl:
+        "https://www.linkedin.com/company/acme-digital-solutions/about/",
+>>>>>>> upstream/main
       twitterProfileUrl: "https://twitter.com/home",
     },
   },
@@ -54,6 +73,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     const { firstName, lastName,mobile,email,company,message}=formData
     
     const res=await fetch('http://localhost:4000/contactus' , {
@@ -71,11 +91,39 @@ if (!data){
 }else{
   console.log("message send sucessfully")
 }
+=======
+    const { firstName, lastName, mobile, email, company, message } = formData;
+
+    const res = await fetch("http://localhost:4000/contactus", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        mobile,
+        email,
+        company,
+        message,
+      }),
+    });
+    const data = await res.json();
+    if (!data) {
+      console.log("message faild to post");
+    } else {
+      console.log("message send sucessfully");
+    }
+>>>>>>> upstream/main
     // Handle form submission
 
     console.log(formData);
   };
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> upstream/main
   const facebookClick = () => {
     window.open(contactData[0].socialLinks.facebookProfileUrl, "_blank");
   };
@@ -100,15 +148,35 @@ if (!data){
           {/* our locations */}
           <div className="location  flex flex-col md:flex-row items-center  justify-around">
             <div className="UAE">
+<<<<<<< HEAD
               <img src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/london-1.svg" alt=""/>
               <h2 className="mt-5">{contactData[0].ourLocation.lication1.city}</h2>
+=======
+              <img
+                src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/london-1.svg"
+                alt=""
+              />
+              <h2 className="mt-5">
+                {contactData[0].ourLocation.lication1.city}
+              </h2>
+>>>>>>> upstream/main
               <p>{contactData[0].ourLocation.lication1.street}</p>
 
               <p>{contactData[0].ourLocation.lication1.street2}</p>
             </div>
             <div className="Lahore">
+<<<<<<< HEAD
               <img src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/york-1.svg" alt=""/> 
               <h2 className="mt-5">{contactData[0].ourLocation.lication2.city}</h2>
+=======
+              <img
+                src="https://thedistance.co.uk/wp-content/themes/thedistance/dist/images/york-1.svg"
+                alt=""
+              />
+              <h2 className="mt-5">
+                {contactData[0].ourLocation.lication2.city}
+              </h2>
+>>>>>>> upstream/main
               <p>{contactData[0].ourLocation.lication2.street}</p>
 
               <p>{contactData[0].ourLocation.lication2.street2}</p>
@@ -196,7 +264,14 @@ if (!data){
               className="p-2 mb-4 rounded bg-white text-gray-700 min-h-24 md:min-h-32 w-full"
               required
             />
+<<<<<<< HEAD
             <button type="submit" className="bg-orange-500 p-2 rounded-full flex items-center justify-center w-32">
+=======
+            <button
+              type="submit"
+              className="bg-orange-500 p-2 rounded-full flex items-center justify-center w-32"
+            >
+>>>>>>> upstream/main
               Send
             </button>
           </form>
@@ -208,13 +283,27 @@ if (!data){
             </div>
 
             <div className="flex gap-10">
+<<<<<<< HEAD
               <span className="cursor-pointer hover:text-orange-500" onClick={facebookClick}>
+=======
+              <span
+                className="cursor-pointer hover:text-orange-500"
+                onClick={facebookClick}
+              >
+>>>>>>> upstream/main
                 <FaFacebookF className="mx-1" />
               </span>
               {/* <span onClick={twitterClick} style={{ cursor: "pointer" }}>
                 <FaTwitter className="mx-1" />
               </span> */}
+<<<<<<< HEAD
               <span onClick={linkedinClick} className="cursor-pointer hover:text-orange-500">
+=======
+              <span
+                onClick={linkedinClick}
+                className="cursor-pointer hover:text-orange-500"
+              >
+>>>>>>> upstream/main
                 <FaLinkedinIn className="mx-1" />
               </span>
             </div>

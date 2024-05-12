@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect, useRef, useState } from "react";
+=======
+import React, { useEffect, useRef, useState } from "react";
+>>>>>>> upstream/main
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -79,7 +83,11 @@ const detailReview = [
 export default function ReviewSlider() {
   const [index, setIndex] = useState(0);
   const [currentReview, setCurrentReview] = useState(detailReview[index].review);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> upstream/main
   useEffect(() => {
     setCurrentReview(detailReview[index].review)
   },[index,currentReview])
@@ -98,7 +106,11 @@ if(index===detailReview.length-1){
     <>
       <div className="review border-2   ">
         <div className="text flex relative   justify-center items-center ">
+<<<<<<< HEAD
           <section className="relative  md:w-[50vw] lg:w-[50vw] text-center py-10 ">
+=======
+          <p className="relative  md:w-[50vw] lg:w-[50vw] text-center py-10 ">
+>>>>>>> upstream/main
             <h2 className="">
             Why cutomers love <br /> <span className="font-bold">working with us</span>
             </h2>
@@ -108,7 +120,11 @@ if(index===detailReview.length-1){
               {currentReview}
             </p>
             <img className="absolute right-8 " src="https://i.ibb.co/DMQ90mt/Bottom-Comma.png" alt="Comma" />
+<<<<<<< HEAD
           </section>
+=======
+          </p>
+>>>>>>> upstream/main
         </div>
         {/* swiper component started form here */}
         <Swiper
@@ -130,6 +146,7 @@ if(index===detailReview.length-1){
           allowTouchMove={false}
 
         >
+<<<<<<< HEAD
           <div className="reviewslider px-1">
             {detailReview.map((item, i) => (
   <div key={`${i}-${item.userName}`} >
@@ -144,6 +161,23 @@ if(index===detailReview.length-1){
   </div>
 ))}
 
+=======
+          <div className="reviewslider">
+            {detailReview.map((item, i) => (
+              <div key={i}>
+                <SwiperSlide >
+                  <div className="flex flex-col justify-center items-center text-center  ">
+                    <img className="w-fit h-20 rounded-full" src={item.img} alt="" />
+                    <p >{item.stars}</p>
+                    <p>{item.userName}</p>
+                    <p>{item.postedDate}</p>
+                  </div>
+
+                  {/* <img src={item.img} alt="" /> */}
+                </SwiperSlide>
+              </div>
+            ))}
+>>>>>>> upstream/main
           </div>
         </Swiper>{" "}
       </div>

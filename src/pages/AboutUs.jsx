@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   import  { useEffect ,useState } from "react";
   import { GiPodiumWinner } from "react-icons/gi";
   import { HiOutlineLightBulb } from "react-icons/hi";
@@ -108,6 +109,30 @@
       
       //bg-gray-100 
       <section  >
+=======
+import { useEffect, useState } from "react";
+import { GiPodiumWinner } from "react-icons/gi";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { BiSolidBookAlt } from "react-icons/bi";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+// thats array of object will come from backend
+
+const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
+    Aos.init();
+  });
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  return (
+    //bg-gray-100
+    <section>
+>>>>>>> upstream/main
       <div className="grid place-items-center text-center">
         {/* Mission Banner */}
         <div className="w-full">
@@ -120,8 +145,14 @@
           <div className="pt-6  pb-16">
             <h2 className="text-xl md: font-semibold mb-4">Our Mission</h2>
             <p className="text-gray-700 font-[400]">
+<<<<<<< HEAD
               We are dedicated to providing innovative software solutions that empower businesses and individuals to achieve
               their goals efficiently and effectively.
+=======
+              We are dedicated to providing innovative software solutions that
+              empower businesses and individuals to achieve their goals
+              efficiently and effectively.
+>>>>>>> upstream/main
             </p>
           </div>
         </div>
@@ -151,6 +182,7 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         {/* Our Team Section */}
 
         <section className=" w-full py-14">
@@ -187,3 +219,11 @@
   };
 
   export default AboutUs;
+=======
+      </div>
+    </section>
+  );
+};
+
+export default AboutUs;
+>>>>>>> upstream/main
