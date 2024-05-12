@@ -95,6 +95,7 @@ export default function CardSlider() {
         modules={[FreeMode, Pagination, Autoplay]}
         className="mySwiper"
       >
+        
         {/* services */}
         <div className="cardSliderMain ">
           {data.map((item, i) => (
