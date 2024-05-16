@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-/* eslint-disable no-unused-vars */
->>>>>>> upstream/main
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
@@ -24,7 +20,6 @@ const Casestudies = () => {
   const filteredData =
     btnCategory === 0 || btnCategory === "View All"
       ? caseStudyData[2]
-<<<<<<< HEAD
       : caseStudyData[2].filter((item) => item.category.toLowerCase() === btnCategory.toLowerCase());
       
   return (
@@ -33,20 +28,6 @@ const Casestudies = () => {
         <div className="bg-[#2baeba] text-[14px] md:text-[18px] px-[15px] py-10 text-white">
           <p className="text-[30px] font-[400] md:pt-[50px] mb-[20px]">Case Studies</p>
           <p className="px-4 leading-4">{caseStudyData[1][0].mainText}</p>
-=======
-      : caseStudyData[2].filter(
-          (item) => item.category.toLowerCase() === btnCategory.toLowerCase()
-        );
-
-  return (
-    <div className="caseStudy ">
-      <div className="title  text-center pb-10">
-        <div className="bg-[#2baeba] text-[14px] md:text-[18px] px-[15px] py-10 text-white">
-          <p className="text-[30px] font-[400] md:pt-[50px] mb-[20px]">
-            Case Studies
-          </p>
-          <p className="px-4">{caseStudyData[1][0].mainText}</p>
->>>>>>> upstream/main
         </div>
         <div className="buttons py-10 place-items-center flex flex-wrap gap-4 items-center justify-center">
           {caseStudyData[0].map((item, i) => (
@@ -64,43 +45,25 @@ const Casestudies = () => {
           ))}
         </div>
       </div>
-<<<<<<< HEAD
       <div className="contents-main  py-10 grid gap-20  justify-center">
         {filteredData.map((item, i) => (
           <Link key={i} to={`${item.id}/${item.category} `}>
             <div data-aos="fade-up"
             // bg-cover bg-center bg-no-repeat
               className="content relative shadow-xl rounded-2xl  bg-center  bg-cover xl:w-[75vw] w-[90vw]  h-[30vh]   xl:h-[50vh] bg-no-repeat"
-=======
-      <div className="contents-main py-10 grid gap-20  justify-center">
-        {filteredData.map((item, i) => (
-          <Link key={i} to={`${item.id}/${item.category} `}>
-            <div
-              data-aos="fade-up"
-              // bg-cover bg-center bg-no-repeat
-              className="content relative  bg-center  bg-cover xl:w-[75vw] w-[90vw]  h-[30vh]   xl:h-[50vh] bg-no-repeat"
->>>>>>> upstream/main
               style={{
                 backgroundImage: `url(${item.backgroundImage})`,
               }}
             >
               <div
-<<<<<<< HEAD
                 className="relative h-[100%] w-[100%] hover:shadow-2xl shadow-xl rounded-2xl  opacity-25 "
                 style={{ background: `linear-gradient(to right, ${item.bgColorTo},${item.bgColorfrom} )` }}
-=======
-                className="relative h-[100%] w-[100%]  opacity-25 "
-                style={{
-                  background: `linear-gradient(to right, ${item.bgColorTo},${item.bgColorfrom} )`,
-                }}
->>>>>>> upstream/main
               ></div>
               <div className="texts-img-outer absolute w-[70vw] md:w-[50vw] bottom-0 left-0 text-white text-left p-1 md:p-6 lg:p-8 ">
                 <div data-aos="fade-down-left" className="text-inner">
                   <h3 className="heading  font-bold">{item.heading}</h3>
                   <p className="text  font-[400] my-5">{item.text}</p>
                 </div>
-<<<<<<< HEAD
                 <div  data-aos="zoom-in" className="imgs  flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]">
                   <img  loading="lazy"  className={`w-fit lg:h-20 h-10 ${item.logImg1 ? '':'hidden'} smooth-fade-in`} src={item.logImg1} alt="" />
                   <img  loading="lazy"  className={`w-fit lg:h-20 h-10 ${item.logImg2 ? '':'hidden'} smooth-fade-in`} src={item.logImg2} alt="" />
@@ -109,46 +72,6 @@ const Casestudies = () => {
               </div>
               <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-0 lg:right-20">
                 <img data-aos="zoom-in-down" loading="lazy" className="h-[100%] w-fit lg:h-[100%] smooth-fade-in" src={item.moboImg}  alt="" />
-=======
-                <div
-                  data-aos="zoom-in"
-                  className="imgs  flex gap-4 max-h-20 max-w-[35%] md:max-w-[25%]"
-                >
-                  <img
-                    loading="lazy"
-                    className={`w-fit lg:h-20 h-10 ${
-                      item.logImg1 ? "" : "hidden"
-                    } smooth-fade-in`}
-                    src={item.logImg1}
-                    alt=""
-                  />
-                  <img
-                    loading="lazy"
-                    className={`w-fit lg:h-20 h-10 ${
-                      item.logImg2 ? "" : "hidden"
-                    } smooth-fade-in`}
-                    src={item.logImg2}
-                    alt=""
-                  />
-                  <img
-                    loading="lazy"
-                    className={`w-fit lg:h-20 h-10 ${
-                      item.logImg3 ? "" : "hidden"
-                    } smooth-fade-in`}
-                    src={item.logImg3}
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="phone absolute max-w-[140px] md:max-w-[260px] bottom-5 right-0 lg:right-20">
-                <img
-                  data-aos="zoom-in-down"
-                  loading="lazy"
-                  className="h-[100%] w-fit lg:h-[100%] smooth-fade-in"
-                  src={item.moboImg}
-                  alt=""
-                />
->>>>>>> upstream/main
               </div>
             </div>
           </Link>
@@ -160,9 +83,5 @@ const Casestudies = () => {
 
 // Add the following CSS to your component
 
-<<<<<<< HEAD
 
 export default Casestudies;
-=======
-export default Casestudies;
->>>>>>> upstream/main

@@ -3,7 +3,6 @@ import React from "react";
 const DisplayCard = ({ key, heading, text, img, backGroundColor }) => {
   return (
     // <div className="container mx-auto flex flex-wrap justify-center">
-<<<<<<< HEAD
     <div key={key} className="w-full md:w-[50%] p-4 flex  ">
       <div className="container mx-auto flex flex-wrap justify-center bg-gray-200 rounded-3xl ">
         <div className=" p-4 flex">
@@ -11,14 +10,6 @@ const DisplayCard = ({ key, heading, text, img, backGroundColor }) => {
           {/* lg:max-h-[10rem] */}
           <div className="flex lg:w-[30vw] flex-row items-start bg-gray-100  overflow-hidden shadow-xl rounded-xl " style={{ boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}
 >
-=======
-    <div key={key} className="w-full md:w-[50%] p-4 flex ">
-      <div className="container mx-auto flex flex-wrap justify-center">
-        <div className=" p-4 flex">
-          {" "}
-          {/* lg:max-h-[10rem] */}
-          <div className="flex lg:w-[30vw] flex-row items-start bg-gray-100 rounded-lg overflow-hidden ">
->>>>>>> upstream/main
             <div className="pl-2 flex items-center">
               <img
                 src={img}

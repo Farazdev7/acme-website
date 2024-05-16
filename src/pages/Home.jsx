@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useContext, useEffect } from "react";
-=======
-import React, { useEffect } from "react";
->>>>>>> upstream/main
 import bgImage from "../../public/images/bgImage.png";
 import videoImg from "../../public/images/video.png";
 import arrow from "../../public/images/arrow-right-line.png";
@@ -19,12 +15,8 @@ import { Link } from "react-router-dom";
 import Process from './Process'
 import ProcessCircle from "../Components/process circle design/ProcessCircle";
 import logo from "../../public/images/logo/1.png";
-<<<<<<< HEAD
 import { Btncontext } from "../Components/Contexts/MenuButton";
 import ParticlesBackground from "../Components/Particles/ParticlesBackground";
-=======
-
->>>>>>> upstream/main
 const homeData = {
   mainText: `We help build and manage a team of world-class developers to bring your vision to life.`,
 };
@@ -32,16 +24,12 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-<<<<<<< HEAD
 
-=======
->>>>>>> upstream/main
   return (
     <React.Fragment>
       <div className="main  ">
         {/* hero section stared */}
         <div className="">
-<<<<<<< HEAD
           <div className="heroSection    lg:min-h-[100vh] h-[90vh]  flex justify-center items-center leading-7 md:leading-10   ">
 {/* blobs */}
           <article className="relative flex w-[100vw] h-[100vh] ">
@@ -132,23 +120,11 @@ const Home = () => {
 
                   {/* <p className="text-caribbean-green "></p> */}
                   <h1 className=" py-2  md:absolute ">
-=======
-          <div className="heroSection  h-[90vh]  flex leading-7 md:leading-10  ">
-            <div className="w-full flex pt-[10vh] justify-center   py-8  px-4 items-center">
-              {/* <div className="max-w-screen-xl mx-auto grid md:grid-cols-2"> */}
-              {/* <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2 justify-between "> */}
-              <div className="max-w-[100vw]  mx-auto grid lg:grid-cols-2  justify-between ">
-              {/* max-h-[50vh] */}
-               <div className="flex flex-col justify-center ">
-                  {/* <p className="text-caribbean-green "></p> */}
-                  <h1 className=" py-2 ">
->>>>>>> upstream/main
                     Great <span className=" text-[#b53d7d] "> Product</span> is <br />
                     <span className="bold font-bold">
                       built by great<span className=" text-[#b53d7d]"> teams </span> <br />
                     </span>
                   </h1>
-<<<<<<< HEAD
                   <h3 className="text-gray-800  font-[400]  ">{homeData.mainText}</h3>
                   <div className="bg-gray-300  mx-auto mt-6">
                   <Link to={'/contactus'} className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-fit rounded-md font-medium my-10 px-4 mx-auto lg:mx-0 py-3">
@@ -173,19 +149,6 @@ const Home = () => {
         e.target.style.filter = 'none'; // Reset filter on mouse out
     }}
     />
-=======
-                  <p className="text-gray-800 text-xl  md:text-2xl font-[400] md:mt-10 ">{homeData.mainText}</p>
-                  <button className="bg-[#3D63EA] text-xl mt-8 md:mt-20 text-white w-[200px] rounded-md font-medium my-10 mx-auto lg:mx-0 py-3">
-                    Let’s get started!
-                  </button>
-                </div>
-                <img
-                  className=" max-h-[50vh]  w-fit mx-auto "
-                  // src="https://i.ibb.co/Rg8mTFW/main.png"
-                  src={logo}
-                  alt="/"
-                />
->>>>>>> upstream/main
               </div>
             </div>
             {/* <img className="absolute md:top-[105vh] lg:top-[105vh] top-[97vh] left-20" src={bgImage} alt="" /> */}

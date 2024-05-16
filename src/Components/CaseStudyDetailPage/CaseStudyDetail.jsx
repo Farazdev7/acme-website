@@ -168,26 +168,18 @@ const CaseStudyDetail = () => {
 
       {/* client review */}
       {/* slider will be use at the place of client review */}
-<<<<<<< HEAD
 
 {/* this is a testemonial section  going to hide due to some technical issue */}
       {/* <div className={`client  py-16 mt-32 bg-orange-300 grid place-items-center font-[400] leading-10 text-white text-center ${Searched.clientReview[0].clientreview ? "" : "hidden"}`}>
-=======
-      <div className={`client  py-16 mt-32 bg-orange-300 grid place-items-center font-[400] leading-10 text-white text-center ${Searched.clientReview[0].clientreview ? "" : "hidden"}`}>
->>>>>>> upstream/main
         <h2 className=" ">Testimonial</h2>
        <p><i>{Searched.clientReview[0].clientreview}</i></p> 
         <div className="client-img flex flex-col md:flex-row gap-8">
           <img loading="lazy" className="max-h-[80px] rounded-full w-fit" src={Searched.clientReview[0].clientImg} alt="n" />
           <p className="name font-bold">{Searched.clientReview[0].clientname}</p>
         </div>
-<<<<<<< HEAD
       </div> */}
 
 
-=======
-      </div>
->>>>>>> upstream/main
       {/* the problem soluction section */}
       <div className={`font-[400] py-10 text-center
        ${Searched.Process[0].theProblem ||

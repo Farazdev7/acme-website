@@ -19,10 +19,6 @@ const navigation = [
   // { name: "Hire", path: "/hire" },
   { name: "Process", path: "/process" },
   { name: "About us", path: "/about" },
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/main
   { name: "Contact us", path: "/contactus" }, 
 
 ];

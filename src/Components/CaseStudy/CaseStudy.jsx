@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-/* eslint-disable no-unused-vars */
->>>>>>> upstream/main
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 const data = [
@@ -32,38 +28,22 @@ const CaseStudy = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-<<<<<<< HEAD
     <div className="case-study-main flex justify-center flex-col gap-10 items-center   ">
-=======
-    <div className="case-study-main flex justify-center flex-col gap-10 items-center  ">
->>>>>>> upstream/main
       {/* mapping from here */}
       {data.map((item, i) => (
         <div
           key={i}
-<<<<<<< HEAD
           // style={{ backgroundColor: item.bgColor }}
           style={{backgroundColor: item.bgColor , boxShadow: '10px 10px 10px 10px rgba(0, 0, 0, 0.1)' }}
           // flex-col md:flex-row
           className={`case_study relative shadow-xl rounded-2xl  md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7` }
-=======
-          style={{ backgroundColor: item.bgColor }}
-          // flex-col md:flex-row
-          className={`case_study relative   md:flex flex-col  lg:flex-row  gap-10 justify-center items-center md:w-[80vw]   leading-7`}
->>>>>>> upstream/main
         >
           <div className="img  lg:w-[40%]" style={{ height: "100%" }}>
             <img className="h-[100%] w-fit " src={item.img} alt="" />
           </div>
-<<<<<<< HEAD
           <div className="txt md:w-[80%] lg:w-[60%] relative md:p-0 p-3">
             <h3 className="font-bold">{item.heading}</h3>
             <div className="pb-10">
-=======
-          <div className="txt md:w-[80%] lg:w-[60%] relative">
-            <h3 className="font-bold">{item.heading}</h3>
-            <p className="pb-10">
->>>>>>> upstream/main
               {" "}
               {item.text}
               <div className="">
@@ -71,11 +51,7 @@ const CaseStudy = () => {
                   <Link to={item.path}> Read More</Link>
                 </button>
               </div>
-<<<<<<< HEAD
             </div>
-=======
-            </p>
->>>>>>> upstream/main
           </div>
         </div>
       ))}
